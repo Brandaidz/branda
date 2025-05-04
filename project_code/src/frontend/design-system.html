@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Branda – Design System</title>
+  <link rel="stylesheet" href="new-styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .design-section {
+      margin-bottom: var(--spacing-2xl);
+    }
+    
+    .color-swatch {
+      width: 100px;
+      height: 100px;
+      border-radius: var(--border-radius-md);
+      margin-bottom: var(--spacing-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 600;
+      box-shadow: var(--shadow-md);
+    }
+    
+    .color-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: var(--spacing-lg);
+      margin-bottom: var(--spacing-xl);
+    }
+    
+    .component-preview {
+      padding: var(--spacing-lg);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--border-radius-lg);
+      margin-bottom: var(--spacing-lg);
+    }
+    
+    .component-title {
+      margin-bottom: var(--spacing-md);
+      font-weight: 600;
+      color: var(--gray-700);
+    }
+    
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: var(--spacing-md);
+      margin-bottom: var(--spacing-lg);
+    }
+    
+    .typography-sample {
+      margin-bottom: var(--spacing-lg);
+    }
+    
+    .font-family-name {
+      font-size: var(--font-size-sm);
+      color: var(--gray-600);
+      margin-bottom: var(--spacing-xs);
+    }
+    
+    .theme-toggle {
+      position: fixed;
+      top: var(--spacing-lg);
+      right: var(--spacing-lg);
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <button class="btn btn-primary theme-toggle" id="themeToggle">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </svg>
+    <span>Changer de thème</span>
+  </button>
+
+  <div class="container">
+    <div class="design-section">
+      <h1>Branda Design System</h1>
+      <p class="text-muted">Une interface joyeuse, subtile et clairvoyante pour Branda</p>
+    </div>
+
+    <div class="design-section">
+      <h2>Palette de couleurs</h2>
+      <p>Une palette vibrante mais élégante qui communique l'énergie et la confiance.</p>
+      
+      <h3 class="mt-4 mb-3">Couleurs principales</h3>
+      <div class="color-grid">
+        <div>
+          <div class="color-swatch" style="background-color: var(--primary-color);">
+            Primary
+          </div>
+          <div class="text-center">#4361ee</div>
+        </div>
+        <div>
+          <div class="color-swatch" style="background-color: var(--primary-light);">
+            Primary Light
+          </div>
+          <div class="text-center">#738efc</div>
+        </div>
+        <div>
+          <div class="color-swatch" style="background-color: var(--primary-dark);">
+            Primary Dark
+          </div>
+          <div class="text-center">#2b4acb</div>
+        </div>
+        <div>
+          <div class="color-swatch" style="background-color: var(--secondary-color);">
+            Secondary
+          </div>
+          <div class="text-center">#ff9f1c</div>
+        </div>
+        <div>
+          <div class="color-swatch" style="background-color: var(--secondary-light);">
+            Secondary Light
+          </div>
+          <div class="text-center">#ffbe59</div>
+        </div>
+        <div>
+          <div class="color-swatch" style="background-color: var(--secondary-dark);">
+            Secondary Dark
+          </div>
+          <div class="text-center">#e08200</div>
+        </div>
+      </div>
+      
+      <h3 class="mt-4 mb-3">Couleurs sémantiques</h3>
+      <div class="color-grid">
+        <div>
+          <div class="color-swatch" style="background-color: var(--success-color);">
+            Success
+          </div>
+          <div class="text-center">#2ec4b6</div>
+        </div>
+        <div>
+          <div class="color-swatch" style="background-color: var(--danger-color);">
+            Danger
+          </div>
+          <div class="text-center">#e63946</div>
+        </div>
+        <div>
+          <div class="color-swatch" style="background-color: var(--warning-color);">
+            Warning
+          </div>
+          <div class="text-center">#ffbf69</div>
+        </div>
+        <div>
+          <div class="color-swatch" style="background-color: var(--info-color);">
+            Info
+          </div>
+          <div class="text-center">#4cc9f0</div>
+        </div>
+        <div>
+          <div class="color-swatch" style="background-color: var(--accent-color);">
+            Accent
+          </div>
+          <div class="text-center">#7209b7</div>
+        </div>
+      </div>
+      
+      <h3 class="mt-4 mb-3">Nuances de gris</h3>
+      <div class="color-grid">
+        <div>
+          <div class="color-swatch" style="background-color: var(--gray-900); color: white;">
+            Gray 900
+          </div>
+          <div class="text-center">#212529</div>
+        </div>
+        <div>
+          <div class="color-swatch" style="background-color: var(--gray-800); color: white;">
+            Gray 800
+          </div>
+          <div class="text-center">#343a40</div>
+        </div>
+        <div>
+          <div class="color-swatch" style="background-color: var(--gray-700); color: white;">
+            Gray 700
+          </div>
+          <div class="text-center">#495057</div>
+        </div>
+        <div>
+          <div class="color-swatch" style="background-color: var(--gray-600); color: white;">
+            Gray 600
+          </div>
+          <div class="text-center">#6c757d</div>
+        </div>
+        <div>
+          <div class="color-swatch" style="background-color: var(--gray-500); color: white;">
+            Gray 500
+          </div>
+          <div class="text-center">#adb5bd</div>
+        </div>
+        <div>
+          <div class="color-swatch" style="background-color: var(--gray-400); color: black;">
+            Gray 400
+          </div>
+          <div class="text-center">#ced4da</div>
+        </div>
+        <div>
+          <div class="color-swatch" style="background-color: var(--gray-300); color: black;">
+            Gray 300
+          </div>
+          <div class="text-center">#dee2e6</div>
+        </div>
+        <div>
+          <div class="color-swatch" style="background-color: var(--gray-200); color: black;">
+            Gray 200
+          </div>
+          <div class="text-center">#e9ecef</div>
+        </div>
+        <div>
+          <div class="color-swatch" style="background-color: var(--gray-100); color: black;">
+            Gray 100
+          </div>
+          <div class="text-center">#f1f3f5</div>
+        </div>
+        <div>
+          <div class="color-swatch" style="background-color: var(--gray-50); color: black;">
+            Gray 50
+          </div>
+          <div class="text-center">#f8f9fa</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="design-section">
+      <h2>Typographie</h2>
+      <p>Une combinaison de polices modernes et lisibles pour une expérience utilisateur optimale.</p>
+      
+      <div class="typography-sample">
+        <div class="font-family-name">Poppins (Titres)</div>
+        <h1 style="font-family: var(--font-family-heading);">Titre h1 - Poppins Bold</h1>
+        <h2 style="font-family: var(--font-family-heading);">Titre h2 - Poppins SemiBold</h2>
+        <h3 style="font-family: var(--font-family-heading);">Titre h3 - Poppins SemiBold</h3>
+        <h4 style="font-family: var(--font-family-heading);">Titre h4 - Poppins SemiBold</h4>
+        <h5 style="font-family: var(--font-family-heading);">Titre h5 - Poppins Medium</h5>
+        <h6 style="font-family: var(--font-family-heading);">Titre h6 - Poppins Medium</h6>
+      </div>
+      
+      <div class="typography-sample">
+        <div class="font-family-name">Inter (Corps de texte)</div>
+        <p style="font-size: var(--font-size-md); font-weight: 400;">Texte normal - Inter Regular (16px)</p>
+        <p style="font-size: var(--font-size-md); font-weight: 500;">Texte medium - Inter Medium (16px)</p>
+        <p style="font-size: var(--font-size-md); font-weight: 600;">Texte semi-bold - Inter SemiBold (16px)</p>
+        <p style="font-size: var(--font-size-md); font-weight: 700;">Texte bold - Inter Bold (16px)</p>
+        <p style="font-size: var(--font-size-sm);">Texte petit - Inter Regular (14px)</p>
+        <p style="font-size: var(--font-size-xs);">Texte très petit - Inter Regular (12px)</p>
+        <p style="font-size: var(--font-size-lg);">Texte grand - Inter Regular (18px)</p>
+        <p style="font-size: var(--font-size-xl);">Texte très grand - Inter Regular (20px)</p>
+      </div>
+    </div>
+
+    <div class="design-section">
+      <h2>Boutons</h2>
+      <p>Des boutons expressifs avec des états visuels clairs et des micro-interactions.</p>
+      
+      <div class="component-preview">
+        <div class="component-title">Styles de boutons</div>
+        <div class="button-grid">
+          <button class="btn btn-primary">Bouton primaire</button>
+          <button class="btn btn-secondary">Bouton secondaire</button>
+          <button class="btn btn-success">Bouton succès</button>
+          <button class="btn btn-danger">Bouton danger</button>
+          <button class="btn btn-outline">Bouton outline</button>
+        </div>
+      </div>
+      
+      <div class="component-preview">
+        <div class="component-title">Tailles de boutons</div>
+        <div class="d-flex align-items-center gap-3 mb-3">
+          <button class="btn btn-primary btn-sm">Petit</button>
+          <button class="btn btn-primary">Normal</button>
+          <button class="btn btn-primary btn-lg">Grand</button>
+        </div>
+      </div>
+      
+      <div class="component-preview">
+        <div class="component-title">Boutons avec icônes</div>
+        <div class="d-flex align-items-center gap-3 mb-3">
+          <button class="btn btn-primary">
+            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 5v14M5 12h14"></path>
+            </svg>
+            Ajouter
+          </button>
+          <button class="btn btn-success">
+            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+            Valider
+          </button>
+          <button class="btn btn-danger">
+            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+            Supprimer
+          </button>
+        </div>
+      </div>
+      
+      <div class="component-preview">
+        <div class="component-title">Boutons icônes uniquement</div>
+        <div class="d-flex align-items-center gap-3 mb-3">
+          <button class="btn btn-primary btn-icon-only">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+              <path d="M12 5v14M5 12h14"></path>
+            </svg>
+          </button>
+          <button class="btn btn-secondary btn-icon-only">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="M21 21l-4.35-4.35"></path>
+            </svg>
+          </button>
+          <button class="btn btn-outline btn-icon-only">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <path d="M22 6l-10 7L2 6"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="design-section">
+      <h2>Cartes</h2>
+      <p>Des conteneurs élégants avec des effets de survol et des ombres subtiles.</p>
+      
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Titre de la carte</h3>
+            </div>
+            <div class="card-body">
+              <p>Contenu de la carte avec du texte et potentiellement d'autres éléments comme des images, des boutons, etc.</p>
+              <p>Les cartes sont des conteneurs polyvalents qui peuvent être utilisés pour afficher différents types de contenu.</p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary">Action principale</button>
+              <button class="btn btn-outline">Action secondaire</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Statistiques</h3>
+            </div>
+            <div class="card-body">
+              <div class="stat-value">1,254 €</div>
+              <div class="stat-change positive">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 19V5M5 12l7-7 7 7"></path>
+                </svg>
+                +12.5% par rapport à hier
+              </div>
+              <div class="progress mt-3">
+                <div class="progress-bar" style="width: 75%"></div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-outline btn-sm">Voir détails</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="design-section">
+      <h2>Formulaires</h2>
+      <p>Des champs de formulaire accessibles avec validation visuelle et feedback instantané.</p>
+      
+      <div class="component-preview">
+        <div class="component-title">Champs de texte</div>
+        <div class="form-group">
+          <label class="form-label" for="textInput">Champ de texte</label>
+          <input type="text" class="form-control" id="textInput" placeholder="Entrez du texte">
+        </div>
+        
+        <div class="form-group">
+          <label class="form-label" for="emailInput">Email</label>
+          <input type="email" class="form-control" id="emailInput" placeholder="exemple@domaine.com">
+        </div>
+        
+        <div class="form-group">
+          <label class="form-label" for="passwordInput">Mot de passe</label>
+          <input type="password" class="form-control" id="passwordInput" placeholder="Votre mot de passe">
+        </div>
+      </div>
+      
+      <div class="component-preview">
+        <div class="component-title">Sélecteurs</div>
+        <div class="form-group">
+          <label class="form-label" for="selectInput">Liste déroulante</label>
+          <select class="form-select" id="selectInput">
+            <option selected>Choisissez une option</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label class="form-label">Cases à cocher</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="checkbox1">
+            <label class="form-check-label" for="checkbox1">Option 1</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="checkbox2" checked>
+            <label class="form-check-label" for="checkbox2">Option 2</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="design-section">
+      <h2>Alertes et notifications</h2>
+      <p>Des messages informatifs avec des codes couleur sémantiques pour une communication claire.</p>
+      
+      <div class="alert alert-primary mb-3">
+        <strong>Information !</strong> Ceci est une alerte d'information.
+      </div>
+      
+      <div class="alert alert-success mb-3">
+        <strong>Succès !</strong> L'opération a été effectuée avec succès.
+      </div>
+      
+      <div class="alert alert-warning mb-3">
+        <strong>Attention !</strong> Cette action nécessite votre attention.
+      </div>
+      
+      <div class="alert alert-danger mb-3">
+        <strong>Erreur !</strong> Une erreur s'est produite lors de l'opération.
+      </div>
+      
+      <div class="toast-container">
+        <div class="toast">
+          <div class="toast-icon success">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </div>
+          <div class="toast-content">
+            <div class="toast-title">Succès</div>
+            <div class="toast-message">L'opération a été effectuée avec succès.</div>
+          </div>
+          <button class="toast-close">&times;</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="design-section">
+      <h2>Badges</h2>
+      <p>Des indicateurs visuels pour mettre en évidence des statuts ou des catégories.</p>
+      
+      <div class="d-flex gap-2 mb-3">
+        <span class="badge badge-primary">Primaire</span>
+        <span class="badge badge-secondary">Secondaire</span>
+        <span class="badge badge-success">Succès</span>
+        <span class="badge badge-danger">Danger</span>
+        <span class="badge badge-warning">Attention</span>
+        <span class="badge badge-info">Info</span>
+      </div>
+    </div>
+
+    <div class="design-section">
+      <h2>Tableaux</h2>
+      <p>Des tableaux de données clairs avec des options de tri et de filtrage.</p>
+      
+      <div class="table-container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Nom</th>
+              <th>Email</th>
+              <th>Rôle</th>
+              <th>Statut</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Jean Dupont</td>
+              <td>jean.dupont@exemple.com</td>
+              <td>Administrateur</td>
+              <td><span class="badge badge-success">Actif</span></td>
+              <td>
+                <button class="btn btn-outline btn-sm">Éditer</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Marie Martin</td>
+              <td>marie.martin@exemple.com</td>
+              <td>Éditeur</td>
+              <td><span class="badge badge-success">Actif</span></td>
+              <td>
+                <button class="btn btn-outline btn-sm">Éditer</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Pierre Durand</td>
+              <td>pierre.durand@exemple.com</td>
+              <td>Utilisateur</td>
+              <td><span class="badge badge-danger">Inactif</span></td>
+              <td>
+                <button class="btn btn-outline btn-sm">Éditer</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="design-section">
+      <h2>Interface de chat</h2>
+      <p>Une interface de conversation intuitive avec des bulles de message distinctes.</p>
+      
+      <div class="chat-container">
+        <div class="chat-header">
+          <h3 class="chat-title">Branda Assistant</h3>
+        </div>
+        <div class="chat-messages">
+          <div class="message assistant-message">
+            <div class="message-content">Bonjour ! Je suis Branda, votre assistante IA pour la gestion d'entreprise. Comment puis-je vous aider aujourd'hui ?</div>
+            <div class="message-time">14:00</div>
+          </div>
+          
+          <div class="message user-message">
+            <div class="message-content">Bonjour Branda, peux-tu me donner un résumé des ventes d'aujourd'hui ?</div>
+            <div class="message-time">14:01</div>
+          </div>
+          
+          <div class="message assistant-message">
+            <div class="message-content">
+              Bien sûr ! Aujourd'hui, vous avez réalisé 1 254 € de ventes, ce qui représente une augmentation de 12,5% par rapport à hier. Vous avez servi 87 clients et avez actuellement 4 commandes en attente. Les produits les plus vendus aujourd'hui sont :
+              <br><br>
+              1. Menu Burger Deluxe (23 ventes)<br>
+              2. Menu Végétarien (18 ventes)<br>
+              3. Menu Enfant (15 ventes)
+              <br><br>
+              Souhaitez-vous des informations plus détaillées sur un aspect particulier ?
+            </div>
+            <div class="message-time">14:01</div>
+          </div>
+          
+          <div class="message user-message">
+            <div class="message-content">Merci ! Y a-t-il des produits en rupture de stock ?</div>
+            <div class="message-time">14:02</div>
+          </div>
+          
+          <div class="message assistant-message">
+            <div class="message-content">
+              Oui, j'ai détecté 3 produits en rupture de stock :
+              <br><br>
+              1. Sauce spéciale maison (0 unités)<br>
+              2. Pain burger complet (2 unités, seuil critique : 10)<br>
+              3. Dessert Brownie (0 unités)
+              <br><br>
+              Je vous recommande de passer commande rapidement, surtout pour la sauce spéciale qui est un ingrédient de votre Menu Burger Deluxe, votre produit le plus vendu aujourd'hui. Souhaitez-vous que je prépare une commande auprès de vos fournisseurs habituels ?
+            </div>
+            <div class="message-time">14:03</div>
+          </div>
+        </div>
+        <div class="chat-form">
+          <input type="text" class="chat-input" placeholder="Tapez votre message ici...">
+          <button class="chat-submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Fonction pour basculer entre les modes clair et sombre
+    function toggleTheme() {
+      document.body.classList.toggle('dark-mode');
+      
+      // Mettre à jour le texte du bouton
+      const themeToggle = document.getElementById('themeToggle');
+      if (document.body.classList.contains('dark-mode')) {
+        themeToggle.innerHTML = `
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+          </svg>
+          <span>Mode clair</span>
+        `;
+      } else {
+        themeToggle.innerHTML = `
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <span>Mode sombre</span>
+        `;
+      }
+      
+      // Sauvegarder la préférence
+      localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+    }
+    
+    // Appliquer le thème sauvegardé ou détecter la préférence système
+    document.addEventListener('DOMContentLoaded', function() {
+      const savedTheme = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      
+      if (savedTheme === 'dark' || (savedTheme === null && prefersDark)) {
+        document.body.classList.add('dark-mode');
+        document.getElementById('themeToggle').innerHTML = `
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+          </svg>
+          <span>Mode clair</span>
+        `;
+      }
+      
+      // Ajouter l'écouteur d'événement pour le bouton de basculement
+      document.getElementById('themeToggle').addEventListener('click', toggleTheme);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+{
+  // "preset": "@shelf/jest-mongodb", // Garder le preset si nécessaire, mais setupFilesAfterEnv est plus flexible
+  "testEnvironment": "node",
+  "transform": {
+    "^.+\\.js$": "babel-jest"
+  },
+  "transformIgnorePatterns": [
+    "/node_modules/(?!ioredis|bullmq)/" // Allow transforming ioredis and bullmq
+  ],
+  "testMatch": ["**/__tests__/**/*.js", "**/?(*.)+(spec|test).js"],
+  "moduleFileExtensions": ["js", "json"],
+  "moduleNameMapper": {
+    "^@services/(.*)$": "<rootDir>/services/$1",
+    "^@config/(.*)$": "<rootDir>/config/$1",
+    "^@models/(.*)$": "<rootDir>/models/$1",
+    "^@middlewares/(.*)$": "<rootDir>/middlewares/$1",
+    "^@controllers/(.*)$": "<rootDir>/controllers/$1",
+    "^@routes/(.*)$": "<rootDir>/routes/$1"
+  },
+  "setupFilesAfterEnv": ["./jest.setup.js"], // Ajouter le fichier de setup
+  "collectCoverage": true,
+  "coverageReporters": ["text", "lcov", "cobertura"],
+  "coverageDirectory": "coverage",
+  "collectCoverageFrom": [
+    "controllers/**/*.js",
+    "services/**/*.js",
+    "models/**/*.js",
+    "middlewares/**/*.js",
+    "config/**/*.js",
+    "routes/**/*.js",
+    "server.js",
+    "!**/node_modules/**",
+    "!**/__tests__/**",
+    "!**/coverage/**",
+    "!config/env.example.js",
+    "!config/pgvector.js",
+    "!jest.setup.js",
+    "!jest.config.json"
+  ],
+  "coverageThreshold": {
+    "global": {
+      "branches": 70,
+      "functions": 70,
+      "lines": 70,
+      "statements": 70
+    }
+  },
+  "verbose": true
+}
+

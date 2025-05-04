@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Branda – Gestion des ventes</title>
+  <link rel="stylesheet" href="new-styles.css">
+  <link rel="stylesheet" href="chat-component.css">
+  <link rel="stylesheet" href="chat-improvements.css">
+  <link rel="stylesheet" href="ui-improvements.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#176BFF">
+  <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+</head>
+<body>
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="logo">
+        <div class="logo-icon">B</div>
+        <span>Branda</span>
+      </div>
+      <button class="menu-toggle" id="menuToggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    
+    <div class="nav-menu">
+      <div class="nav-item">
+        <a href="index.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+          Tableau de bord
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="products.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          Produits
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="sales.html" class="nav-link active">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="1" x2="12" y2="23"></line>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+          </svg>
+          Ventes
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="employees.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+          Employés
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="accounting.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+          </svg>
+          Comptabilité
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="hr.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+          Ressources Humaines
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="reports.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          Rapports
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="settings.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+          Paramètres
+        </a>
+      </div>
+    </div>
+    
+    <div class="sidebar-footer">
+      <div class="user-info">
+        <div class="user-avatar">F</div>
+        <div class="user-details">
+          <div class="user-name">Fast-Food</div>
+          <div class="user-role">Administrateur</div>
+        </div>
+        <button class="user-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="1"></circle>
+            <circle cx="12" cy="5" r="1"></circle>
+            <circle cx="12" cy="19" r="1"></circle>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="main-content">
+    <div class="header">
+      <button class="menu-toggle" id="sidebarToggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      
+      <h1 class="page-title">Gestion des ventes</h1>
+      
+      <div class="header-actions">
+        <div class="search-bar">
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" class="search-input" placeholder="Rechercher une vente..." id="searchInput">
+        </div>
+        
+        <button class="notification-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+          </svg>
+          <span class="notification-badge">3</span>
+        </button>
+        
+        <button class="btn btn-outline" id="themeToggle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <div class="content">
+      <div class="stats-grid">
+        <div class="stat-card slide-in-up" style="animation-delay: 0.1s;">
+          <div class="stat-header">
+            <h3 class="stat-title">Ventes totales</h3>
+            <div class="stat-icon blue">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+          </div>
+          <div class="stat-value" id="totalSales">0</div>
+        </div>
+        <div class="stat-card slide-in-up" style="animation-delay: 0.2s;">
+          <div class="stat-header">
+            <h3 class="stat-title">Chiffre d'affaires</h3>
+            <div class="stat-icon orange">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="stat-value" id="totalRevenue">0 €</div>
+        </div>
+        <div class="stat-card slide-in-up" style="animation-delay: 0.3s;">
+          <div class="stat-header">
+            <h3 class="stat-title">Valeur moyenne</h3>
+            <div class="stat-icon green">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="5" x2="5" y2="19"></line>
+                <circle cx="6.5" cy="6.5" r="2.5"></circle>
+                <circle cx="17.5" cy="17.5" r="2.5"></circle>
+              </svg>
+            </div>
+          </div>
+          <div class="stat-value" id="averageSale">0 €</div>
+        </div>
+      </div>
+      
+      <div class="toolbar" style="margin-bottom: var(--spacing-lg); display: flex; justify-content: space-between; align-items: center;">
+        <div class="filters" style="display: flex; gap: var(--spacing-md); align-items: center;">
+          <label for="startDate" class="form-label">Du:</label>
+          <input type="date" class="form-control" id="startDate" onchange="loadSales()">
+          <label for="endDate" class="form-label">Au:</label>
+          <input type="date" class="form-control" id="endDate" onchange="loadSales()">
+        </div>
+        <button class="btn btn-primary" onclick="openSaleModal()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: var(--spacing-xs);">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+          Nouvelle vente
+        </button>
+      </div>
+      
+      <div class="table-container">
+        <table class="table" id="salesTable">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Client</th>
+              <th>Articles</th>
+              <th>Montant</th>
+              <th>Paiement</th>
+              <th>Statut</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="salesTableBody">
+            <!-- Les ventes seront chargées ici dynamiquement -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal pour ajouter une vente -->
+  <div id="saleModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modalTitle" class="modal-title">Nouvelle vente</h2>
+        <button class="modal-close" onclick="closeSaleModal()" aria-label="Fermer la fenêtre modale">&times;</button>
+      </div>
+      <form id="saleForm">
+        <input type="hidden" id="saleId">
+        <div class="form-group">
+          <label for="saleDate" class="form-label">Date</label>
+          <input type="datetime-local" id="saleDate" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="saleCustomer" class="form-label">Client</label>
+          <input type="text" id="saleCustomer" class="form-control">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Articles</label>
+          <div class="items-container" id="itemsContainer">
+            <!-- Les articles seront ajoutés ici dynamiquement -->
+          </div>
+          <button type="button" class="btn btn-sm btn-success" onclick="addItemRow()" style="margin-top: var(--spacing-sm);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: var(--spacing-xs);">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+            Ajouter un article
+          </button>
+        </div>
+        <div class="form-group">
+          <label for="saleTotal" class="form-label">Montant total</label>
+          <input type="number" id="saleTotal" class="form-control" step="0.01" min="0" readonly>
+        </div>
+        <div class="form-group">
+          <label for="salePayment" class="form-label">Méthode de paiement</label>
+          <select id="salePayment" class="form-select">
+            <option value="espèces">Espèces</option>
+            <option value="carte">Carte bancaire</option>
+            <option value="chèque">Chèque</option>
+            <option value="autre">Autre</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="saleNotes" class="form-label">Notes</label>
+          <textarea id="saleNotes" class="form-control" rows="3"></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="closeSaleModal()">Annuler</button>
+          <button type="submit" class="btn btn-primary">Enregistrer</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <!-- Modal pour voir les détails d'une vente -->
+  <div id="saleDetailsModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Détails de la vente</h2>
+        <button class="modal-close" onclick="closeSaleDetailsModal()" aria-label="Fermer la fenêtre modale">&times;</button>
+      </div>
+      <div id="saleDetails">
+        <!-- Les détails de la vente seront chargés ici dynamiquement -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" onclick="closeSaleDetailsModal()">Fermer</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="toast-container" id="toastContainer">
+    <!-- Les notifications seront ajoutées ici dynamiquement -->
+  </div>
+  
+  <script src="proactive-assistant.js"></script>
+  <script src="chat-component.js"></script>
+  <script>
+    // Fonction pour basculer la sidebar sur mobile
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle("open");
+    }
+
+    // Fonction pour basculer entre les modes clair et sombre
+    function toggleTheme() {
+      document.body.classList.toggle("dark-mode");
+      localStorage.setItem("theme", document.body.classList.contains("dark-mode") ? "dark" : "light");
+    }
+
+    // Fonction pour afficher une notification toast
+    function showToast(type, title, message) {
+      const toastContainer = document.getElementById("toastContainer");
+      const toast = document.createElement("div");
+      toast.className = `toast ${type}`;
+      let iconSvg = "";
+      if (type === "success") {
+        iconSvg = 
+          '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg>';
+      } else if (type === "error") {
+        iconSvg = 
+          '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>';
+      } else if (type === "warning") {
+        iconSvg = 
+          '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>';
+      } else {
+        iconSvg = 
+          '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>';
+      }
+      toast.innerHTML = `
+        <div class="toast-icon ${type}">
+          ${iconSvg}
+        </div>
+        <div class="toast-content">
+          <div class="toast-title">${title}</div>
+          <div class="toast-message">${message}</div>
+        </div>
+        <button class="toast-close">&times;</button>
+      `;
+      toastContainer.appendChild(toast);
+      toast.querySelector(".toast-close").addEventListener("click", function () {
+        toast.remove();
+      });
+      setTimeout(() => {
+        toast.remove();
+      }, 5000);
+    }
+
+    // Initialisation
+    document.addEventListener("DOMContentLoaded", function () {
+      const savedTheme = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      if (savedTheme === "dark" || (savedTheme === null && prefersDark)) {
+        document.body.classList.add("dark-mode");
+      }
+      document.getElementById("sidebarToggle").addEventListener("click", toggleSidebar);
+      document.getElementById("menuToggle").addEventListener("click", toggleSidebar);
+      document.getElementById("themeToggle").addEventListener("click", toggleTheme);
+      
+      // Mettre à jour la classe active dans le menu de navigation
+      const currentPage = window.location.pathname.split("/").pop() || "index.html";
+      const navLinks = document.querySelectorAll(".nav-link");
+      navLinks.forEach(link => {
+        link.classList.remove("active"); // Remove active from all
+        const href = link.getAttribute("href");
+        if (href === currentPage) {
+          link.classList.add("active"); // Add active to the current page link
+        }
+      });
+      
+      // Initialiser les dates et charger les données
+      initializeDates();
+      loadProducts(); // Charger les produits pour le formulaire
+      loadSales();
+    });
+
+    // --- Gestion des ventes --- 
+    const PORT_BACK = 5001;
+    const API = `http://localhost:${PORT_BACK}/api`;
+    let JWT = localStorage.getItem("jwt") || "";
+    if (!JWT) {
+      JWT = prompt("Colle ici ton token JWT obtenu via /login :") || "";
+      localStorage.setItem("jwt", JWT);
+    }
+    let activeUserId = localStorage.getItem("activeUserId") || "fastfood2025";
+    let products = []; // Pour stocker la liste des produits
+
+    // Initialiser les dates par défaut (aujourd'hui et il y a 30 jours)
+    function initializeDates() {
+      const today = new Date();
+      const thirtyDaysAgo = new Date();
+      thirtyDaysAgo.setDate(today.getDate() - 30);
+      
+      document.getElementById("endDate").valueAsDate = today;
+      document.getElementById("startDate").valueAsDate = thirtyDaysAgo;
+    }
+
+    // Charger les ventes
+    async function loadSales() {
+      try {
+        const startDate = document.getElementById("startDate").value;
+        const endDate = document.getElementById("endDate").value;
+        
+        let url = `${API}/sales/user/${activeUserId}`;
+        if (startDate || endDate) {
+          url += "?";
+          if (startDate) url += `startDate=${startDate}`;
+          if (startDate && endDate) url += "&";
+          if (endDate) url += `endDate=${endDate}`;
+        }
+        
+        const res = await fetch(url, {
+          headers: { Authorization: "Bearer " + JWT },
+        });
+        
+        if (!res.ok) {
+          throw new Error("Erreur lors du chargement des ventes");
+        }
+        
+        const sales = await res.json();
+        displaySales(sales);
+        
+        // Charger les statistiques
+        loadSalesStats();
+      } catch (error) {
+        console.error("Erreur:", error);
+        showToast("error", "Erreur", "Impossible de charger les ventes. Veuillez réessayer plus tard.");
+      }
+    }
+
+    // Charger les statistiques des ventes
+    async function loadSalesStats() {
+      try {
+        const startDate = document.getElementById("startDate").value;
+        const endDate = document.getElementById("endDate").value;
+        
+        let url = `${API}/sales/stats/${activeUserId}`;
+        if (startDate || endDate) {
+          url += "?";
+          if (startDate) url += `startDate=${startDate}`;
+          if (startDate && endDate) url += "&";
+          if (endDate) url += `endDate=${endDate}`;
+        }
+        
+        const res = await fetch(url, {
+          headers: { Authorization: "Bearer " + JWT },
+        });
+        
+        if (!res.ok) {
+          throw new Error("Erreur lors du chargement des statistiques");
+        }
+        
+        const stats = await res.json();
+        
+        document.getElementById("totalSales").textContent = stats.totalSales;
+        document.getElementById("totalRevenue").textContent = `${stats.totalRevenue.toFixed(2)} €`;
+        document.getElementById("averageSale").textContent = `${stats.averageSaleValue.toFixed(2)} €`;
+      } catch (error) {
+        console.error("Erreur:", error);
+      }
+    }
+
+    // Charger les produits
+    async function loadProducts() {
+      try {
+        const res = await fetch(`${API}/products/user/${activeUserId}`, {
+          headers: { Authorization: "Bearer " + JWT },
+        });
+        
+        if (!res.ok) {
+          throw new Error("Erreur lors du chargement des produits");
+        }
+        
+        products = await res.json();
+      } catch (error) {
+        console.error("Erreur:", error);
+        showToast("error", "Erreur", "Impossible de charger les produits. Veuillez réessayer plus tard.");
+      }
+    }
+
+    // Afficher les ventes dans le tableau
+    function displaySales(sales) {
+      const tableBody = document.getElementById("salesTableBody");
+      tableBody.innerHTML = "";
+      
+      if (sales.length === 0) {
+        tableBody.innerHTML = '<tr><td colspan="7" style="text-align: center;">Aucune vente trouvée pour la période sélectionnée</td></tr>';
+        return;
+      }
+      
+      sales.forEach(sale => {
+        const row = document.createElement("tr");
+        const date = new Date(sale.date);
+        row.innerHTML = `
+          <td>${date.toLocaleDateString()} ${date.toLocaleTimeString([], {hour: "2-digit", minute:"2-digit"})}</td>
+          <td>${sale.customer || "-"}</td>
+          <td>${sale.items.length} article(s)</td>
+          <td>${sale.totalAmount.toFixed(2)} €</td>
+          <td>${sale.paymentMethod}</td>
+          <td>
+            <span class="badge ${sale.status === 'complétée' ? 'badge-success' : sale.status === 'annulée' ? 'badge-danger' : 'badge-warning'}">
+              ${sale.status.charAt(0).toUpperCase() + sale.status.slice(1)}
+            </span>
+          </td>
+          <td class="action-buttons">
+            <button class="btn btn-sm btn-outline-primary" onclick="viewSaleDetails(\'${sale._id}\')">Voir</button>
+            ${sale.status === 'complétée' ? `<button class="btn btn-sm btn-outline-danger" onclick="cancelSale(\'${sale._id}\')">Annuler</button>` : ''}
+          </td>
+        `;
+        tableBody.appendChild(row);
+      });
+    }
+
+    // Ouvrir la modal pour ajouter une vente
+    function openSaleModal() {
+      document.getElementById("modalTitle").textContent = "Nouvelle vente";
+      document.getElementById("saleForm").reset();
+      document.getElementById("saleId").value = "";
+      
+      // Initialiser la date à maintenant
+      const now = new Date();
+      now.setMinutes(now.getMinutes() - now.getTimezoneOffset());
+      document.getElementById("saleDate").value = now.toISOString().slice(0, 16);
+      
+      // Initialiser les articles
+      document.getElementById("itemsContainer").innerHTML = "";
+      addItemRow();
+      
+      document.getElementById("saleModal").style.display = "flex";
+    }
+
+    // Fermer la modal
+    function closeSaleModal() {
+      document.getElementById("saleModal").style.display = "none";
+    }
+
+    // Ajouter une ligne d'article
+    function addItemRow() {
+      const container = document.getElementById("itemsContainer");
+      const row = document.createElement("div");
+      row.className = "item-row";
+      
+      // Créer le sélecteur de produit
+      const select = document.createElement("select");
+      select.className = "form-select product-select";
+      select.innerHTML = '<option value="">Sélectionner un produit</option>';
+      
+      products.forEach(product => {
+        if (product.isActive) {
+          select.innerHTML += `<option value="${product._id}" data-price="${product.price}" data-name="${product.name}">${product.name} - ${product.price.toFixed(2)} €</option>`;
+        }
+      });
+      
+      select.addEventListener("change", updateItemPrice);
+      
+      // Créer l'input de quantité
+      const quantityInput = document.createElement("input");
+      quantityInput.type = "number";
+      quantityInput.min = "1";
+      quantityInput.value = "1";
+      quantityInput.className = "form-control quantity-input";
+      quantityInput.addEventListener("input", updateTotalAmount);
+      
+      // Créer l'input de prix unitaire
+      const priceInput = document.createElement("input");
+      priceInput.type = "number";
+      priceInput.step = "0.01";
+      priceInput.min = "0";
+      priceInput.className = "form-control price-input";
+      priceInput.readOnly = true;
+      priceInput.addEventListener("input", updateTotalAmount);
+      
+      // Bouton de suppression
+      const removeButton = document.createElement("button");
+      removeButton.type = "button";
+      removeButton.className = "btn btn-sm btn-danger remove-item";
+      removeButton.innerHTML = '&times;'; // Use HTML entity for 'X'
+      removeButton.setAttribute('aria-label', 'Supprimer cet article');
+      removeButton.addEventListener("click", function() {
+        container.removeChild(row);
+        updateTotalAmount();
+      });
+      
+      row.appendChild(select);
+      row.appendChild(quantityInput);
+      row.appendChild(priceInput);
+      row.appendChild(removeButton);
+      
+      container.appendChild(row);
+    }
+
+    // Mettre à jour le prix unitaire lorsqu'un produit est sélectionné
+    function updateItemPrice(e) {
+      const select = e.target;
+      const option = select.options[select.selectedIndex];
+      const priceInput = select.parentNode.querySelector(".price-input");
+      
+      if (option && option.dataset.price) {
+        priceInput.value = option.dataset.price;
+      } else {
+        priceInput.value = "";
+      }
+      
+      updateTotalAmount();
+    }
+
+    // Mettre à jour le montant total
+    function updateTotalAmount() {
+      const rows = document.querySelectorAll(".item-row");
+      let total = 0;
+      
+      rows.forEach(row => {
+        const quantity = parseFloat(row.querySelector(".quantity-input").value) || 0;
+        const price = parseFloat(row.querySelector(".price-input").value) || 0;
+        total += quantity * price;
+      });
+      
+      document.getElementById("saleTotal").value = total.toFixed(2);
+    }
+
+    // Voir les détails d'une vente
+    async function viewSaleDetails(id) {
+      try {
+        const res = await fetch(`${API}/sales/${id}`, {
+          headers: { Authorization: "Bearer " + JWT },
+        });
+        
+        if (!res.ok) {
+          throw new Error("Erreur lors du chargement des détails de la vente");
+        }
+        
+        const sale = await res.json();
+        const date = new Date(sale.date);
+        
+        let detailsHtml = `
+          <p><strong>ID:</strong> ${sale._id}</p>
+          <p><strong>Date:</strong> ${date.toLocaleDateString()} ${date.toLocaleTimeString()}</p>
+          <p><strong>Client:</strong> ${sale.customer || "-"}</p>
+          <p><strong>Montant total:</strong> ${sale.totalAmount.toFixed(2)} €</p>
+          <p><strong>Paiement:</strong> ${sale.paymentMethod}</p>
+          <p><strong>Statut:</strong> ${sale.status.charAt(0).toUpperCase() + sale.status.slice(1)}</p>
+          <p><strong>Notes:</strong> ${sale.notes || "-"}</p>
+          <h3>Articles:</h3>
+          <ul>
+        `;
+        
+        sale.items.forEach(item => {
+          detailsHtml += `<li>${item.quantity} x ${item.productName} (${item.price.toFixed(2)} €) = ${(item.quantity * item.price).toFixed(2)} €</li>`;
+        });
+        
+        detailsHtml += `</ul>`;
+        
+        document.getElementById("saleDetails").innerHTML = detailsHtml;
+        document.getElementById("saleDetailsModal").style.display = "flex";
+      } catch (error) {
+        console.error("Erreur:", error);
+        showToast("error", "Erreur", "Impossible de charger les détails de la vente.");
+      }
+    }
+
+    // Fermer la modal des détails
+    function closeSaleDetailsModal() {
+      document.getElementById("saleDetailsModal").style.display = "none";
+    }
+
+    // Annuler une vente
+    async function cancelSale(id) {
+      if (!confirm("Êtes-vous sûr de vouloir annuler cette vente ?")) {
+        return;
+      }
+      
+      try {
+        const res = await fetch(`${API}/sales/${id}/cancel`, {
+          method: "PUT",
+          headers: { Authorization: "Bearer " + JWT },
+        });
+        
+        if (!res.ok) {
+          throw new Error("Erreur lors de l'annulation de la vente");
+        }
+        
+        showToast("success", "Succès", "Vente annulée avec succès");
+        loadSales();
+      } catch (error) {
+        console.error("Erreur:", error);
+        showToast("error", "Erreur", "Impossible d'annuler la vente. Veuillez réessayer plus tard.");
+      }
+    }
+
+    // Soumettre le formulaire de vente
+    document.getElementById("saleForm").addEventListener("submit", async function(e) {
+      e.preventDefault();
+      
+      const saleId = document.getElementById("saleId").value;
+      const items = [];
+      const itemRows = document.querySelectorAll(".item-row");
+      
+      itemRows.forEach(row => {
+        const select = row.querySelector(".product-select");
+        const quantityInput = row.querySelector(".quantity-input");
+        const priceInput = row.querySelector(".price-input");
+        const selectedOption = select.options[select.selectedIndex];
+        
+        if (selectedOption && selectedOption.value) {
+          items.push({
+            productId: selectedOption.value,
+            productName: selectedOption.dataset.name,
+            quantity: parseInt(quantityInput.value) || 1,
+            price: parseFloat(priceInput.value) || 0
+          });
+        }
+      });
+      
+      if (items.length === 0) {
+        showToast("warning", "Attention", "Veuillez ajouter au moins un article à la vente.");
+        return;
+      }
+      
+      const saleData = {
+        userId: activeUserId,
+        date: document.getElementById("saleDate").value,
+        customer: document.getElementById("saleCustomer").value,
+        items: items,
+        totalAmount: parseFloat(document.getElementById("saleTotal").value),
+        paymentMethod: document.getElementById("salePayment").value,
+        notes: document.getElementById("saleNotes").value,
+        status: "complétée" // Par défaut
+      };
+      
+      try {
+        let res;
+        
+        // Pour l'instant, on ne gère que la création
+        if (saleId) {
+          showToast("error", "Erreur", "La modification des ventes n'est pas encore implémentée.");
+          return;
+        } else {
+          // Création d'une nouvelle vente
+          res = await fetch(`${API}/sales`, {
+            method: "POST",
+            headers: { 
+              "Content-Type": "application/json",
+              Authorization: "Bearer " + JWT 
+            },
+            body: JSON.stringify(saleData)
+          });
+        }
+        
+        if (!res.ok) {
+          throw new Error("Erreur lors de l'enregistrement de la vente");
+        }
+        
+        closeSaleModal();
+        loadSales();
+        showToast("success", "Succès", "Vente enregistrée avec succès");
+      } catch (error) {
+        console.error("Erreur:", error);
+        showToast("error", "Erreur", "Impossible d'enregistrer la vente. Veuillez réessayer plus tard.");
+      }
+    });
+
+    // Recherche de ventes (simple filtre sur le client pour l'instant)
+    document.getElementById("searchInput").addEventListener("input", function(e) {
+      const searchTerm = e.target.value.toLowerCase();
+      const rows = document.querySelectorAll("#salesTableBody tr");
+      
+      rows.forEach(row => {
+        const customerCell = row.cells[1]; // Colonne Client
+        const text = customerCell ? customerCell.textContent.toLowerCase() : "";
+        row.style.display = text.includes(searchTerm) ? "" : "none";
+      });
+    });
+  </script>
+</body>
+</html>

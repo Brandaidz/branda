@@ -1,0 +1,209 @@
+/* Améliorations pour le composant de chat */
+
+/* Ajout d'avatars pour les messages */
+.chat-message {
+  position: relative;
+  padding-left: 40px; /* Espace pour l'avatar */
+}
+
+.assistant-message {
+  padding-left: 40px;
+  padding-right: 0;
+}
+
+.user-message {
+  padding-right: 40px;
+  padding-left: 0;
+  align-items: flex-end;
+}
+
+.message-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  font-size: var(--font-size-sm);
+}
+
+.assistant-message .message-avatar {
+  left: 0;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+}
+
+.user-message .message-avatar {
+  right: 0;
+  background-color: var(--secondary-color);
+}
+
+/* Amélioration du formatage des messages */
+.chat-message-content {
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.chat-message-content a {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.chat-message-content a:hover {
+  color: var(--primary-dark);
+}
+
+.chat-message-content p {
+  margin-bottom: var(--spacing-sm);
+}
+
+.chat-message-content p:last-child {
+  margin-bottom: 0;
+}
+
+.chat-message-content ul, 
+.chat-message-content ol {
+  margin-left: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+}
+
+.chat-message-content code {
+  background-color: var(--gray-100);
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+.chat-message-content pre {
+  background-color: var(--gray-100);
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius-md);
+  overflow-x: auto;
+  margin-bottom: var(--spacing-sm);
+}
+
+.chat-message-content pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Amélioration des suggestions */
+.chat-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+  animation: fadeIn 0.5s ease-out;
+}
+
+.chat-suggestion {
+  background-color: var(--accent2-color);
+  border: 1px solid var(--accent2-dark);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-sm) var(--spacing-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: inline-block;
+  max-width: 100%;
+  font-size: var(--font-size-sm);
+  color: var(--gray-800);
+  box-shadow: var(--shadow-sm);
+}
+
+.chat-suggestion:hover {
+  background-color: var(--accent2-dark);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: var(--shadow-md);
+}
+
+/* Amélioration de l'indicateur de chargement */
+.loading-indicator {
+  padding: var(--spacing-md);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-indicator.active {
+  display: flex;
+}
+
+.loading-dots {
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+.loading-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.loading-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loading-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* Amélioration du mode sombre */
+.dark-mode .chat-message-content code,
+.dark-mode .chat-message-content pre {
+  background-color: var(--gray-700);
+  color: var(--gray-100);
+}
+
+.dark-mode .chat-suggestion {
+  background-color: var(--gray-700);
+  border-color: var(--gray-600);
+  color: var(--gray-100);
+}
+
+.dark-mode .chat-suggestion:hover {
+  background-color: var(--gray-600);
+}
+
+/* Amélioration de l'accessibilité */
+.chat-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.chat-submit:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.chat-panel-button:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Amélioration du responsive */
+@media (max-width: 480px) {
+  .chat-panel {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+    bottom: 0;
+    right: 0;
+    height: 80vh;
+  }
+  
+  .chat-suggestions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .chat-suggestion {
+    max-width: 100%;
+  }
+}

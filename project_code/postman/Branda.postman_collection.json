@@ -1,0 +1,398 @@
+{
+	"info": {
+		"_postman_id": "f8e3a4b1-9c7e-4d5a-8f2b-1a2b3c4d5e6f",
+		"name": "Branda API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"description": "Collection Postman pour l\"API Branda, incluant l\"authentification, les produits et le chat."
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"description": "Requêtes liées à l\"authentification des utilisateurs.",
+			"item": [
+				{
+					"name": "Login User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });",
+									"pm.test(\"Response has token\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.token).to.be.a(\"string\");",
+									"    // Store the token in an environment variable",
+									"    pm.environment.set(\"authToken\", jsonData.token);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"testuser@example.com\",\n    \"password\": \"password123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/auth/login",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						},
+						"description": "Connecte un utilisateur existant et retourne un token JWT. Le token est automatiquement sauvegardé dans la variable d\"environnement `authToken`."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"description": "Opérations CRUD pour les produits.",
+			"item": [
+				{
+					"name": "Create Product",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201\", function () { pm.response.to.have.status(201); });",
+									"pm.test(\"Response has product ID\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData._id).to.be.a(\"string\");",
+									"    // Store the product ID in an environment variable",
+									"    pm.environment.set(\"productId\", jsonData._id);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{authToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Produit Exemple Postman\",\n    \"description\": \"Description du produit exemple créé via Postman\",\n    \"price\": 19.99,\n    \"category\": \"Electronique\",\n    \"stock\": 100\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/products",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						},
+						"description": "Crée un nouveau produit. Nécessite un token d\"authentification valide (`authToken`). L\"ID du produit créé est sauvegardé dans `productId`."
+					},
+					"response": []
+				},
+				{
+					"name": "List Products",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{authToken}}"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/products",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						},
+						"description": "Récupère la liste de tous les produits pour le tenant de l\"utilisateur authentifié. Nécessite `authToken`."
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product by ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{authToken}}"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/products/{{productId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"{{productId}}"
+							]
+						},
+						"description": "Récupère les détails d\"un produit spécifique par son ID. Nécessite `authToken` et `productId` (obtenu lors de la création)."
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{authToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"price\": 24.99,\n    \"stock\": 90\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/products/{{productId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"{{productId}}"
+							]
+						},
+						"description": "Met à jour un produit existant. Nécessite `authToken` et `productId`."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{authToken}}"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/products/{{productId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"{{productId}}"
+							]
+						},
+						"description": "Supprime un produit spécifique par son ID. Nécessite `authToken` et `productId`."
+					},
+					"response": []
+				}
+			]
+		},
+        {
+            "name": "Chat",
+            "description": "Requêtes liées à la fonctionnalité de chat avec l\"IA.",
+            "item": [
+                {
+                    "name": "Start New Chat Session",
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "pm.test(\"Status code is 201\", function () { pm.response.to.have.status(201); });",
+                                    "pm.test(\"Response has session ID\", function () {",
+                                    "    var jsonData = pm.response.json();",
+                                    "    pm.expect(jsonData.sessionId).to.be.a(\"string\");",
+                                    "    // Store the session ID in an environment variable",
+                                    "    pm.environment.set(\"chatSessionId\", jsonData.sessionId);",
+                                    "});"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{authToken}}"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/api/chat",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "api",
+                                "chat"
+                            ]
+                        },
+                        "description": "Démarre une nouvelle session de chat. Nécessite `authToken`. L\"ID de session est sauvegardé dans `chatSessionId`."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Send Message to Chat",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{authToken}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"message\": \"Bonjour, comment peux-tu m\"aider aujourd\"hui ?\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/api/chat/{{chatSessionId}}/messages",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "api",
+                                "chat",
+                                "{{chatSessionId}}",
+                                "messages"
+                            ]
+                        },
+                        "description": "Envoie un message dans une session de chat existante. Nécessite `authToken` et `chatSessionId`."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get Chat History",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{authToken}}"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/api/chat/{{chatSessionId}}/messages",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "api",
+                                "chat",
+                                "{{chatSessionId}}",
+                                "messages"
+                            ]
+                        },
+                        "description": "Récupère l\"historique des messages pour une session de chat spécifique. Nécessite `authToken` et `chatSessionId`."
+                    },
+                    "response": []
+                }
+            ]
+        }
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:3000",
+			"type": "string",
+			"description": "URL de base de l\"API Branda (à adapter si déployée)"
+		},
+        {
+			"key": "authToken",
+			"value": "",
+			"type": "string",
+			"description": "Token JWT obtenu après le login. Est défini automatiquement par le script de test de la requête Login."
+		},
+        {
+			"key": "productId",
+			"value": "",
+			"type": "string",
+			"description": "ID du produit créé via la requête \"Create Product\". Est défini automatiquement par le script de test de cette requête."
+		},
+        {
+            "key": "chatSessionId",
+            "value": "",
+            "type": "string",
+            "description": "ID de la session de chat créée via la requête \"Start New Chat Session\". Est défini automatiquement par le script de test de cette requête."
+        }
+	]
+}
+

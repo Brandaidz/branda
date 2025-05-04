@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Branda – Rapports</title>
+  <link rel="stylesheet" href="new-styles.css">
+  <link rel="stylesheet" href="chat-component.css">
+  <link rel="stylesheet" href="chat-improvements.css">
+  <link rel="stylesheet" href="ui-improvements.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#176BFF">
+  <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+</head>
+<body>
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="logo">
+        <div class="logo-icon">B</div>
+        <span>Branda</span>
+      </div>
+      <button class="menu-toggle" id="menuToggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    
+    <div class="nav-menu">
+      <div class="nav-item">
+        <a href="index.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+          Tableau de bord
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="products.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          Produits
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="sales.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="1" x2="12" y2="23"></line>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+          </svg>
+          Ventes
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="employees.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+          Employés
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="accounting.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+          </svg>
+          Comptabilité
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="hr.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+          Ressources Humaines
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="reports.html" class="nav-link active">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          Rapports
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="settings.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+          Paramètres
+        </a>
+      </div>
+    </div>
+    
+    <div class="sidebar-footer">
+      <div class="user-info">
+        <div class="user-avatar">F</div>
+        <div class="user-details">
+          <div class="user-name">Fast-Food</div>
+          <div class="user-role">Administrateur</div>
+        </div>
+        <button class="user-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="1"></circle>
+            <circle cx="12" cy="5" r="1"></circle>
+            <circle cx="12" cy="19" r="1"></circle>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="main-content">
+    <div class="header">
+      <button class="menu-toggle" id="sidebarToggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      
+      <h1 class="page-title">Rapports</h1>
+      
+      <div class="header-actions">
+        <div class="search-bar">
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" class="search-input" placeholder="Rechercher un rapport..." id="searchInput">
+        </div>
+        
+        <button class="notification-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+          </svg>
+          <span class="notification-badge">3</span>
+        </button>
+        
+        <button class="btn btn-outline" id="themeToggle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <div class="content">
+      <div class="reports-filter">
+        <div class="filter-group">
+          <label for="reportTypeFilter" class="filter-label">Type de rapport</label>
+          <select id="reportTypeFilter" class="filter-select" onchange="filterReports()">
+            <option value="">Tous les types</option>
+            <option value="ventes">Ventes</option>
+            <option value="produits">Produits</option>
+            <option value="employés">Employés</option>
+            <option value="comptabilité">Comptabilité</option>
+            <option value="performance">Performance</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="reportPeriodFilter" class="filter-label">Période</label>
+          <select id="reportPeriodFilter" class="filter-select" onchange="filterReports()">
+            <option value="">Toutes les périodes</option>
+            <option value="quotidien">Quotidien</option>
+            <option value="hebdomadaire">Hebdomadaire</option>
+            <option value="mensuel">Mensuel</option>
+            <option value="trimestriel">Trimestriel</option>
+            <option value="annuel">Annuel</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="reportStartDateFilter" class="filter-label">Date de début</label>
+          <input type="date" id="reportStartDateFilter" class="filter-date" onchange="filterReports()">
+        </div>
+        <div class="filter-group">
+          <label for="reportEndDateFilter" class="filter-label">Date de fin</label>
+          <input type="date" id="reportEndDateFilter" class="filter-date" onchange="filterReports()">
+        </div>
+        <button class="filter-btn" onclick="resetFilters()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="23 4 23 10 17 10"></polyline>
+            <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+          </svg>
+          Réinitialiser
+        </button>
+      </div>
+      
+      <div class="reports-grid" id="reportsGrid">
+        <!-- Les cartes de rapport seront générées ici dynamiquement -->
+      </div>
+      
+      <div id="reportDetailContainer" style="display: none;">
+        <!-- Le détail du rapport sera chargé ici dynamiquement -->
+      </div>
+    </div>
+  </div>
+  
+  <div class="toast-container" id="toastContainer">
+    <!-- Les notifications seront ajoutées ici dynamiquement -->
+  </div>
+  
+  <script src="proactive-assistant.js"></script>
+  <script src="chat-component.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    // Fonction pour basculer la sidebar sur mobile
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle("open");
+    }
+
+    // Fonction pour basculer entre les modes clair et sombre
+    function toggleTheme() {
+      document.body.classList.toggle("dark-mode");
+      localStorage.setItem("theme", document.body.classList.contains("dark-mode") ? "dark" : "light");
+    }
+
+    // Fonction pour afficher une notification toast
+    function showToast(type, title, message) {
+      const toastContainer = document.getElementById("toastContainer");
+      const toast = document.createElement("div");
+      toast.className = `toast ${type}`;
+      let iconSvg = "";
+      if (type === "success") {
+        iconSvg = 
+          '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg>';
+      } else if (type === "error") {
+        iconSvg = 
+          '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>';
+      } else if (type === "warning") {
+        iconSvg = 
+          '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>';
+      } else {
+        iconSvg = 
+          '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>';
+      }
+      toast.innerHTML = `
+        <div class="toast-icon ${type}">
+          ${iconSvg}
+        </div>
+        <div class="toast-content">
+          <div class="toast-title">${title}</div>
+          <div class="toast-message">${message}</div>
+        </div>
+        <button class="toast-close">&times;</button>
+      `;
+      toastContainer.appendChild(toast);
+      toast.querySelector(".toast-close").addEventListener("click", function () {
+        toast.remove();
+      });
+      setTimeout(() => {
+        toast.remove();
+      }, 5000);
+    }
+
+    // Initialisation
+    document.addEventListener("DOMContentLoaded", function () {
+      const savedTheme = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      if (savedTheme === "dark" || (savedTheme === null && prefersDark)) {
+        document.body.classList.add("dark-mode");
+      }
+      document.getElementById("sidebarToggle").addEventListener("click", toggleSidebar);
+      document.getElementById("menuToggle").addEventListener("click", toggleSidebar);
+      document.getElementById("themeToggle").addEventListener("click", toggleTheme);
+      
+      // Mettre à jour la classe active dans le menu de navigation
+      const currentPage = window.location.pathname.split("/").pop() || "index.html";
+      const navLinks = document.querySelectorAll(".nav-link");
+      navLinks.forEach(link => {
+        link.classList.remove("active"); // Remove active from all
+        const href = link.getAttribute("href");
+        if (href === currentPage) {
+          link.classList.add("active"); // Add active to the current page link
+        }
+      });
+      
+      // Charger les rapports
+      loadReports();
+    });
+
+    const PORT_BACK = 5001;
+    const API = `http://localhost:${PORT_BACK}/api`;
+    let JWT = localStorage.getItem("jwt") || "";
+    if (!JWT) {
+      JWT = prompt("Colle ici ton token JWT obtenu via /login :") || "";
+      localStorage.setItem("jwt", JWT);
+    }
+    let activeUserId = localStorage.getItem("activeUserId") || "fastfood2025";
+    let currentReportChart = null;
+
+    // Charger les rapports
+    async function loadReports(filters = {}) {
+      try {
+        let url = `${API}/reports/user/${activeUserId}`;
+        let params = [];
+        if (filters.type) params.push(`type=${filters.type}`);
+        if (filters.period) params.push(`period=${filters.period}`);
+        if (filters.startDate) params.push(`startDate=${filters.startDate}`);
+        if (filters.endDate) params.push(`endDate=${filters.endDate}`);
+        if (params.length > 0) url += `?${params.join("&")}`;
+        
+        const res = await fetch(url, {
+          headers: { Authorization: "Bearer " + JWT },
+        });
+        
+        if (!res.ok) {
+          throw new Error("Erreur lors du chargement des rapports");
+        }
+        
+        const reports = await res.json();
+        displayReports(reports);
+      } catch (error) {
+        console.error("Erreur:", error);
+        showToast("error", "Erreur", "Impossible de charger les rapports. Veuillez réessayer plus tard.");
+      }
+    }
+
+    // Afficher les rapports dans la grille
+    function displayReports(reports) {
+      const grid = document.getElementById("reportsGrid");
+      grid.innerHTML = "";
+      
+      if (reports.length === 0) {
+        grid.innerHTML = '<p class="text-center text-muted">Aucun rapport trouvé pour les filtres sélectionnés</p>';
+        return;
+      }
+      
+      reports.forEach(report => {
+        const card = document.createElement("div");
+        card.className = "report-card";
+        card.dataset.id = report._id;
+        card.dataset.type = report.type;
+        card.addEventListener("click", () => loadReportDetail(report._id, report.type));
+        
+        let iconClass = "blue";
+        let iconSvg = 
+          '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>';
+        
+        switch (report.type) {
+          case "ventes":
+            iconClass = "green";
+            iconSvg = 
+              '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>';
+            break;
+          case "produits":
+            iconClass = "blue";
+            iconSvg = 
+              '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>';
+            break;
+          case "employés":
+          case "performance":
+            iconClass = "orange";
+            iconSvg = 
+              '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>';
+            break;
+          case "comptabilité":
+            iconClass = "red";
+            iconSvg = 
+              '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>';
+            break;
+        }
+        
+        const date = new Date(report.createdAt);
+        const formattedDate = date.toLocaleDateString();
+        
+        card.innerHTML = `
+          <div class="report-icon ${iconClass}">
+            ${iconSvg}
+          </div>
+          <h3 class="report-title">${report.title}</h3>
+          <p class="report-description">${report.description || "Aucune description"}</p>
+          <div class="report-meta">
+            <div class="report-date">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              ${formattedDate}
+            </div>
+            <div class="report-format">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              ${report.format || "PDF"}
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    // Filtrer les rapports
+    function filterReports() {
+      const filters = {
+        type: document.getElementById("reportTypeFilter").value,
+        period: document.getElementById("reportPeriodFilter").value,
+        startDate: document.getElementById("reportStartDateFilter").value,
+        endDate: document.getElementById("reportEndDateFilter").value,
+      };
+      loadReports(filters);
+    }
+
+    // Réinitialiser les filtres
+    function resetFilters() {
+      document.getElementById("reportTypeFilter").value = "";
+      document.getElementById("reportPeriodFilter").value = "";
+      document.getElementById("reportStartDateFilter").value = "";
+      document.getElementById("reportEndDateFilter").value = "";
+      loadReports();
+    }
+
+    // Charger le détail d'un rapport
+    async function loadReportDetail(id, type) {
+      try {
+        const res = await fetch(`${API}/reports/${id}`, {
+          headers: { Authorization: "Bearer " + JWT },
+        });
+        
+        if (!res.ok) {
+          throw new Error("Erreur lors du chargement du détail du rapport");
+        }
+        
+        const report = await res.json();
+        displayReportDetail(report);
+        
+        // Masquer la grille et afficher le détail
+        document.getElementById("reportsGrid").style.display = "none";
+        document.getElementById("reportDetailContainer").style.display = "block";
+        
+        // Faire défiler vers le haut
+        window.scrollTo(0, 0);
+      } catch (error) {
+        console.error("Erreur:", error);
+        showToast("error", "Erreur", "Impossible de charger le détail du rapport. Veuillez réessayer plus tard.");
+      }
+    }
+
+    // Afficher le détail d'un rapport
+    function displayReportDetail(report) {
+      const container = document.getElementById("reportDetailContainer");
+      
+      // Détruire le graphique précédent s'il existe
+      if (currentReportChart) {
+        currentReportChart.destroy();
+        currentReportChart = null;
+      }
+      
+      container.innerHTML = `
+        <div class="report-detail">
+          <div class="report-detail-header">
+            <h2 class="report-detail-title">${report.title}</h2>
+            <div class="report-detail-actions">
+              <button class="btn btn-outline" onclick="goBackToGrid()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Retour
+              </button>
+              <button class="btn btn-primary" onclick="downloadReport(\'${report._id}\', \'${report.format || 'PDF'}\')">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                Télécharger (${report.format || "PDF"})
+              </button>
+            </div>
+          </div>
+          <div class="report-detail-content">
+            ${generateReportSummary(report.data.summary)}
+            
+            ${report.data.chart ? 
+              `<div class="report-chart">
+                <canvas id="reportChartCanvas"></canvas>
+              </div>` : ''}
+            
+            ${report.data.table ? 
+              `<div class="report-table-container">
+                ${generateReportTable(report.data.table)}
+              </div>` : ''}
+          </div>
+        </div>
+      `;
+      
+      // Générer le graphique si les données existent
+      if (report.data.chart) {
+        generateReportChart(report.data.chart);
+      }
+    }
+
+    // Générer le résumé du rapport
+    function generateReportSummary(summary) {
+      if (!summary || Object.keys(summary).length === 0) return '';
+      
+      let summaryHtml = '<div class="report-summary">';
+      for (const key in summary) {
+        const item = summary[key];
+        let changeHtml = '';
+        if (item.change !== undefined) {
+          const changeClass = item.change > 0 ? 'positive' : item.change < 0 ? 'negative' : '';
+          const changeIcon = item.change > 0 ? 
+            '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>' : 
+            item.change < 0 ? 
+            '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 8 12 15 5 8"></polyline></svg>' : '';
+          changeHtml = `<div class="summary-change ${changeClass}"><span class="summary-change-icon">${changeIcon}</span> ${Math.abs(item.change)}%</div>`;
+        }
+        
+        summaryHtml += `
+          <div class="summary-item">
+            <div class="summary-label">${item.label}</div>
+            <div class="summary-value">${item.value}</div>
+            ${changeHtml}
+          </div>
+        `;
+      }
+      summaryHtml += '</div>';
+      return summaryHtml;
+    }
+
+    // Générer le tableau du rapport
+    function generateReportTable(tableData) {
+      if (!tableData || !tableData.headers || !tableData.rows || tableData.rows.length === 0) return '';
+      
+      let tableHtml = '<table class="report-table"><thead><tr>';
+      tableData.headers.forEach(header => {
+        tableHtml += `<th>${header}</th>`;
+      });
+      tableHtml += '</tr></thead><tbody>';
+      
+      tableData.rows.forEach(row => {
+        tableHtml += '<tr>';
+        row.forEach(cell => {
+          tableHtml += `<td>${cell}</td>`;
+        });
+        tableHtml += '</tr>';
+      });
+      
+      tableHtml += '</tbody></table>';
+      return tableHtml;
+    }
+
+    // Générer le graphique du rapport
+    function generateReportChart(chartData) {
+      const ctx = document.getElementById('reportChartCanvas').getContext('2d');
+      currentReportChart = new Chart(ctx, {
+        type: chartData.type || 'line',
+        data: {
+          labels: chartData.labels,
+          datasets: chartData.datasets.map(dataset => ({
+            label: dataset.label,
+            data: dataset.data,
+            backgroundColor: dataset.backgroundColor || 'rgba(23, 107, 255, 0.2)',
+            borderColor: dataset.borderColor || '#176BFF',
+            borderWidth: dataset.borderWidth || 1,
+            fill: dataset.fill !== undefined ? dataset.fill : true,
+            tension: dataset.tension !== undefined ? dataset.tension : 0.4
+          }))
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'top',
+            },
+            tooltip: {
+              mode: 'index',
+              intersect: false,
+            }
+          },
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    }
+
+    // Retourner à la grille des rapports
+    function goBackToGrid() {
+      document.getElementById("reportDetailContainer").style.display = "none";
+      document.getElementById("reportsGrid").style.display = "grid";
+      // Détruire le graphique actuel
+      if (currentReportChart) {
+        currentReportChart.destroy();
+        currentReportChart = null;
+      }
+    }
+
+    // Télécharger un rapport
+    async function downloadReport(id, format) {
+      try {
+        const res = await fetch(`${API}/reports/${id}/download?format=${format}`, {
+          headers: { Authorization: "Bearer " + JWT },
+        });
+        
+        if (!res.ok) {
+          throw new Error("Erreur lors du téléchargement du rapport");
+        }
+        
+        const blob = await res.blob();
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.style.display = 'none';
+        a.href = url;
+        // Extraire le nom du fichier de l'en-tête Content-Disposition si disponible
+        const contentDisposition = res.headers.get('Content-Disposition');
+        let filename = `rapport_${id}.${format.toLowerCase()}`;
+        if (contentDisposition) {
+          const filenameMatch = contentDisposition.match(/filename="?(.+)"?/i);
+          if (filenameMatch && filenameMatch[1]) {
+            filename = filenameMatch[1];
+          }
+        }
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        window.URL.revokeObjectURL(url);
+        a.remove();
+        
+        showToast("success", "Succès", "Téléchargement du rapport démarré.");
+      } catch (error) {
+        console.error("Erreur:", error);
+        showToast("error", "Erreur", "Impossible de télécharger le rapport. Veuillez réessayer plus tard.");
+      }
+    }
+
+    // Recherche de rapports
+    document.getElementById("searchInput").addEventListener("input", function(e) {
+      const searchTerm = e.target.value.toLowerCase();
+      const cards = document.querySelectorAll("#reportsGrid .report-card");
+      cards.forEach(card => {
+        const title = card.querySelector(".report-title").textContent.toLowerCase();
+        const description = card.querySelector(".report-description").textContent.toLowerCase();
+        card.style.display = (title.includes(searchTerm) || description.includes(searchTerm)) ? "" : "none";
+      });
+    });
+  </script>
+</body>
+</html>

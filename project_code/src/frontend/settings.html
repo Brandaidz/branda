@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Branda – Paramètres</title>
+  <link rel="stylesheet" href="new-styles.css">
+  <link rel="stylesheet" href="chat-component.css">
+  <link rel="stylesheet" href="chat-improvements.css">
+  <link rel="stylesheet" href="ui-improvements.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#176BFF">
+  <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+</head>
+<body>
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="logo">
+        <div class="logo-icon">B</div>
+        <span>Branda</span>
+      </div>
+      <button class="menu-toggle" id="menuToggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    
+    <div class="nav-menu">
+      <div class="nav-item">
+        <a href="index.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+          Tableau de bord
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="products.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          Produits
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="sales.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="1" x2="12" y2="23"></line>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+          </svg>
+          Ventes
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="employees.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+          Employés
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="accounting.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+          </svg>
+          Comptabilité
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="hr.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+          Ressources Humaines
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="reports.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          Rapports
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="settings.html" class="nav-link active">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+          Paramètres
+        </a>
+      </div>
+    </div>
+    
+    <div class="sidebar-footer">
+      <div class="user-info">
+        <div class="user-avatar">F</div>
+        <div class="user-details">
+          <div class="user-name">Fast-Food</div>
+          <div class="user-role">Administrateur</div>
+        </div>
+        <button class="user-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="1"></circle>
+            <circle cx="12" cy="5" r="1"></circle>
+            <circle cx="12" cy="19" r="1"></circle>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="main-content">
+    <div class="header">
+      <button class="menu-toggle" id="sidebarToggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      
+      <h1 class="page-title">Paramètres</h1>
+      
+      <div class="header-actions">
+        <div class="search-bar">
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" class="search-input" placeholder="Rechercher..." id="searchInput">
+        </div>
+        
+        <button class="notification-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+          </svg>
+          <span class="notification-badge">3</span>
+        </button>
+        
+        <button class="btn btn-outline" id="themeToggle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <div class="content">
+      <div class="settings-container">
+        <div class="settings-sidebar">
+          <div class="settings-nav">
+            <div class="settings-nav-item active" data-tab="profile">
+              <svg class="settings-nav-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              Profil
+            </div>
+            <div class="settings-nav-item" data-tab="account">
+              <svg class="settings-nav-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              Compte
+            </div>
+            <div class="settings-nav-item" data-tab="appearance">
+              <svg class="settings-nav-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+              </svg>
+              Apparence
+            </div>
+            <div class="settings-nav-item" data-tab="notifications">
+              <svg class="settings-nav-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+              </svg>
+              Notifications
+            </div>
+            <div class="settings-nav-item" data-tab="api">
+              <svg class="settings-nav-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              API
+            </div>
+            <div class="settings-nav-item" data-tab="security">
+              <svg class="settings-nav-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              Sécurité
+            </div>
+          </div>
+        </div>
+        
+        <div class="settings-content">
+          <!-- Onglet Profil -->
+          <div class="settings-tab active" id="profile-tab">
+            <div class="profile-header">
+              <div class="avatar-upload">
+                <div class="profile-avatar">F</div>
+                <div class="avatar-upload-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="17 8 12 3 7 8"></polyline>
+                    <line x1="12" y1="3" x2="12" y2="15"></line>
+                  </svg>
+                </div>
+                <input type="file" id="avatarUpload" accept="image/*">
+              </div>
+              <div class="profile-info">
+                <h2 class="profile-name">Fast-Food</h2>
+                <div class="profile-email">admin@fastfood.com</div>
+                <div class="profile-actions">
+                  <button class="btn btn-outline">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                      <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                    </svg>
+                    Modifier le profil
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="settings-section">
+              <h3 class="settings-title">Informations personnelles</h3>
+              <form id="profileForm">
+                <div class="form-group">
+                  <label for="profileName" class="form-label">Nom de l'entreprise</label>
+                  <input type="text" id="profileName" class="form-input" value="Fast-Food">
+                </div>
+                <div class="form-group">
+                  <label for="profileEmail" class="form-label">Email</label>
+                  <input type="email" id="profileEmail" class="form-input" value="admin@fastfood.com">
+                </div>
+                <div class="form-group">
+                  <label for="profilePhone" class="form-label">Téléphone</label>
+                  <input type="tel" id="profilePhone" class="form-input" value="+33 1 23 45 67 89">
+                </div>
+                <div class="form-group">
+                  <label for="profileAddress" class="form-label">Adresse</label>
+                  <textarea id="profileAddress" class="form-textarea">123 Rue de la Restauration
+75001 Paris
+France</textarea>
+                </div>
+                <div class="form-group">
+                  <label for="profileBio" class="form-label">À propos</label>
+                  <textarea id="profileBio" class="form-textarea">Chaîne de restauration rapide spécialisée dans les burgers et les frites. Présente dans 5 villes en France.</textarea>
+                </div>
+                <div class="form-actions">
+                  <button type="button" class="btn btn-outline">Annuler</button>
+                  <button type="submit" class="btn btn-primary">Enregistrer</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          
+          <!-- Onglet Compte -->
+          <div class="settings-tab" id="account-tab">
+            <div class="settings-section">
+              <h3 class="settings-title">Paramètres du compte</h3>
+              <form id="accountForm">
+                <div class="form-group">
+                  <label for="accountLanguage" class="form-label">Langue</label>
+                  <select id="accountLanguage" class="form-select">
+                    <option value="fr" selected>Français</option>
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="de">Deutsch</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="accountTimezone" class="form-label">Fuseau horaire</label>
+                  <select id="accountTimezone" class="form-select">
+                    <option value="Europe/Paris" selected>Europe/Paris (UTC+01:00)</option>
+                    <option value="Europe/London">Europe/London (UTC+00:00)</option>
+                    <option value="America/New_York">America/New_York (UTC-05:00)</option>
+                    <option value="Asia/Tokyo">Asia/Tokyo (UTC+09:00)</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="accountDateFormat" class="form-label">Format de date</label>
+                  <select id="accountDateFormat" class="form-select">
+                    <option value="DD/MM/YYYY" selected>DD/MM/YYYY</option>
+                    <option value="MM/DD/YYYY">MM/DD/YYYY</option>
+                    <option value="YYYY-MM-DD">YYYY-MM-DD</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="accountCurrency" class="form-label">Devise</label>
+                  <select id="accountCurrency" class="form-select">
+                    <option value="EUR" selected>Euro (€)</option>
+                    <option value="USD">Dollar américain ($)</option>
+                    <option value="GBP">Livre sterling (£)</option>
+                    <option value="JPY">Yen japonais (¥)</option>
+                  </select>
+                </div>
+                <div class="form-actions">
+                  <button type="button" class="btn btn-outline">Annuler</button>
+                  <button type="submit" class="btn btn-primary">Enregistrer</button>
+                </div>
+              </form>
+            </div>
+            
+            <div class="settings-section">
+              <h3 class="settings-title">Abonnement</h3>
+              <div class="settings-card">
+                <div class="settings-card-header">
+                  <div class="settings-card-title">Plan Premium</div>
+                  <span class="badge badge-success">Actif</span>
+                </div>
+                <div class="settings-card-content">
+                  <p>Votre abonnement est actif jusqu'au 31/12/2025.</p>
+                  <ul style="margin-top: 10px; margin-left: 20px;">
+                    <li>Accès à toutes les fonctionnalités</li>
+                    <li>Support prioritaire</li>
+                    <li>Stockage illimité</li>
+                    <li>Rapports avancés</li>
+                  </ul>
+                </div>
+                <div class="settings-card-footer">
+                  <button class="btn btn-outline">Gérer l'abonnement</button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="settings-section">
+              <h3 class="settings-title">Supprimer le compte</h3>
+              <p class="settings-description">La suppression de votre compte est définitive. Toutes vos données seront supprimées et ne pourront pas être récupérées.</p>
+              <button class="btn btn-danger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="3 6 5 6 21 6"></polyline>
+                  <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                  <line x1="10" y1="11" x2="10" y2="17"></line>
+                  <line x1="14" y1="11" x2="14" y2="17"></line>
+                </svg>
+                Supprimer le compte
+              </button>
+            </div>
+          </div>
+          
+          <!-- Onglet Apparence -->
+          <div class="settings-tab" id="appearance-tab">
+            <div class="settings-section">
+              <h3 class="settings-title">Thème</h3>
+              <div class="form-group">
+                <label class="form-label">Mode d'affichage</label>
+                <div class="settings-grid">
+                  <div class="settings-card" id="lightThemeCard">
+                    <div class="settings-card-header">
+                      <div class="settings-card-title">Clair</div>
+                      <input type="radio" name="theme" value="light" checked>
+                    </div>
+                    <div class="settings-card-content">
+                      <div style="height: 100px; background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 8px; margin-bottom: 10px;"></div>
+                    </div>
+                  </div>
+                  <div class="settings-card" id="darkThemeCard">
+                    <div class="settings-card-header">
+                      <div class="settings-card-title">Sombre</div>
+                      <input type="radio" name="theme" value="dark">
+                    </div>
+                    <div class="settings-card-content">
+                      <div style="height: 100px; background-color: #343a40; border: 1px solid #495057; border-radius: 8px; margin-bottom: 10px;"></div>
+                    </div>
+                  </div>
+                  <div class="settings-card" id="systemThemeCard">
+                    <div class="settings-card-header">
+                      <div class="settings-card-title">Système</div>
+                      <input type="radio" name="theme" value="system">
+                    </div>
+                    <div class="settings-card-content">
+                      <div style="height: 100px; background: linear-gradient(to right, #f8f9fa 50%, #343a40 50%); border: 1px solid #dee2e6; border-radius: 8px; margin-bottom: 10px;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="settings-section">
+              <h3 class="settings-title">Couleur principale</h3>
+              <div class="settings-grid">
+                <div class="settings-card" id="blueColorCard">
+                  <div class="settings-card-header">
+                    <div class="settings-card-title">Bleu</div>
+                    <input type="radio" name="color" value="blue" checked>
+                  </div>
+                  <div class="settings-card-content">
+                    <div style="height: 50px; background-color: #176BFF; border-radius: 8px;"></div>
+                  </div>
+                </div>
+                <div class="settings-card" id="greenColorCard">
+                  <div class="settings-card-header">
+                    <div class="settings-card-title">Vert</div>
+                    <input type="radio" name="color" value="green">
+                  </div>
+                  <div class="settings-card-content">
+                    <div style="height: 50px; background-color: #4CAF50; border-radius: 8px;"></div>
+                  </div>
+                </div>
+                <div class="settings-card" id="purpleColorCard">
+                  <div class="settings-card-header">
+                    <div class="settings-card-title">Violet</div>
+                    <input type="radio" name="color" value="purple">
+                  </div>
+                  <div class="settings-card-content">
+                    <div style="height: 50px; background-color: #9C27B0; border-radius: 8px;"></div>
+                  </div>
+                </div>
+                <div class="settings-card" id="orangeColorCard">
+                  <div class="settings-card-header">
+                    <div class="settings-card-title">Orange</div>
+                    <input type="radio" name="color" value="orange">
+                  </div>
+                  <div class="settings-card-content">
+                    <div style="height: 50px; background-color: #FF9800; border-radius: 8px;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="settings-section">
+              <h3 class="settings-title">Disposition</h3>
+              <div class="form-group">
+                <div class="form-checkbox">
+                  <input type="checkbox" id="compactMode" checked>
+                  <label for="compactMode">Mode compact</label>
+                </div>
+                <div class="form-checkbox">
+                  <input type="checkbox" id="sidebarCollapsed">
+                  <label for="sidebarCollapsed">Barre latérale réduite par défaut</label>
+                </div>
+                <div class="form-checkbox">
+                  <input type="checkbox" id="showBreadcrumbs" checked>
+                  <label for="showBreadcrumbs">Afficher le fil d'Ariane</label>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-actions">
+              <button type="button" class="btn btn-outline">Réinitialiser</button>
+              <button type="button" class="btn btn-primary" id="saveAppearanceBtn">Enregistrer</button>
+            </div>
+          </div>
+          
+          <!-- Onglet Notifications -->
+          <div class="settings-tab" id="notifications-tab">
+            <div class="settings-section">
+              <h3 class="settings-title">Préférences de notification</h3>
+              <div class="notification-setting">
+                <div class="notification-info">
+                  <div class="notification-title">Notifications par email</div>
+                  <div class="notification-description">Recevoir des notifications par email</div>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" checked>
+                  <span class="slider"></span>
+                </label>
+              </div>
+              <div class="notification-setting">
+                <div class="notification-info">
+                  <div class="notification-title">Notifications dans l'application</div>
+                  <div class="notification-description">Recevoir des notifications dans l'application</div>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" checked>
+                  <span class="slider"></span>
+                </label>
+              </div>
+              <div class="notification-setting">
+                <div class="notification-info">
+                  <div class="notification-title">Notifications push</div>
+                  <div class="notification-description">Recevoir des notifications push sur votre appareil</div>
+                </div>
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider"></span>
+                </label>
+              </div>
+              <div class="notification-setting">
+                <div class="notification-info">
+                  <div class="notification-title">Notifications SMS</div>
+                  <div class="notification-description">Recevoir des notifications par SMS</div>
+                </div>
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+            
+            <div class="settings-section">
+              <h3 class="settings-title">Types de notifications</h3>
+              <div class="notification-setting">
+                <div class="notification-info">
+                  <div class="notification-title">Nouvelles ventes</div>
+                  <div class="notification-description">Notifications pour les nouvelles ventes</div>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" checked>
+                  <span class="slider"></span>
+                </label>
+              </div>
+              <div class="notification-setting">
+                <div class="notification-info">
+                  <div class="notification-title">Nouveaux produits</div>
+                  <div class="notification-description">Notifications pour les nouveaux produits</div>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" checked>
+                  <span class="slider"></span>
+                </label>
+              </div>
+              <div class="notification-setting">
+                <div class="notification-info">
+                  <div class="notification-title">Rapports</div>
+                  <div class="notification-description">Notifications pour les nouveaux rapports</div>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" checked>
+                  <span class="slider"></span>
+                </label>
+              </div>
+              <div class="notification-setting">
+                <div class="notification-info">
+                  <div class="notification-title">Mises à jour système</div>
+                  <div class="notification-description">Notifications pour les mises à jour système</div>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" checked>
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+            
+            <div class="form-actions">
+              <button type="button" class="btn btn-outline">Réinitialiser</button>
+              <button type="button" class="btn btn-primary" id="saveNotificationsBtn">Enregistrer</button>
+            </div>
+          </div>
+          
+          <!-- Onglet API -->
+          <div class="settings-tab" id="api-tab">
+            <div class="settings-section">
+              <h3 class="settings-title">Clés API</h3>
+              <p class="settings-description">Gérez vos clés API pour accéder à l'API Branda.</p>
+              
+              <div class="api-key">
+                <div class="api-key-value">••••••••••••••••••••••••••••••</div>
+                <div class="api-key-actions">
+                  <button class="api-key-btn copy" title="Copier">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                  </button>
+                  <button class="api-key-btn delete" title="Supprimer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="3 6 5 6 21 6"></polyline>
+                      <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              
+              <div class="api-key">
+                <div class="api-key-value">••••••••••••••••••••••••••••••</div>
+                <div class="api-key-actions">
+                  <button class="api-key-btn copy" title="Copier">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                  </button>
+                  <button class="api-key-btn delete" title="Supprimer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="3 6 5 6 21 6"></polyline>
+                      <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              
+              <button class="btn btn-primary" style="margin-top: 20px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+                Générer une nouvelle clé
+              </button>
+            </div>
+            
+            <div class="settings-section">
+              <h3 class="settings-title">Webhooks</h3>
+              <p class="settings-description">Configurez des webhooks pour recevoir des notifications en temps réel.</p>
+              
+              <div class="settings-card">
+                <div class="settings-card-header">
+                  <div class="settings-card-title">Webhook de ventes</div>
+                  <span class="badge badge-success">Actif</span>
+                </div>
+                <div class="settings-card-content">
+                  <p>URL: https://example.com/webhook/sales</p>
+                  <p>Événements: nouvelles ventes, mises à jour de ventes</p>
+                </div>
+                <div class="settings-card-footer">
+                  <button class="btn btn-outline">Modifier</button>
+                  <button class="btn btn-danger">Supprimer</button>
+                </div>
+              </div>
+              
+              <button class="btn btn-primary" style="margin-top: 20px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+                Ajouter un webhook
+              </button>
+            </div>
+          </div>
+          
+          <!-- Onglet Sécurité -->
+          <div class="settings-tab" id="security-tab">
+            <div class="settings-section">
+              <h3 class="settings-title">Mot de passe</h3>
+              <form id="passwordForm">
+                <div class="form-group">
+                  <label for="currentPassword" class="form-label">Mot de passe actuel</label>
+                  <input type="password" id="currentPassword" class="form-input">
+                </div>
+                <div class="form-group">
+                  <label for="newPassword" class="form-label">Nouveau mot de passe</label>
+                  <input type="password" id="newPassword" class="form-input">
+                </div>
+                <div class="form-group">
+                  <label for="confirmPassword" class="form-label">Confirmer le mot de passe</label>
+                  <input type="password" id="confirmPassword" class="form-input">
+                </div>
+                <div class="form-actions">
+                  <button type="button" class="btn btn-outline">Annuler</button>
+                  <button type="submit" class="btn btn-primary">Changer le mot de passe</button>
+                </div>
+              </form>
+            </div>
+            
+            <div class="settings-section">
+              <h3 class="settings-title">Authentification à deux facteurs</h3>
+              <p class="settings-description">L'authentification à deux facteurs ajoute une couche de sécurité supplémentaire à votre compte.</p>
+              
+              <div class="notification-setting">
+                <div class="notification-info">
+                  <div class="notification-title">Authentification à deux facteurs</div>
+                  <div class="notification-description">Activer l'authentification à deux facteurs</div>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="twoFactorAuth">
+                  <span class="slider"></span>
+                </label>
+              </div>
+              
+              <div id="twoFactorOptions" style="display: none; margin-top: 20px;">
+                <div class="form-group">
+                  <label class="form-label">Méthode d'authentification</label>
+                  <div class="form-checkbox">
+                    <input type="radio" name="twoFactorMethod" id="twoFactorApp" checked>
+                    <label for="twoFactorApp">Application d'authentification</label>
+                  </div>
+                  <div class="form-checkbox">
+                    <input type="radio" name="twoFactorMethod" id="twoFactorSMS">
+                    <label for="twoFactorSMS">SMS</label>
+                  </div>
+                  <div class="form-checkbox">
+                    <input type="radio" name="twoFactorMethod" id="twoFactorEmail">
+                    <label for="twoFactorEmail">Email</label>
+                  </div>
+                </div>
+                
+                <button class="btn btn-primary">Configurer</button>
+              </div>
+            </div>
+            
+            <div class="settings-section">
+              <h3 class="settings-title">Sessions actives</h3>
+              <p class="settings-description">Gérez vos sessions actives et déconnectez-vous des appareils non reconnus.</p>
+              
+              <div class="settings-card">
+                <div class="settings-card-header">
+                  <div class="settings-card-title">Chrome sur Windows</div>
+                  <span class="badge badge-success">Actif</span>
+                </div>
+                <div class="settings-card-content">
+                  <p>IP: 192.168.1.1</p>
+                  <p>Dernière activité: Aujourd'hui à 15:30</p>
+                </div>
+                <div class="settings-card-footer">
+                  <button class="btn btn-danger">Déconnecter</button>
+                </div>
+              </div>
+              
+              <div class="settings-card">
+                <div class="settings-card-header">
+                  <div class="settings-card-title">Safari sur iPhone</div>
+                  <span class="badge badge-warning">Inactif</span>
+                </div>
+                <div class="settings-card-content">
+                  <p>IP: 192.168.1.2</p>
+                  <p>Dernière activité: Hier à 10:15</p>
+                </div>
+                <div class="settings-card-footer">
+                  <button class="btn btn-danger">Déconnecter</button>
+                </div>
+              </div>
+              
+              <button class="btn btn-danger" style="margin-top: 20px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                  <polyline points="16 17 21 12 16 7"></polyline>
+                  <line x1="21" y1="12" x2="9" y2="12"></line>
+                </svg>
+                Déconnecter toutes les sessions
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="toast-container" id="toastContainer">
+    <!-- Les notifications seront ajoutées ici dynamiquement -->
+  </div>
+  
+  <script src="proactive-assistant.js"></script>
+  <script src="chat-component.js"></script>
+  <script>
+    // Fonction pour basculer la sidebar sur mobile
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle("open");
+    }
+
+    // Fonction pour basculer entre les modes clair et sombre
+    function toggleTheme() {
+      document.body.classList.toggle("dark-mode");
+      localStorage.setItem("theme", document.body.classList.contains("dark-mode") ? "dark" : "light");
+    }
+
+    // Fonction pour afficher une notification toast
+    function showToast(type, title, message) {
+      const toastContainer = document.getElementById("toastContainer");
+      const toast = document.createElement("div");
+      toast.className = `toast ${type}`;
+      let iconSvg = "";
+      if (type === "success") {
+        iconSvg = 
+          '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg>';
+      } else if (type === "error") {
+        iconSvg = 
+          '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>';
+      } else if (type === "warning") {
+        iconSvg = 
+          '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>';
+      } else {
+        iconSvg = 
+          '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>';
+      }
+      toast.innerHTML = `
+        <div class="toast-icon ${type}">
+          ${iconSvg}
+        </div>
+        <div class="toast-content">
+          <div class="toast-title">${title}</div>
+          <div class="toast-message">${message}</div>
+        </div>
+        <button class="toast-close">&times;</button>
+      `;
+      toastContainer.appendChild(toast);
+      toast.querySelector(".toast-close").addEventListener("click", function () {
+        toast.remove();
+      });
+      setTimeout(() => {
+        toast.remove();
+      }, 5000);
+    }
+
+    // Fonction pour changer d'onglet dans les paramètres
+    function switchSettingsTab(tabId) {
+      // Masquer tous les onglets
+      document.querySelectorAll('.settings-tab').forEach(tab => {
+        tab.classList.remove('active');
+      });
+      
+      // Désactiver tous les éléments de navigation
+      document.querySelectorAll('.settings-nav-item').forEach(item => {
+        item.classList.remove('active');
+      });
+      
+      // Activer l'onglet sélectionné
+      document.getElementById(`${tabId}-tab`).classList.add('active');
+      
+      // Activer l'élément de navigation correspondant
+      document.querySelector(`.settings-nav-item[data-tab="${tabId}"]`).classList.add('active');
+    }
+
+    // Initialisation
+    document.addEventListener("DOMContentLoaded", function () {
+      const savedTheme = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      if (savedTheme === "dark" || (savedTheme === null && prefersDark)) {
+        document.body.classList.add("dark-mode");
+      }
+      document.getElementById("sidebarToggle").addEventListener("click", toggleSidebar);
+      document.getElementById("menuToggle").addEventListener("click", toggleSidebar);
+      document.getElementById("themeToggle").addEventListener("click", toggleTheme);
+      
+      // Mettre à jour la classe active dans le menu de navigation
+      const currentPage = window.location.pathname.split("/").pop() || "index.html";
+      const navLinks = document.querySelectorAll(".nav-link");
+      navLinks.forEach(link => {
+        link.classList.remove("active"); // Remove active from all
+        const href = link.getAttribute("href");
+        if (href === currentPage) {
+          link.classList.add("active"); // Add active to the current page link
+        }
+      });
+      
+      // Ajouter les gestionnaires d'événements pour les onglets de paramètres
+      document.querySelectorAll('.settings-nav-item').forEach(item => {
+        item.addEventListener('click', function() {
+          switchSettingsTab(this.dataset.tab);
+        });
+      });
+      
+      // Gestionnaire d'événement pour le formulaire de profil
+      document.getElementById('profileForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        showToast('success', 'Succès', 'Profil mis à jour avec succès');
+      });
+      
+      // Gestionnaire d'événement pour le formulaire de compte
+      document.getElementById('accountForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        showToast('success', 'Succès', 'Paramètres du compte mis à jour avec succès');
+      });
+      
+      // Gestionnaire d'événement pour le formulaire de mot de passe
+      document.getElementById('passwordForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const newPassword = document.getElementById('newPassword').value;
+        const confirmPassword = document.getElementById('confirmPassword').value;
+        
+        if (newPassword !== confirmPassword) {
+          showToast('error', 'Erreur', 'Les mots de passe ne correspondent pas');
+          return;
+        }
+        
+        showToast('success', 'Succès', 'Mot de passe mis à jour avec succès');
+        this.reset();
+      });
+      
+      // Gestionnaire d'événement pour l'authentification à deux facteurs
+      document.getElementById('twoFactorAuth').addEventListener('change', function() {
+        const twoFactorOptions = document.getElementById('twoFactorOptions');
+        if (this.checked) {
+          twoFactorOptions.style.display = 'block';
+        } else {
+          twoFactorOptions.style.display = 'none';
+        }
+      });
+      
+      // Gestionnaire d'événement pour le bouton d'enregistrement de l'apparence
+      document.getElementById('saveAppearanceBtn').addEventListener('click', function() {
+        showToast('success', 'Succès', 'Paramètres d\'apparence mis à jour avec succès');
+      });
+      
+      // Gestionnaire d'événement pour le bouton d'enregistrement des notifications
+      document.getElementById('saveNotificationsBtn').addEventListener('click', function() {
+        showToast('success', 'Succès', 'Préférences de notification mises à jour avec succès');
+      });
+      
+      // Gestionnaire d'événement pour les cartes de thème
+      document.getElementById('lightThemeCard').addEventListener('click', function() {
+        document.querySelector('input[name="theme"][value="light"]').checked = true;
+        document.body.classList.remove('dark-mode');
+        localStorage.setItem('theme', 'light');
+      });
+      
+      document.getElementById('darkThemeCard').addEventListener('click', function() {
+        document.querySelector('input[name="theme"][value="dark"]').checked = true;
+        document.body.classList.add('dark-mode');
+        localStorage.setItem('theme', 'dark');
+      });
+      
+      document.getElementById('systemThemeCard').addEventListener('click', function() {
+        document.querySelector('input[name="theme"][value="system"]').checked = true;
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (prefersDark) {
+          document.body.classList.add('dark-mode');
+        } else {
+          document.body.classList.remove('dark-mode');
+        }
+        localStorage.removeItem('theme');
+      });
+      
+      // Gestionnaire d'événement pour les boutons de copie de clé API
+      document.querySelectorAll('.api-key-btn.copy').forEach(button => {
+        button.addEventListener('click', function() {
+          showToast('success', 'Succès', 'Clé API copiée dans le presse-papiers');
+        });
+      });
+      
+      // Gestionnaire d'événement pour les boutons de suppression de clé API
+      document.querySelectorAll('.api-key-btn.delete').forEach(button => {
+        button.addEventListener('click', function() {
+          if (confirm('Êtes-vous sûr de vouloir supprimer cette clé API ?')) {
+            this.closest('.api-key').remove();
+            showToast('success', 'Succès', 'Clé API supprimée avec succès');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

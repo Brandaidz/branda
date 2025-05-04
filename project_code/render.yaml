@@ -1,0 +1,83 @@
+services:
+  # Service principal - API Backend
+  - type: web
+    name: branda-api
+    env: node
+    buildCommand: cd src/backend && npm install
+    startCommand: cd src/backend && node server.js
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGODB_URI
+        sync: false
+      - key: REDIS_HOST
+        sync: false
+      - key: REDIS_PORT
+        sync: false
+      - key: REDIS_PASSWORD
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: OPENROUTER_KEY
+        sync: false
+      - key: OPENROUTER_API_BASE
+        value: https://openrouter.ai/api/v1
+      - key: PROMETHEUS_USER
+        sync: false
+      - key: PROMETHEUS_PASSWORD
+        sync: false
+    autoDeploy: true
+    plan: starter
+
+  # Service Worker pour BullMQ
+  - type: worker
+    name: branda-worker
+    env: node
+    buildCommand: cd src/backend && npm install
+    startCommand: cd src/backend && node workers/index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false
+      - key: REDIS_HOST
+        sync: false
+      - key: REDIS_PORT
+        sync: false
+      - key: REDIS_PASSWORD
+        sync: false
+      - key: OPENROUTER_KEY
+        sync: false
+      - key: OPENROUTER_API_BASE
+        value: https://openrouter.ai/api/v1
+    autoDeploy: true
+    plan: starter
+
+  # Frontend statique
+  - type: web
+    name: branda-frontend
+    env: static
+    buildCommand: echo "No build needed for static frontend"
+    staticPublishPath: ./src/frontend
+    routes:
+      - type: rewrite
+        source: /api/*
+        destination: https://branda-api.onrender.com/api/*
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: DENY
+      - path: /*
+        name: X-XSS-Protection
+        value: 1; mode=block
+    envVars:
+      - key: API_URL
+        value: https://branda-api.onrender.com
+    autoDeploy: true
+    plan: free

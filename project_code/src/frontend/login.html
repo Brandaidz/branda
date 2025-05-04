@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Branda – Connexion</title>
+<style>
+:root {
+  --primary-color: #176BFF;
+  --primary-dark: #0056cc;
+  --primary-light: #e3f2fd;
+  --success-color: #4CAF50;
+  --warning-color: #FFC107;
+  --danger-color: #F44336;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #6c757d;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --border-radius: 8px;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: #f5f5f5;
+  color: var(--gray-800);
+  display: flex;
+  min-height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.login-image {
+  flex: 1;
+  background-image: url('https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 40px;
+  color: white;
+  position: relative;
+}
+
+.login-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0) 100%);
+}
+
+.login-image-content {
+  position: relative;
+  z-index: 1;
+}
+
+.login-image-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.login-image-text {
+  font-size: 18px;
+  max-width: 500px;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.login-form-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: white;
+}
+
+.login-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.login-logo-icon {
+  width: 48px;
+  height: 48px;
+  background-color: var(--primary-color);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  margin-right: 16px;
+}
+
+.login-logo-text {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--gray-900);
+}
+
+.login-form {
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: var(--gray-900);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--gray-700);
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--gray-300);
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  transition: var(--transition);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(23, 107, 255, 0.1);
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.form-checkbox input {
+  margin-right: 8px;
+}
+
+.form-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.form-link:hover {
+  text-decoration: underline;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.login-btn:hover {
+  background-color: var(--primary-dark);
+}
+
+.login-divider {
+  display: flex;
+  align-items: center;
+  margin: 24px 0;
+  color: var(--gray-500);
+}
+
+.login-divider::before,
+.login-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: var(--gray-300);
+}
+
+.login-divider::before {
+  margin-right: 16px;
+}
+
+.login-divider::after {
+  margin-left: 16px;
+}
+
+.social-login {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.social-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border: 1px solid var(--gray-300);
+  border-radius: var(--border-radius);
+  background-color: white;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.social-btn:hover {
+  background-color: var(--gray-100);
+}
+
+.social-icon {
+  margin-right: 8px;
+}
+
+.login-footer {
+  margin-top: 24px;
+  text-align: center;
+  color: var(--gray-600);
+}
+
+.demo-accounts {
+  margin-top: 24px;
+  padding: 16px;
+  background-color: var(--gray-100);
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--primary-color);
+}
+
+.demo-accounts-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--gray-800);
+}
+
+.demo-account {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--gray-300);
+}
+
+.demo-account:last-child {
+  border-bottom: none;
+}
+
+.demo-account-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.demo-account-name {
+  font-weight: 500;
+}
+
+.demo-account-email {
+  font-size: 14px;
+  color: var(--gray-600);
+}
+
+.demo-account-btn {
+  padding: 6px 12px;
+  background-color: var(--primary-light);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.demo-account-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+@media (max-width: 992px) {
+  .login-container {
+    flex-direction: column;
+  }
+  
+  .login-image {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .login-form-container {
+    padding: 20px;
+  }
+  
+  .login-image {
+    padding: 20px;
+  }
+  
+  .social-login {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+<div class="login-container">
+  <div class="login-image">
+    <div class="login-image-content">
+      <h1 class="login-image-title">Bienvenue sur Branda</h1>
+      <p class="login-image-text">Votre assistante IA pour la gestion d'entreprise. Simplifiez votre quotidien et prenez des décisions éclairées grâce à l'intelligence artificielle.</p>
+    </div>
+  </div>
+  
+  <div class="login-form-container">
+    <div class="login-logo">
+      <div class="login-logo-icon">B</div>
+      <div class="login-logo-text">Branda</div>
+    </div>
+    
+    <div class="login-form">
+      <h2 class="login-title">Connexion</h2>
+      
+      <div class="form-group">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" class="form-input" placeholder="Votre adresse email">
+      </div>
+      
+      <div class="form-group">
+        <label for="password" class="form-label">Mot de passe</label>
+        <input type="password" id="password" class="form-input" placeholder="Votre mot de passe">
+      </div>
+      
+      <div class="form-options">
+        <div class="form-checkbox">
+          <input type="checkbox" id="remember">
+          <label for="remember">Se souvenir de moi</label>
+        </div>
+        <a href="#" class="form-link">Mot de passe oublié ?</a>
+      </div>
+      
+      <button class="login-btn" id="loginBtn">Se connecter</button>
+      
+      <div class="login-divider">ou</div>
+      
+      <div class="social-login">
+        <button class="social-btn">
+          <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#4285F4">
+            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853" />
+            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05" />
+            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335" />
+          </svg>
+          Google
+        </button>
+        <button class="social-btn">
+          <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#1877F2">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+          </svg>
+          Facebook
+        </button>
+      </div>
+      
+      <div class="demo-accounts">
+        <h3 class="demo-accounts-title">Comptes de démonstration</h3>
+        <div class="demo-account">
+          <div class="demo-account-info">
+            <span class="demo-account-name">Fast-Food</span>
+            <span class="demo-account-email">demo@fastfood.com</span>
+          </div>
+          <button class="demo-account-btn" data-user="fastfood2025">Utiliser</button>
+        </div>
+        <div class="demo-account">
+          <div class="demo-account-info">
+            <span class="demo-account-name">Salon El Chic</span>
+            <span class="demo-account-email">demo@salonelchic.com</span>
+          </div>
+          <button class="demo-account-btn" data-user="salonelchic">Utiliser</button>
+        </div>
+      </div>
+      
+      <div class="login-footer">
+        <p>Vous n'avez pas de compte ? <a href="#" class="form-link">S'inscrire</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Handle login button click
+  document.getElementById('loginBtn').addEventListener('click', function() {
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    
+    if (!email || !password) {
+      alert('Veuillez remplir tous les champs');
+      return;
+    }
+    
+    // Simulate login
+    simulateLogin('fastfood2025');
+  });
+  
+  // Handle demo account buttons
+  document.querySelectorAll('.demo-account-btn').forEach(button => {
+    button.addEventListener('click', function() {
+      const userId = this.getAttribute('data-user');
+      simulateLogin(userId);
+    });
+  });
+  
+  function simulateLogin(userId) {
+    // Generate a fake JWT token
+    const fakeToken = generateFakeToken(userId);
+    
+    // Store in localStorage
+    localStorage.setItem('jwt', fakeToken);
+    localStorage.setItem('activeUserId', userId);
+    
+    // Redirect to dashboard
+    window.location.href = 'index.html';
+  }
+  
+  function generateFakeToken(userId) {
+    // This is just a simulation, not a real JWT
+    const header = btoa(JSON.stringify({ alg: 'HS256', typ: 'JWT' }));
+    const payload = btoa(JSON.stringify({ 
+      sub: userId, 
+      name: userId === 'fastfood2025' ? 'Fast-Food' : 'Salon El Chic',
+      role: 'admin',
+      exp: Math.floor(Date.now() / 1000) + (60 * 60 * 24) // 24 hours
+    }));
+    const signature = btoa('fake_signature');
+    
+    return `${header}.${payload}.${signature}`;
+  }
+});
+</script>
+</body>
+</html>

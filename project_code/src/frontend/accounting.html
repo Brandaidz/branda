@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Branda – Comptabilité</title>
+  <link rel="stylesheet" href="new-styles.css">
+  <link rel="stylesheet" href="chat-component.css">
+  <link rel="stylesheet" href="chat-improvements.css">
+  <link rel="stylesheet" href="ui-improvements.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#176BFF">
+  <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+</head>
+<body>
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="logo">
+        <div class="logo-icon">B</div>
+        <span>Branda</span>
+      </div>
+      <button class="menu-toggle" id="menuToggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    
+    <div class="nav-menu">
+      <div class="nav-item">
+        <a href="index.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+          Tableau de bord
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="products.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          Produits
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="sales.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="1" x2="12" y2="23"></line>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+          </svg>
+          Ventes
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="employees.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+          Employés
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="accounting.html" class="nav-link active">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+          </svg>
+          Comptabilité
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="hr.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+          Ressources Humaines
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="reports.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          Rapports
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="settings.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+          Paramètres
+        </a>
+      </div>
+    </div>
+    
+    <div class="sidebar-footer">
+      <div class="user-info">
+        <div class="user-avatar">F</div>
+        <div class="user-details">
+          <div class="user-name">Fast-Food</div>
+          <div class="user-role">Administrateur</div>
+        </div>
+        <button class="user-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="1"></circle>
+            <circle cx="12" cy="5" r="1"></circle>
+            <circle cx="12" cy="19" r="1"></circle>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="main-content">
+    <div class="header">
+      <button class="menu-toggle" id="sidebarToggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      
+      <h1 class="page-title">Comptabilité</h1>
+      
+      <div class="header-actions">
+        <div class="search-bar">
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" class="search-input" placeholder="Rechercher..." id="searchInput">
+        </div>
+        
+        <button class="notification-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+          </svg>
+          <span class="notification-badge">3</span>
+        </button>
+        
+        <button class="btn btn-outline" id="themeToggle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <div class="content">
+      <div class="tab-container">
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="entries">Entrées comptables</button>
+          <button class="tab-btn" data-tab="reports">Rapports financiers</button>
+          <button class="tab-btn" data-tab="daily">Rapport quotidien</button>
+        </div>
+        
+        <!-- Onglet Entrées comptables -->
+        <div class="tab-content active" id="entries-tab">
+          <div class="stats-grid">
+            <div class="stat-card slide-in-up" style="animation-delay: 0.1s;">
+              <div class="stat-header">
+                <h3 class="stat-title">Revenus (période)</h3>
+                <div class="stat-icon green">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                    <polyline points="17 6 23 6 23 12"></polyline>
+                  </svg>
+                </div>
+              </div>
+              <div class="stat-value" id="totalRevenues">0 €</div>
+            </div>
+            <div class="stat-card slide-in-up" style="animation-delay: 0.2s;">
+              <div class="stat-header">
+                <h3 class="stat-title">Dépenses (période)</h3>
+                <div class="stat-icon red">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline>
+                    <polyline points="17 18 23 18 23 12"></polyline>
+                  </svg>
+                </div>
+              </div>
+              <div class="stat-value" id="totalExpenses">0 €</div>
+            </div>
+            <div class="stat-card slide-in-up" style="animation-delay: 0.3s;">
+              <div class="stat-header">
+                <h3 class="stat-title">Bénéfice net</h3>
+                <div class="stat-icon blue">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="1" x2="12" y2="23"></line>
+                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="stat-value" id="netProfit">0 €</div>
+            </div>
+          </div>
+          
+          <div class="filter-tabs" style="margin-bottom: var(--spacing-md);">
+            <button class="tab-btn active" data-filter="all" onclick="filterEntries('all')">Tous</button>
+            <button class="tab-btn" data-filter="revenue" onclick="filterEntries('revenue')">Revenus</button>
+            <button class="tab-btn" data-filter="expense" onclick="filterEntries('expense')">Dépenses</button>
+          </div>
+          
+          <div class="toolbar" style="margin-bottom: var(--spacing-lg); display: flex; justify-content: space-between; align-items: center;">
+            <div class="filters" style="display: flex; gap: var(--spacing-md); align-items: center;">
+              <label for="startDate" class="form-label">Du:</label>
+              <input type="date" class="form-control" id="startDate" onchange="loadEntries()">
+              <label for="endDate" class="form-label">Au:</label>
+              <input type="date" class="form-control" id="endDate" onchange="loadEntries()">
+            </div>
+            <div style="display: flex; gap: var(--spacing-sm);">
+              <button class="btn btn-primary" onclick="openEntryModal()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: var(--spacing-xs);">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+                Nouvelle entrée
+              </button>
+              <button class="btn btn-secondary" onclick="importSales()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: var(--spacing-xs);">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="17 8 12 3 7 8"></polyline>
+                  <line x1="12" y1="3" x2="12" y2="15"></line>
+                </svg>
+                Importer ventes
+              </button>
+            </div>
+          </div>
+          
+          <div class="table-container">
+            <table class="table" id="entriesTable">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Catégorie</th>
+                  <th>Description</th>
+                  <th>Montant</th>
+                  <th>Type</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="entriesTableBody">
+                <!-- Les entrées seront chargées ici dynamiquement -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+        
+        <!-- Onglet Rapports financiers -->
+        <div class="tab-content" id="reports-tab">
+          <div class="toolbar" style="margin-bottom: var(--spacing-lg); display: flex; justify-content: space-between; align-items: center;">
+            <div class="filters" style="display: flex; gap: var(--spacing-md); align-items: center;">
+              <label for="reportStartDate" class="form-label">Du:</label>
+              <input type="date" class="form-control" id="reportStartDate">
+              <label for="reportEndDate" class="form-label">Au:</label>
+              <input type="date" class="form-control" id="reportEndDate">
+              <select id="groupBySelect" class="form-select">
+                <option value="day">Grouper par jour</option>
+                <option value="week">Grouper par semaine</option>
+                <option value="month">Grouper par mois</option>
+              </select>
+            </div>
+            <button class="btn btn-primary" onclick="generateReport()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: var(--spacing-xs);">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              Générer rapport
+            </button>
+          </div>
+          
+          <div id="reportContent">
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-header">
+                  <h3 class="stat-title">Revenus totaux</h3>
+                  <div class="stat-icon green">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                      <polyline points="17 6 23 6 23 12"></polyline>
+                    </svg>
+                  </div>
+                </div>
+                <div class="stat-value" id="reportTotalRevenues">0 €</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-header">
+                  <h3 class="stat-title">Dépenses totales</h3>
+                  <div class="stat-icon red">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline>
+                      <polyline points="17 18 23 18 23 12"></polyline>
+                    </svg>
+                  </div>
+                </div>
+                <div class="stat-value" id="reportTotalExpenses">0 €</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-header">
+                  <h3 class="stat-title">Bénéfice net</h3>
+                  <div class="stat-icon blue">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="12" y1="1" x2="12" y2="23"></line>
+                      <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="stat-value" id="reportNetProfit">0 €</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-header">
+                  <h3 class="stat-title">Marge bénéficiaire</h3>
+                  <div class="stat-icon purple">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                      <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                      <polyline points="7 3 7 8 15 8"></polyline>
+                    </svg>
+                  </div>
+                </div>
+                <div class="stat-value" id="reportProfitMargin">0 %</div>
+              </div>
+            </div>
+            
+            <div class="card" style="margin-bottom: var(--spacing-lg);">
+              <div class="card-header">
+                <h2 class="card-title">Évolution sur la période</h2>
+              </div>
+              <div class="card-body">
+                <div class="chart-container" id="timeSeriesChart">
+                  <!-- Le graphique sera généré ici -->
+                  <p style="text-align: center; padding-top: 120px; color: var(--text-muted);">Générez un rapport pour voir le graphique</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="card-header">
+                <h2 class="card-title">Résumé par catégorie</h2>
+              </div>
+              <div class="card-body">
+                <div class="category-summary" id="categorySummary">
+                  <!-- Les cartes de catégorie seront générées ici -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Onglet Rapport quotidien -->
+        <div class="tab-content" id="daily-tab">
+          <div class="toolbar" style="margin-bottom: var(--spacing-lg); display: flex; justify-content: space-between; align-items: center;">
+            <div class="filters" style="display: flex; gap: var(--spacing-md); align-items: center;">
+              <label for="dailyReportDate" class="form-label">Date du rapport:</label>
+              <input type="date" class="form-control" id="dailyReportDate">
+            </div>
+            <button class="btn btn-primary" onclick="generateDailyReport()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: var(--spacing-xs);">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              Générer rapport
+            </button>
+          </div>
+          
+          <div id="dailyReportContent">
+            <div class="card">
+              <div class="card-header">
+                <h2 class="card-title">Rapport du <span id="reportDateDisplay">aujourd'hui</span></h2>
+              </div>
+              <div class="card-body">
+                <div class="stats-grid">
+                  <div class="stat-card">
+                    <div class="stat-header">
+                      <h3 class="stat-title">Nombre de ventes</h3>
+                      <div class="stat-icon blue">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                          <line x1="3" y1="6" x2="21" y2="6"></line>
+                          <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="stat-value" id="dailySalesCount">0</div>
+                  </div>
+                  <div class="stat-card">
+                    <div class="stat-header">
+                      <h3 class="stat-title">Chiffre d'affaires</h3>
+                      <div class="stat-icon green">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <line x1="12" y1="1" x2="12" y2="23"></line>
+                          <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="stat-value" id="dailyRevenue">0 €</div>
+                  </div>
+                  <div class="stat-card">
+                    <div class="stat-header">
+                      <h3 class="stat-title">Valeur moyenne</h3>
+                      <div class="stat-icon purple">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <line x1="19" y1="5" x2="5" y2="19"></line>
+                          <circle cx="6.5" cy="6.5" r="2.5"></circle>
+                          <circle cx="17.5" cy="17.5" r="2.5"></circle>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="stat-value" id="dailyAverageValue">0 €</div>
+                  </div>
+                  <div class="stat-card">
+                    <div class="stat-header">
+                      <h3 class="stat-title">Évolution CA</h3>
+                      <div class="stat-icon orange">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                          <polyline points="17 6 23 6 23 12"></polyline>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="stat-value" id="dailyRevenueChange">0 %</div>
+                  </div>
+                  <div class="stat-card">
+                    <div class="stat-header">
+                      <h3 class="stat-title">Dépenses</h3>
+                      <div class="stat-icon red">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline>
+                          <polyline points="17 18 23 18 23 12"></polyline>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="stat-value" id="dailyExpenses">0 €</div>
+                  </div>
+                  <div class="stat-card">
+                    <div class="stat-header">
+                      <h3 class="stat-title">Bénéfice net</h3>
+                      <div class="stat-icon blue">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <line x1="12" y1="1" x2="12" y2="23"></line>
+                          <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="stat-value" id="dailyNetProfit">0 €</div>
+                  </div>
+                </div>
+                
+                <div class="card" style="margin-top: var(--spacing-lg);">
+                  <div class="card-header">
+                    <h3 class="card-title">Produits les plus vendus</h3>
+                  </div>
+                  <div class="card-body">
+                    <div class="top-products-list" id="topProductsList">
+                      <!-- Les produits les plus vendus seront générés ici -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal pour ajouter/modifier une entrée comptable -->
+  <div id="entryModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modalTitle" class="modal-title">Nouvelle entrée comptable</h2>
+        <button class="modal-close" onclick="closeEntryModal()" aria-label="Fermer la fenêtre modale">&times;</button>
+      </div>
+      <form id="entryForm">
+        <input type="hidden" id="entryId">
+        <div class="form-group">
+          <label for="entryDate" class="form-label">Date</label>
+          <input type="datetime-local" id="entryDate" class="form-control" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="entryType" class="form-label">Type</label>
+            <select id="entryType" class="form-select" required>
+              <option value="revenu">Revenu</option>
+              <option value="dépense">Dépense</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="entryCategory" class="form-label">Catégorie</label>
+            <input type="text" id="entryCategory" class="form-control" required list="categoriesList">
+            <datalist id="categoriesList">
+              <option value="Ventes">
+              <option value="Services">
+              <option value="Salaires">
+              <option value="Loyer">
+              <option value="Fournitures">
+              <option value="Marketing">
+              <option value="Équipement">
+              <option value="Taxes">
+              <option value="Divers">
+            </datalist>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="entryAmount" class="form-label">Montant</label>
+          <input type="number" id="entryAmount" class="form-control" step="0.01" min="0" required>
+        </div>
+        <div class="form-group">
+          <label for="entryDescription" class="form-label">Description</label>
+          <textarea id="entryDescription" class="form-control" rows="2"></textarea>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="entryPaymentMethod" class="form-label">Méthode de paiement</label>
+            <select id="entryPaymentMethod" class="form-select">
+              <option value="espèces">Espèces</option>
+              <option value="carte">Carte bancaire</option>
+              <option value="chèque">Chèque</option>
+              <option value="virement">Virement</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="entryTags" class="form-label">Tags (séparés par des virgules)</label>
+            <input type="text" id="entryTags" class="form-control">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="entryRecurring" class="form-label">Entrée récurrente</label>
+          <div style="display: flex; align-items: center; gap: var(--spacing-sm);">
+            <input type="checkbox" id="entryRecurring" style="width: auto;">
+            <select id="entryRecurringPeriod" class="form-select" disabled>
+              <option value="quotidien">Quotidien</option>
+              <option value="hebdomadaire">Hebdomadaire</option>
+              <option value="mensuel">Mensuel</option>
+              <option value="trimestriel">Trimestriel</option>
+              <option value="annuel">Annuel</option>
+            </select>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="closeEntryModal()">Annuler</button>
+          <button type="submit" class="btn btn-primary">Enregistrer</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <div class="toast-container" id="toastContainer">
+    <!-- Les notifications seront ajoutées ici dynamiquement -->
+  </div>
+  
+  <script src="proactive-assistant.js"></script>
+  <script src="chat-component.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    // Fonction pour basculer la sidebar sur mobile
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle("open");
+    }
+
+    // Fonction pour basculer entre les modes clair et sombre
+    function toggleTheme() {
+      document.body.classList.toggle("dark-mode");
+      localStorage.setItem("theme", document.body.classList.contains("dark-mode") ? "dark" : "light");
+    }
+
+    // Fonction pour afficher une notification toast
+    function showToast(type, title, message) {
+      const toastContainer = document.getElementById("toastContainer");
+      const toast = document.createElement("div");
+      toast.className = `toast ${type}`;
+      let iconSvg = "";
+      if (type === "success") {
+        iconSvg = 
+          '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg>';
+      } else if (type === "error") {
+        iconSvg = 
+          '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>';
+      } else if (type === "warning") {
+        iconSvg = 
+          '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>';
+      } else {
+        iconSvg = 
+          '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>';
+      }
+      toast.innerHTML = `
+        <div class="toast-icon ${type}">
+          ${iconSvg}
+        </div>
+        <div class="toast-content">
+          <div class="toast-title">${title}</div>
+          <div class="toast-message">${message}</div>
+        </div>
+        <button class="toast-close">&times;</button>
+      `;
+      toastContainer.appendChild(toast);
+      toast.querySelector(".toast-close").addEventListener("click", function () {
+        toast.remove();
+      });
+      setTimeout(() => {
+        toast.remove();
+      }, 5000);
+    }
+
+    // Gestion des onglets
+    function switchTab(tabId) {
+      // Masquer tous les contenus d'onglets
+      document.querySelectorAll('.tab-content').forEach(content => {
+        content.classList.remove('active');
+      });
+      
+      // Désactiver tous les boutons d'onglets
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      
+      // Activer l'onglet sélectionné
+      document.getElementById(`${tabId}-tab`).classList.add('active');
+      
+      // Activer le bouton d'onglet correspondant
+      document.querySelectorAll(`.tab-btn[data-tab="${tabId}"]`).forEach(btn => {
+        btn.classList.add('active');
+      });
+    }
+
+    // Initialisation
+    document.addEventListener("DOMContentLoaded", function () {
+      const savedTheme = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      if (savedTheme === "dark" || (savedTheme === null && prefersDark)) {
+        document.body.classList.add("dark-mode");
+      }
+      document.getElementById("sidebarToggle").addEventListener("click", toggleSidebar);
+      document.getElementById("menuToggle").addEventListener("click", toggleSidebar);
+      document.getElementById("themeToggle").addEventListener("click", toggleTheme);
+      
+      // Mettre à jour la classe active dans le menu de navigation
+      const currentPage = window.location.pathname.split("/").pop() || "index.html";
+      const navLinks = document.querySelectorAll(".nav-link");
+      navLinks.forEach(link => {
+        link.classList.remove("active"); // Remove active from all
+        const href = link.getAttribute("href");
+        if (href === currentPage) {
+          link.classList.add("active"); // Add active to the current page link
+        }
+      });
+      
+      // Initialiser les dates par défaut
+      initializeDates();
+      
+      // Ajouter les gestionnaires d'événements pour les onglets
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          switchTab(this.dataset.tab);
+        });
+      });
+      
+      // Activer l'onglet par défaut
+      switchTab('entries');
+      
+      // Charger les entrées comptables
+      loadEntries();
+      
+      // Gestionnaire d'événement pour la case à cocher "Entrée récurrente"
+      document.getElementById('entryRecurring').addEventListener('change', function() {
+        document.getElementById('entryRecurringPeriod').disabled = !this.checked;
+      });
+    });
+
+    const PORT_BACK = 5001;
+    const API = `http://localhost:${PORT_BACK}/api`;
+    let JWT = localStorage.getItem("jwt") || "";
+    if (!JWT) {
+      JWT = prompt("Colle ici ton token JWT obtenu via /login :") || "";
+      localStorage.setItem("jwt", JWT);
+    }
+    let activeUserId = localStorage.getItem("activeUserId") || "fastfood2025";
+    let currentFilter = 'all';
+
+    // Initialiser les dates par défaut (aujourd'hui et il y a 30 jours)
+    function initializeDates() {
+      const today = new Date();
+      const thirtyDaysAgo = new Date();
+      thirtyDaysAgo.setDate(today.getDate() - 30);
+      
+      // Pour l'onglet Entrées comptables
+      document.getElementById('endDate').valueAsDate = today;
+      document.getElementById('startDate').valueAsDate = thirtyDaysAgo;
+      
+      // Pour l'onglet Rapports financiers
+      document.getElementById('reportEndDate').valueAsDate = today;
+      document.getElementById('reportStartDate').valueAsDate = thirtyDaysAgo;
+      
+      // Pour l'onglet Rapport quotidien
+      document.getElementById('dailyReportDate').valueAsDate = today;
+    }
+
+    // Charger les entrées comptables
+    async function loadEntries() {
+      try {
+        const startDate = document.getElementById('startDate').value;
+        const endDate = document.getElementById('endDate').value;
+        
+        let url = `${API}/accounting/entries/user/${activeUserId}`;
+        if (startDate || endDate) {
+          url += '?';
+          if (startDate) url += `startDate=${startDate}`;
+          if (startDate && endDate) url += '&';
+          if (endDate) url += `endDate=${endDate}`;
+        }
+        
+        const res = await fetch(url, {
+          headers: { Authorization: "Bearer " + JWT },
+        });
+        
+        if (!res.ok) {
+          throw new Error('Erreur lors du chargement des entrées comptables');
+        }
+        
+        const entries = await res.json();
+        displayEntries(entries);
+        
+        // Charger les statistiques
+        loadEntriesStats();
+      } catch (error) {
+        console.error("Erreur:", error);
+        showToast("error", "Erreur", "Impossible de charger les entrées comptables. Veuillez réessayer plus tard.");
+      }
+    }
+
+    // Charger les statistiques des entrées comptables
+    async function loadEntriesStats() {
+      try {
+        const startDate = document.getElementById('startDate').value;
+        const endDate = document.getElementById('endDate').value;
+        
+        let url = `${API}/accounting/stats/${activeUserId}`;
+        if (startDate || endDate) {
+          url += '?';
+          if (startDate) url += `startDate=${startDate}`;
+          if (startDate && endDate) url += '&';
+          if (endDate) url += `endDate=${endDate}`;
+        }
+        
+        const res = await fetch(url, {
+          headers: { Authorization: "Bearer " + JWT },
+        });
+        
+        if (!res.ok) {
+          throw new Error('Erreur lors du chargement des statistiques');
+        }
+        
+        const stats = await res.json();
+        
+        document.getElementById('totalRevenues').textContent = `${stats.totalRevenues.toFixed(2)} €`;
+        document.getElementById('totalExpenses').textContent = `${stats.totalExpenses.toFixed(2)} €`;
+        document.getElementById('netProfit').textContent = `${stats.netProfit.toFixed(2)} €`;
+        
+        // Ajouter des classes pour la couleur selon la valeur
+        const netProfitElement = document.getElementById('netProfit');
+        netProfitElement.classList.remove('positive', 'negative');
+        if (stats.netProfit > 0) {
+          netProfitElement.classList.add('positive');
+        } else if (stats.netProfit < 0) {
+          netProfitElement.classList.add('negative');
+        }
+      } catch (error) {
+        console.error("Erreur:", error);
+      }
+    }
+
+    // Afficher les entrées comptables dans le tableau
+    function displayEntries(entries) {
+      const tableBody = document.getElementById('entriesTableBody');
+      tableBody.innerHTML = '';
+      
+      if (entries.length === 0) {
+        tableBody.innerHTML = '<tr><td colspan="6" style="text-align: center;">Aucune entrée comptable trouvée</td></tr>';
+        return;
+      }
+      
+      // Filtrer les entrées selon le filtre actif
+      let filteredEntries = entries;
+      if (currentFilter === 'revenue') {
+        filteredEntries = entries.filter(e => e.type === 'revenu');
+      } else if (currentFilter === 'expense') {
+        filteredEntries = entries.filter(e => e.type === 'dépense');
+      }
+      
+      if (filteredEntries.length === 0) {
+        tableBody.innerHTML = '<tr><td colspan="6" style="text-align: center;">Aucune entrée ne correspond au filtre</td></tr>';
+        return;
+      }
+      
+      filteredEntries.forEach(entry => {
+        const row = document.createElement('tr');
+        const date = new Date(entry.date);
+        
+        row.innerHTML = `
+          <td>${date.toLocaleDateString()} ${date.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</td>
+          <td>${entry.category}</td>
+          <td>${entry.description || '-'}</td>
+          <td class="amount-cell ${entry.type === 'revenu' ? 'revenue' : 'expense'}">${entry.amount.toFixed(2)} €</td>
+          <td>
+            <span class="badge ${entry.type === 'revenu' ? 'badge-success' : 'badge-danger'}">
+              ${entry.type.charAt(0).toUpperCase() + entry.type.slice(1)}
+            </span>
+          </td>
+          <td class="action-buttons">
+            <button class="btn btn-sm btn-outline-primary" onclick="editEntry('${entry._id}')">Modifier</button>
+            <button class="btn btn-sm btn-outline-danger" onclick="deleteEntry('${entry._id}')">Supprimer</button>
+          </td>
+        `;
+        tableBody.appendChild(row);
+      });
+    }
+
+    // Filtrer les entrées comptables
+    function filterEntries(filter) {
+      currentFilter = filter;
+      
+      // Mettre à jour les boutons de filtre
+      document.querySelectorAll('.tab-btn[data-filter]').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.filter === filter);
+      });
+      
+      // Recharger les entrées avec le filtre
+      loadEntries();
+    }
+
+    // Ouvrir la modal pour ajouter une entrée comptable
+    function openEntryModal() {
+      document.getElementById('modalTitle').textContent = 'Nouvelle entrée comptable';
+      document.getElementById('entryForm').reset();
+      document.getElementById('entryId').value = '';
+      
+      // Initialiser la date à maintenant
+      const now = new Date();
+      now.setMinutes(now.getMinutes() - now.getTimezoneOffset());
+      document.getElementById('entryDate').value = now.toISOString().slice(0, 16);
+      
+      document.getElementById('entryModal').style.display = 'flex';
+    }
+
+    // Fermer la modal
+    function closeEntryModal() {
+      document.getElementById('entryModal').style.display = 'none';
+    }
+
+    // Modifier une entrée comptable
+    async function editEntry(id) {
+      try {
+        const res = await fetch(`${API}/accounting/entries/${id}`, {
+          headers: { Authorization: "Bearer " + JWT },
+        });
+        
+        if (!res.ok) {
+          throw new Error('Erreur lors du chargement de l\'entrée comptable');
+        }
+        
+        const entry = await res.json();
+        
+        document.getElementById('modalTitle').textContent = 'Modifier une entrée comptable';
+        document.getElementById('entryId').value = entry._id;
+        document.getElementById('entryDate').value = new Date(entry.date).toISOString().slice(0, 16);
+        document.getElementById('entryType').value = entry.type;
+        document.getElementById('entryCategory').value = entry.category;
+        document.getElementById('entryAmount').value = entry.amount;
+        document.getElementById('entryDescription').value = entry.description || '';
+        document.getElementById('entryPaymentMethod').value = entry.paymentMethod || 'espèces';
+        document.getElementById('entryTags').value = entry.tags ? entry.tags.join(', ') : '';
+        
+        // Entrée récurrente
+        if (entry.recurring) {
+          document.getElementById('entryRecurring').checked = true;
+          document.getElementById('entryRecurringPeriod').disabled = false;
+          document.getElementById('entryRecurringPeriod').value = entry.recurringPeriod || 'mensuel';
+        } else {
+          document.getElementById('entryRecurring').checked = false;
+          document.getElementById('entryRecurringPeriod').disabled = true;
+        }
+        
+        document.getElementById('entryModal').style.display = 'flex';
+      } catch (error) {
+        console.error("Erreur:", error);
+        showToast("error", "Erreur", "Impossible de charger les détails de l'entrée comptable. Veuillez réessayer plus tard.");
+      }
+    }
+
+    // Supprimer une entrée comptable
+    async function deleteEntry(id) {
+      if (!confirm("Êtes-vous sûr de vouloir supprimer cette entrée comptable ?")) {
+        return;
+      }
+      
+      try {
+        const res = await fetch(`${API}/accounting/entries/${id}`, {
+          method: "DELETE",
+          headers: { Authorization: "Bearer " + JWT },
+        });
+        
+        if (!res.ok) {
+          throw new Error("Erreur lors de la suppression de l'entrée comptable");
+        }
+        
+        showToast("success", "Succès", "Entrée comptable supprimée avec succès");
+        loadEntries();
+      } catch (error) {
+        console.error("Erreur:", error);
+        showToast("error", "Erreur", "Impossible de supprimer l'entrée comptable. Veuillez réessayer plus tard.");
+      }
+    }
+
+    // Importer les ventes comme entrées comptables
+    async function importSales() {
+      if (!confirm("Voulez-vous importer toutes les ventes non importées comme entrées comptables ?")) {
+        return;
+      }
+      
+      try {
+        const res = await fetch(`${API}/accounting/import-sales/${activeUserId}`, {
+          method: "POST",
+          headers: { Authorization: "Bearer " + JWT },
+        });
+        
+        if (!res.ok) {
+          throw new Error("Erreur lors de l'importation des ventes");
+        }
+        
+        const result = await res.json();
+        showToast("success", "Succès", `${result.count} ventes importées avec succès`);
+        loadEntries();
+      } catch (error) {
+        console.error("Erreur:", error);
+        showToast("error", "Erreur", "Impossible d'importer les ventes. Veuillez réessayer plus tard.");
+      }
+    }
+
+    // Soumettre le formulaire d'entrée comptable
+    document.getElementById("entryForm").addEventListener("submit", async function(e) {
+      e.preventDefault();
+      
+      const entryId = document.getElementById('entryId').value;
+      
+      // Traiter les tags
+      const tagsString = document.getElementById('entryTags').value;
+      const tags = tagsString ? tagsString.split(',').map(tag => tag.trim()) : [];
+      
+      const entryData = {
+        userId: activeUserId,
+        date: document.getElementById('entryDate').value,
+        type: document.getElementById('entryType').value,
+        category: document.getElementById('entryCategory').value,
+        amount: parseFloat(document.getElementById('entryAmount').value),
+        description: document.getElementById('entryDescription').value,
+        paymentMethod: document.getElementById('entryPaymentMethod').value,
+        tags: tags,
+        recurring: document.getElementById('entryRecurring').checked,
+        recurringPeriod: document.getElementById('entryRecurring').checked ? document.getElementById('entryRecurringPeriod').value : null
+      };
+      
+      try {
+        let res;
+        
+        if (entryId) {
+          // Mise à jour d'une entrée existante
+          res = await fetch(`${API}/accounting/entries/${entryId}`, {
+            method: "PUT",
+            headers: { 
+              "Content-Type": "application/json",
+              Authorization: "Bearer " + JWT 
+            },
+            body: JSON.stringify(entryData)
+          });
+        } else {
+          // Création d'une nouvelle entrée
+          res = await fetch(`${API}/accounting/entries`, {
+            method: "POST",
+            headers: { 
+              "Content-Type": "application/json",
+              Authorization: "Bearer " + JWT 
+            },
+            body: JSON.stringify(entryData)
+          });
+        }
+        
+        if (!res.ok) {
+          throw new Error("Erreur lors de l'enregistrement de l'entrée comptable");
+        }
+        
+        closeEntryModal();
+        loadEntries();
+        showToast("success", "Succès", entryId ? "Entrée comptable mise à jour avec succès" : "Entrée comptable ajoutée avec succès");
+      } catch (error) {
+        console.error("Erreur:", error);
+        showToast("error", "Erreur", "Impossible d'enregistrer l'entrée comptable. Veuillez réessayer plus tard.");
+      }
+    });
+
+    // Générer un rapport financier
+    async function generateReport() {
+      try {
+        const startDate = document.getElementById('reportStartDate').value;
+        const endDate = document.getElementById('reportEndDate').value;
+        const groupBy = document.getElementById('groupBySelect').value;
+        
+        if (!startDate || !endDate) {
+          showToast("warning", "Attention", "Veuillez sélectionner une période pour le rapport.");
+          return;
+        }
+        
+        let url = `${API}/accounting/report/${activeUserId}?startDate=${startDate}&endDate=${endDate}&groupBy=${groupBy}`;
+        
+        const res = await fetch(url, {
+          headers: { Authorization: "Bearer " + JWT },
+        });
+        
+        if (!res.ok) {
+          throw new Error('Erreur lors de la génération du rapport');
+        }
+        
+        const report = await res.json();
+        
+        // Afficher les statistiques globales
+        document.getElementById('reportTotalRevenues').textContent = `${report.totalRevenues.toFixed(2)} €`;
+        document.getElementById('reportTotalExpenses').textContent = `${report.totalExpenses.toFixed(2)} €`;
+        document.getElementById('reportNetProfit').textContent = `${report.netProfit.toFixed(2)} €`;
+        document.getElementById('reportProfitMargin').textContent = `${report.profitMargin.toFixed(2)} %`;
+        
+        // Générer le graphique d'évolution
+        generateTimeSeriesChart(report.timeSeries);
+        
+        // Afficher le résumé par catégorie
+        displayCategorySummary(report.categories);
+        
+        showToast("success", "Succès", "Rapport financier généré avec succès");
+      } catch (error) {
+        console.error("Erreur:", error);
+        showToast("error", "Erreur", "Impossible de générer le rapport. Veuillez réessayer plus tard.");
+      }
+    }
+
+    // Générer le graphique d'évolution
+    function generateTimeSeriesChart(timeSeries) {
+      const chartContainer = document.getElementById('timeSeriesChart');
+      chartContainer.innerHTML = '<canvas id="timeSeriesCanvas"></canvas>';
+      
+      const ctx = document.getElementById('timeSeriesCanvas').getContext('2d');
+      
+      // Extraire les données pour le graphique
+      const labels = timeSeries.map(item => item.date);
+      const revenueData = timeSeries.map(item => item.revenues);
+      const expenseData = timeSeries.map(item => item.expenses);
+      const profitData = timeSeries.map(item => item.profit);
+      
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: [
+            {
+              label: 'Revenus',
+              data: revenueData,
+              borderColor: '#4CAF50',
+              backgroundColor: 'rgba(76, 175, 80, 0.1)',
+              tension: 0.4,
+              fill: true
+            },
+            {
+              label: 'Dépenses',
+              data: expenseData,
+              borderColor: '#f44336',
+              backgroundColor: 'rgba(244, 67, 54, 0.1)',
+              tension: 0.4,
+              fill: true
+            },
+            {
+              label: 'Bénéfice',
+              data: profitData,
+              borderColor: '#176BFF',
+              backgroundColor: 'rgba(23, 107, 255, 0.1)',
+              tension: 0.4,
+              fill: true
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'top',
+            },
+            tooltip: {
+              callbacks: {
+                label: function(context) {
+                  return `${context.dataset.label}: ${context.raw.toFixed(2)} €`;
+                }
+              }
+            }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              ticks: {
+                callback: function(value) {
+                  return value + ' €';
+                }
+              }
+            }
+          }
+        }
+      });
+    }
+
+    // Afficher le résumé par catégorie
+    function displayCategorySummary(categories) {
+      const container = document.getElementById('categorySummary');
+      container.innerHTML = '';
+      
+      if (categories.length === 0) {
+        container.innerHTML = '<p style="text-align: center; color: var(--text-muted);">Aucune donnée disponible pour la période sélectionnée</p>';
+        return;
+      }
+      
+      categories.forEach(category => {
+        const card = document.createElement('div');
+        card.className = 'category-card';
+        
+        let cardContent = `
+          <h3>${category.name}</h3>
+          <div class="category-value">
+            <span>Revenus:</span>
+            <span class="positive">${category.revenues.toFixed(2)} €</span>
+          </div>
+          <div class="category-value">
+            <span>Dépenses:</span>
+            <span class="negative">${category.expenses.toFixed(2)} €</span>
+          </div>
+          <div class="category-value">
+            <span>Net:</span>
+            <span class="${category.net > 0 ? 'positive' : category.net < 0 ? 'negative' : ''}">${category.net.toFixed(2)} €</span>
+          </div>
+        `;
+        
+        card.innerHTML = cardContent;
+        container.appendChild(card);
+      });
+    }
+
+    // Générer un rapport quotidien
+    async function generateDailyReport() {
+      try {
+        const reportDate = document.getElementById('dailyReportDate').value;
+        
+        if (!reportDate) {
+          showToast("warning", "Attention", "Veuillez sélectionner une date pour le rapport.");
+          return;
+        }
+        
+        let url = `${API}/accounting/daily-report/${activeUserId}?date=${reportDate}`;
+        
+        const res = await fetch(url, {
+          headers: { Authorization: "Bearer " + JWT },
+        });
+        
+        if (!res.ok) {
+          throw new Error('Erreur lors de la génération du rapport quotidien');
+        }
+        
+        const report = await res.json();
+        
+        // Afficher la date du rapport
+        const displayDate = new Date(reportDate).toLocaleDateString();
+        document.getElementById('reportDateDisplay').textContent = displayDate;
+        
+        // Afficher les statistiques
+        document.getElementById('dailySalesCount').textContent = report.salesCount;
+        document.getElementById('dailyRevenue').textContent = `${report.revenue.toFixed(2)} €`;
+        document.getElementById('dailyAverageValue').textContent = `${report.averageValue.toFixed(2)} €`;
+        document.getElementById('dailyExpenses').textContent = `${report.expenses.toFixed(2)} €`;
+        document.getElementById('dailyNetProfit').textContent = `${report.netProfit.toFixed(2)} €`;
+        
+        // Afficher l'évolution du CA
+        const revenueChangeElement = document.getElementById('dailyRevenueChange');
+        revenueChangeElement.textContent = `${report.revenueChange.toFixed(2)} %`;
+        revenueChangeElement.className = 'daily-report-value';
+        if (report.revenueChange > 0) {
+          revenueChangeElement.classList.add('positive');
+        } else if (report.revenueChange < 0) {
+          revenueChangeElement.classList.add('negative');
+        }
+        
+        // Afficher les produits les plus vendus
+        displayTopProducts(report.topProducts);
+        
+        showToast("success", "Succès", "Rapport quotidien généré avec succès");
+      } catch (error) {
+        console.error("Erreur:", error);
+        showToast("error", "Erreur", "Impossible de générer le rapport quotidien. Veuillez réessayer plus tard.");
+      }
+    }
+
+    // Afficher les produits les plus vendus
+    function displayTopProducts(products) {
+      const container = document.getElementById('topProductsList');
+      container.innerHTML = '';
+      
+      if (products.length === 0) {
+        container.innerHTML = '<p style="text-align: center; color: var(--text-muted);">Aucune vente pour cette journée</p>';
+        return;
+      }
+      
+      products.forEach(product => {
+        const item = document.createElement('div');
+        item.className = 'top-product-item';
+        item.innerHTML = `
+          <span>${product.name}</span>
+          <span>${product.quantity} vendu(s) - ${product.revenue.toFixed(2)} €</span>
+        `;
+        container.appendChild(item);
+      });
+    }
+
+    // Recherche d'entrées comptables
+    document.getElementById("searchInput").addEventListener("input", function(e) {
+      const searchTerm = e.target.value.toLowerCase();
+      const rows = document.querySelectorAll("#entriesTableBody tr");
+      
+      rows.forEach(row => {
+        const categoryCell = row.cells[1]; // Colonne Catégorie
+        const descriptionCell = row.cells[2]; // Colonne Description
+        
+        if (categoryCell && descriptionCell) {
+          const categoryText = categoryCell.textContent.toLowerCase();
+          const descriptionText = descriptionCell.textContent.toLowerCase();
+          
+          row.style.display = categoryText.includes(searchTerm) || descriptionText.includes(searchTerm) ? "" : "none";
+        }
+      });
+    });
+  </script>
+</body>
+</html>

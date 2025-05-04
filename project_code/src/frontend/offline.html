@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Branda - Page hors ligne</title>
+  <link rel="stylesheet" href="new-styles.css">
+  <link rel="stylesheet" href="ui-improvements.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .offline-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .offline-icon {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 30px;
+      color: var(--primary-color);
+    }
+    
+    .offline-title {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: var(--gray-800);
+    }
+    
+    .offline-message {
+      font-size: 1.1rem;
+      color: var(--gray-600);
+      max-width: 500px;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+    
+    .offline-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    @media (max-width: 576px) {
+      .offline-icon {
+        width: 80px;
+        height: 80px;
+      }
+      
+      .offline-title {
+        font-size: 1.5rem;
+      }
+      
+      .offline-message {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="offline-container">
+    <div class="offline-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="1" y1="1" x2="23" y2="23"></line>
+        <path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"></path>
+        <path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"></path>
+        <path d="M10.71 5.05A16 16 0 0 1 22.58 9"></path>
+        <path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"></path>
+        <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+        <line x1="12" y1="20" x2="12.01" y2="20"></line>
+      </svg>
+    </div>
+    <h1 class="offline-title">Vous êtes hors ligne</h1>
+    <p class="offline-message">
+      Il semble que vous n'ayez pas de connexion internet. Certaines fonctionnalités de Branda peuvent être limitées en mode hors ligne.
+    </p>
+    <div class="offline-actions">
+      <button class="btn btn-primary" id="reloadButton">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;">
+          <path d="M23 4v6h-6"></path>
+          <path d="M1 20v-6h6"></path>
+          <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+        </svg>
+        Réessayer
+      </button>
+      <button class="btn btn-outline" id="homeButton">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+        Retour à l'accueil
+      </button>
+    </div>
+  </div>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('reloadButton').addEventListener('click', function() {
+        window.location.reload();
+      });
+      
+      document.getElementById('homeButton').addEventListener('click', function() {
+        window.location.href = '/index.html';
+      });
+    });
+  </script>
+</body>
+</html>

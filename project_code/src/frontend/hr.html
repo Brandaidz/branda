@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Branda – Ressources Humaines</title>
+  <link rel="stylesheet" href="new-styles.css">
+  <link rel="stylesheet" href="chat-component.css">
+  <link rel="stylesheet" href="chat-improvements.css">
+  <link rel="stylesheet" href="ui-improvements.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#176BFF">
+  <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+</head>
+<body>
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="logo">
+        <div class="logo-icon">B</div>
+        <span>Branda</span>
+      </div>
+      <button class="menu-toggle" id="menuToggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    
+    <div class="nav-menu">
+      <div class="nav-item">
+        <a href="index.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+          Tableau de bord
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="products.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          Produits
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="sales.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="1" x2="12" y2="23"></line>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+          </svg>
+          Ventes
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="employees.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+          Employés
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="accounting.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+          </svg>
+          Comptabilité
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="hr.html" class="nav-link active">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+          Ressources Humaines
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="reports.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          Rapports
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="settings.html" class="nav-link">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+          Paramètres
+        </a>
+      </div>
+    </div>
+    
+    <div class="sidebar-footer">
+      <div class="user-info">
+        <div class="user-avatar">F</div>
+        <div class="user-details">
+          <div class="user-name">Fast-Food</div>
+          <div class="user-role">Administrateur</div>
+        </div>
+        <button class="user-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="1"></circle>
+            <circle cx="12" cy="5" r="1"></circle>
+            <circle cx="12" cy="19" r="1"></circle>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="main-content">
+    <div class="header">
+      <button class="menu-toggle" id="sidebarToggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      
+      <h1 class="page-title">Ressources Humaines</h1>
+      
+      <div class="header-actions">
+        <div class="search-bar">
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" class="search-input" placeholder="Rechercher..." id="searchInput">
+        </div>
+        
+        <button class="notification-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+          </svg>
+          <span class="notification-badge">3</span>
+        </button>
+        
+        <button class="btn btn-outline" id="themeToggle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <div class="content">
+      <div class="tab-container">
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="planning">Planning</button>
+          <button class="tab-btn" data-tab="performance">Évaluations</button>
+          <button class="tab-btn" data-tab="reports">Rapports</button>
+        </div>
+        
+        <!-- Onglet Planning -->
+        <div class="tab-content active" id="planning-tab">
+          <div class="toolbar" style="margin-bottom: var(--spacing-lg); display: flex; justify-content: space-between; align-items: center;">
+            <div class="filters" style="display: flex; gap: var(--spacing-md); align-items: center;">
+              <select id="employeeFilter" class="form-select" onchange="filterSchedules()">
+                <option value="">Tous les employés</option>
+                <!-- Les employés seront chargés ici dynamiquement -->
+              </select>
+            </div>
+            <div style="display: flex; gap: var(--spacing-sm);">
+              <button class="btn btn-primary" onclick="openScheduleModal()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: var(--spacing-xs);">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+                Ajouter un événement
+              </button>
+              <button class="btn btn-secondary" onclick="generateWeeklySchedule()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: var(--spacing-xs);">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                Générer planning hebdo
+              </button>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-header" style="display: flex; justify-content: space-between; align-items: center;">
+              <h2 class="card-title" id="calendarTitle">Avril 2025</h2>
+              <div style="display: flex; gap: var(--spacing-sm);">
+                <button class="btn btn-sm btn-outline" onclick="previousMonth()">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                  </svg>
+                  Précédent
+                </button>
+                <button class="btn btn-sm btn-outline" onclick="currentMonth()">Aujourd'hui</button>
+                <button class="btn btn-sm btn-outline" onclick="nextMonth()">
+                  Suivant
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <div class="calendar">
+                <div class="calendar-days">
+                  <div class="calendar-day">Lun</div>
+                  <div class="calendar-day">Mar</div>
+                  <div class="calendar-day">Mer</div>
+                  <div class="calendar-day">Jeu</div>
+                  <div class="calendar-day">Ven</div>
+                  <div class="calendar-day">Sam</div>
+                  <div class="calendar-day">Dim</div>
+                </div>
+                <div class="calendar-grid" id="calendarGrid">
+                  <!-- Les cellules du calendrier seront générées ici dynamiquement -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Onglet Évaluations -->
+        <div class="tab-content" id="performance-tab">
+          <div class="toolbar" style="margin-bottom: var(--spacing-lg); display: flex; justify-content: space-between; align-items: center;">
+            <div class="filters" style="display: flex; gap: var(--spacing-md); align-items: center;">
+              <select id="performanceEmployeeFilter" class="form-select" onchange="loadPerformances()">
+                <option value="">Tous les employés</option>
+                <!-- Les employés seront chargés ici dynamiquement -->
+              </select>
+              <select id="performancePeriodFilter" class="form-select" onchange="loadPerformances()">
+                <option value="">Toutes les périodes</option>
+                <option value="quotidien">Quotidien</option>
+                <option value="hebdomadaire">Hebdomadaire</option>
+                <option value="mensuel">Mensuel</option>
+                <option value="trimestriel">Trimestriel</option>
+                <option value="annuel">Annuel</option>
+              </select>
+            </div>
+            <button class="btn btn-primary" onclick="openPerformanceModal()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: var(--spacing-xs);">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+              Nouvelle évaluation
+            </button>
+          </div>
+          
+          <div class="grid-container" id="performanceGrid">
+            <!-- Les cartes d'évaluation seront générées ici dynamiquement -->
+          </div>
+        </div>
+        
+        <!-- Onglet Rapports -->
+        <div class="tab-content" id="reports-tab">
+          <div class="toolbar" style="margin-bottom: var(--spacing-lg); display: flex; justify-content: space-between; align-items: center;">
+            <div class="filters" style="display: flex; gap: var(--spacing-md); align-items: center;">
+              <select id="reportEmployeeFilter" class="form-select">
+                <option value="">Sélectionner un employé</option>
+                <!-- Les employés seront chargés ici dynamiquement -->
+              </select>
+              <label for="reportStartDate" class="form-label">Du:</label>
+              <input type="date" class="form-control" id="reportStartDate">
+              <label for="reportEndDate" class="form-label">Au:</label>
+              <input type="date" class="form-control" id="reportEndDate">
+            </div>
+            <button class="btn btn-primary" onclick="generatePerformanceReport()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: var(--spacing-xs);">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              Générer rapport
+            </button>
+          </div>
+          
+          <div id="reportContent">
+            <!-- Le contenu du rapport sera généré ici dynamiquement -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal pour ajouter/modifier un événement de planning -->
+  <div id="scheduleModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="scheduleModalTitle" class="modal-title">Nouvel événement</h2>
+        <button class="modal-close" onclick="closeScheduleModal()" aria-label="Fermer la fenêtre modale">&times;</button>
+      </div>
+      <form id="scheduleForm">
+        <input type="hidden" id="scheduleId">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="scheduleEmployee" class="form-label">Employé</label>
+            <select id="scheduleEmployee" class="form-select" required>
+              <option value="">Sélectionner un employé</option>
+              <!-- Les employés seront chargés ici dynamiquement -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="scheduleType" class="form-label">Type</label>
+            <select id="scheduleType" class="form-select">
+              <option value="travail">Travail</option>
+              <option value="congé">Congé</option>
+              <option value="formation">Formation</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="scheduleTitle" class="form-label">Titre</label>
+          <input type="text" id="scheduleTitle" class="form-control" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="scheduleStart" class="form-label">Début</label>
+            <input type="datetime-local" id="scheduleStart" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="scheduleEnd" class="form-label">Fin</label>
+            <input type="datetime-local" id="scheduleEnd" class="form-control" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="scheduleDescription" class="form-label">Description</label>
+          <textarea id="scheduleDescription" class="form-control" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="scheduleStatus" class="form-label">Statut</label>
+          <select id="scheduleStatus" class="form-select">
+            <option value="planifié">Planifié</option>
+            <option value="confirmé">Confirmé</option>
+            <option value="annulé">Annulé</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Récurrence</label>
+          <div style="display: flex; align-items: center; gap: var(--spacing-sm);">
+            <input type="checkbox" id="scheduleRecurring" style="width: auto;">
+            <label for="scheduleRecurring" style="font-weight: normal;">Événement récurrent</label>
+            <select id="scheduleRecurringPeriod" class="form-select" disabled>
+              <option value="quotidien">Quotidien</option>
+              <option value="hebdomadaire">Hebdomadaire</option>
+              <option value="mensuel">Mensuel</option>
+              <option value="trimestriel">Trimestriel</option>
+              <option value="annuel">Annuel</option>
+            </select>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="closeScheduleModal()">Annuler</button>
+          <button type="submit" class="btn btn-primary">Enregistrer</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <!-- Modal pour ajouter/modifier une évaluation de performance -->
+  <div id="performanceModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="performanceModalTitle" class="modal-title">Nouvelle évaluation</h2>
+        <button class="modal-close" onclick="closePerformanceModal()" aria-label="Fermer la fenêtre modale">&times;</button>
+      </div>
+      <form id="performanceForm">
+        <input type="hidden" id="performanceId">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="performanceEmployee" class="form-label">Employé</label>
+            <select id="performanceEmployee" class="form-select" required>
+              <option value="">Sélectionner un employé</option>
+              <!-- Les employés seront chargés ici dynamiquement -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="performancePeriod" class="form-label">Période</label>
+            <select id="performancePeriod" class="form-select" required>
+              <option value="quotidien">Quotidien</option>
+              <option value="hebdomadaire">Hebdomadaire</option>
+              <option value="mensuel">Mensuel</option>
+              <option value="trimestriel">Trimestriel</option>
+              <option value="annuel">Annuel</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="performanceDate" class="form-label">Date d'évaluation</label>
+            <input type="date" id="performanceDate" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="performanceEvaluator" class="form-label">Évaluateur</label>
+            <input type="text" id="performanceEvaluator" class="form-control" required>
+          </div>
+        </div>
+        
+        <h3 class="form-section-title">Métriques d'évaluation</h3>
+        <div class="grid-container" style="grid-template-columns: repeat(2, 1fr); gap: var(--spacing-md); margin-bottom: var(--spacing-lg);">
+          <div class="card">
+            <div class="card-body">
+              <label for="performanceProductivity" class="form-label">Productivité</label>
+              <div class="rating-input">
+                <input type="radio" name="productivity" id="productivity1" value="1">
+                <label for="productivity1">1</label>
+                <input type="radio" name="productivity" id="productivity2" value="2">
+                <label for="productivity2">2</label>
+                <input type="radio" name="productivity" id="productivity3" value="3">
+                <label for="productivity3">3</label>
+                <input type="radio" name="productivity" id="productivity4" value="4">
+                <label for="productivity4">4</label>
+                <input type="radio" name="productivity" id="productivity5" value="5">
+                <label for="productivity5">5</label>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <label for="performanceQuality" class="form-label">Qualité du travail</label>
+              <div class="rating-input">
+                <input type="radio" name="quality" id="quality1" value="1">
+                <label for="quality1">1</label>
+                <input type="radio" name="quality" id="quality2" value="2">
+                <label for="quality2">2</label>
+                <input type="radio" name="quality" id="quality3" value="3">
+                <label for="quality3">3</label>
+                <input type="radio" name="quality" id="quality4" value="4">
+                <label for="quality4">4</label>
+                <input type="radio" name="quality" id="quality5" value="5">
+                <label for="quality5">5</label>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <label for="performanceTeamwork" class="form-label">Travail d'équipe</label>
+              <div class="rating-input">
+                <input type="radio" name="teamwork" id="teamwork1" value="1">
+                <label for="teamwork1">1</label>
+                <input type="radio" name="teamwork" id="teamwork2" value="2">
+                <label for="teamwork2">2</label>
+                <input type="radio" name="teamwork" id="teamwork3" value="3">
+                <label for="teamwork3">3</label>
+                <input type="radio" name="teamwork" id="teamwork4" value="4">
+                <label for="teamwork4">4</label>
+                <input type="radio" name="teamwork" id="teamwork5" value="5">
+                <label for="teamwork5">5</label>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <label for="performanceInitiative" class="form-label">Initiative</label>
+              <div class="rating-input">
+                <input type="radio" name="initiative" id="initiative1" value="1">
+                <label for="initiative1">1</label>
+                <input type="radio" name="initiative" id="initiative2" value="2">
+                <label for="initiative2">2</label>
+                <input type="radio" name="initiative" id="initiative3" value="3">
+                <label for="initiative3">3</label>
+                <input type="radio" name="initiative" id="initiative4" value="4">
+                <label for="initiative4">4</label>
+                <input type="radio" name="initiative" id="initiative5" value="5">
+                <label for="initiative5">5</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card" style="margin-bottom: var(--spacing-lg);">
+          <div class="card-header">
+            <h3 class="card-title">Points forts</h3>
+          </div>
+          <div class="card-body">
+            <div id="strengthsList">
+              <div class="list-item">
+                <input type="text" class="form-control" name="strengths[]" placeholder="Point fort">
+                <button type="button" class="btn btn-icon btn-danger remove-item" onclick="removeListItem(this)">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <button type="button" class="btn btn-sm btn-success" onclick="addListItem('strengthsList', 'strengths[]', 'Point fort')">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: var(--spacing-xs);">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+              Ajouter un point fort
+            </button>
+          </div>
+        </div>
+        
+        <div class="card" style="margin-bottom: var(--spacing-lg);">
+          <div class="card-header">
+            <h3 class="card-title">Points à améliorer</h3>
+          </div>
+          <div class="card-body">
+            <div id="improvementsList">
+              <div class="list-item">
+                <input type="text" class="form-control" name="improvements[]" placeholder="Point à améliorer">
+                <button type="button" class="btn btn-icon btn-danger remove-item" onclick="removeListItem(this)">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <button type="button" class="btn btn-sm btn-success" onclick="addListItem('improvementsList', 'improvements[]', 'Point à améliorer')">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: var(--spacing-xs);">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+              Ajouter un point à améliorer
+            </button>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="performanceComments" class="form-label">Commentaires généraux</label>
+          <textarea id="performanceComments" class="form-control" rows="4"></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label for="performanceStatus" class="form-label">Statut</label>
+          <select id="performanceStatus" class="form-select">
+            <option value="brouillon">Brouillon</option>
+            <option value="en_attente">En attente de validation</option>
+            <option value="validé">Validé</option>
+            <option value="archivé">Archivé</option>
+          </select>
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="closePerformanceModal()">Annuler</button>
+          <button type="submit" class="btn btn-primary">Enregistrer</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <div class="toast-container" id="toastContainer">
+    <!-- Les notifications seront ajoutées ici dynamiquement -->
+  </div>
+  
+  <script src="proactive-assistant.js"></script>
+  <script src="chat-component.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    // Fonction pour basculer la sidebar sur mobile
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle("open");
+    }
+
+    // Fonction pour basculer entre les modes clair et sombre
+    function toggleTheme() {
+      document.body.classList.toggle("dark-mode");
+      localStorage.setItem("theme", document.body.classList.contains("dark-mode") ? "dark" : "light");
+    }
+
+    // Fonction pour afficher une notification toast
+    function showToast(type, title, message) {
+      const toastContainer = document.getElementById("toastContainer");
+      const toast = document.createElement("div");
+      toast.className = `toast ${type}`;
+      let iconSvg = "";
+      if (type === "success") {
+        iconSvg = 
+          '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg>';
+      } else if (type === "error") {
+        iconSvg = 
+          '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>';
+      } else if (type === "warning") {
+        iconSvg = 
+          '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>';
+      } else {
+        iconSvg = 
+          '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>';
+      }
+      toast.innerHTML = `
+        <div class="toast-icon ${type}">
+          ${iconSvg}
+        </div>
+        <div class="toast-content">
+          <div class="toast-title">${title}</div>
+          <div class="toast-message">${message}</div>
+        </div>
+        <button class="toast-close">&times;</button>
+      `;
+      toastContainer.appendChild(toast);
+      toast.querySelector(".toast-close").addEventListener("click", function () {
+        toast.remove();
+      });
+      setTimeout(() => {
+        toast.remove();
+      }, 5000);
+    }
+
+    // Gestion des onglets
+    function switchTab(tabId) {
+      // Masquer tous les contenus d'onglets
+      document.querySelectorAll('.tab-content').forEach(content => {
+        content.classList.remove('active');
+      });
+      
+      // Désactiver tous les boutons d'onglets
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      
+      // Activer l'onglet sélectionné
+      document.getElementById(`${tabId}-tab`).classList.add('active');
+      
+      // Activer le bouton d'onglet correspondant
+      document.querySelectorAll(`.tab-btn[data-tab="${tabId}"]`).forEach(btn => {
+        btn.classList.add('active');
+      });
+    }
+
+    // Initialisation
+    document.addEventListener("DOMContentLoaded", function () {
+      const savedTheme = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      if (savedTheme === "dark" || (savedTheme === null && prefersDark)) {
+        document.body.classList.add("dark-mode");
+      }
+      document.getElementById("sidebarToggle").addEventListener("click", toggleSidebar);
+      document.getElementById("menuToggle").addEventListener("click", toggleSidebar);
+      document.getElementById("themeToggle").addEventListener("click", toggleTheme);
+      
+      // Mettre à jour la classe active dans le menu de navigation
+      const currentPage = window.location.pathname.split("/").pop() || "index.html";
+      const navLinks = document.querySelectorAll(".nav-link");
+      navLinks.forEach(link => {
+        link.classList.remove("active"); // Remove active from all
+        const href = link.getAttribute("href");
+        if (href === currentPage) {
+          link.classList.add("active"); // Add active to the current page link
+        }
+      });
+      
+      // Ajouter les gestionnaires d'événements pour les onglets
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          switchTab(this.dataset.tab);
+        });
+      });
+      
+      // Activer l'onglet par défaut
+      switchTab('planning');
+      
+      // Charger les employés
+      loadEmployees();
+      
+      // Initialiser le calendrier
+      initCalendar();
+      
+      // Gestionnaire d'événement pour la case à cocher "Événement récurrent"
+      document.getElementById('scheduleRecurring').addEventListener('change', function() {
+        document.getElementById('scheduleRecurringPeriod').disabled = !this.checked;
+      });
+    });
+
+    const PORT_BACK = 5001;
+    const API = `http://localhost:${PORT_BACK}/api`;
+    let JWT = localStorage.getItem("jwt") || "";
+    if (!JWT) {
+      JWT = prompt("Colle ici ton token JWT obtenu via /login :") || "";
+      localStorage.setItem("jwt", JWT);
+    }
+    let activeUserId = localStorage.getItem("activeUserId") || "fastfood2025";
+    let currentDate = new Date();
+    let currentMonth = currentDate.getMonth();
+    let currentYear = currentDate.getFullYear();
+
+    // Charger les employés
+    async function loadEmployees() {
+      try {
+        const res = await fetch(`${API}/employees/user/${activeUserId}`, {
+          headers: { Authorization: "Bearer " + JWT },
+        });
+        
+        if (!res.ok) {
+          throw new Error('Erreur lors du chargement des employés');
+        }
+        
+        const employees = await res.json();
+        
+        // Remplir les listes déroulantes d'employés
+        const employeeSelects = [
+          document.getElementById('employeeFilter'),
+          document.getElementById('performanceEmployeeFilter'),
+          document.getElementById('reportEmployeeFilter'),
+          document.getElementById('scheduleEmployee'),
+          document.getElementById('performanceEmployee')
+        ];
+        
+        employeeSelects.forEach(select => {
+          if (select) {
+            // Conserver la première option (Tous les employés / Sélectionner un employé)
+            const firstOption = select.options[0];
+            select.innerHTML = '';
+            select.appendChild(firstOption);
+            
+            // Ajouter les employés
+            employees.forEach(employee => {
+              const option = document.createElement('option');
+              option.value = employee._id;
+              option.textContent = `${employee.firstName} ${employee.lastName}`;
+              select.appendChild(option);
+            });
+          }
+        });
+        
+        // Charger les plannings et les évaluations
+        loadSchedules();
+        loadPerformances();
+      } catch (error) {
+        console.error("Erreur:", error);
+        showToast("error", "Erreur", "Impossible de charger les employés. Veuillez réessayer plus tard.");
+      }
+    }
+
+    // Initialiser le calendrier
+    function initCalendar() {
+      updateCalendarTitle();
+      generateCalendarGrid();
+    }
+
+    // Mettre à jour le titre du calendrier
+    function updateCalendarTitle() {
+      const months = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'];
+      document.getElementById('calendarTitle').textContent = `${months[currentMonth]} ${currentYear}`;
+    }
+
+    // Générer la grille du calendrier
+    function generateCalendarGrid() {
+      const grid = document.getElementById('calendarGrid');
+      grid.innerHTML = '';
+      
+      const firstDay = new Date(currentYear, currentMonth, 1);
+      const lastDay = new Date(currentYear, currentMonth + 1, 0);
+      
+      // Déterminer le jour de la semaine du premier jour (0 = Dimanche, 1 = Lundi, etc.)
+      let startDay = firstDay.getDay() - 1; // Ajuster pour commencer par Lundi
+      if (startDay < 0) startDay = 6; // Si c'est Dimanche (0), le mettre à la fin (6)
+      
+      // Ajouter les jours du mois précédent
+      const prevMonthLastDay = new Date(currentYear, currentMonth, 0).getDate();
+      for (let i = 0; i < startDay; i++) {
+        const day = prevMonthLastDay - startDay + i + 1;
+        const cell = createCalendarCell(day, true);
+        grid.appendChild(cell);
+      }
+      
+      // Ajouter les jours du mois actuel
+      const today = new Date();
+      for (let i = 1; i <= lastDay.getDate(); i++) {
+        const isToday = today.getDate() === i && today.getMonth() === currentMonth && today.getFullYear() === currentYear;
+        const cell = createCalendarCell(i, false, isToday);
+        grid.appendChild(cell);
+      }
+      
+      // Ajouter les jours du mois suivant
+      const totalCells = 42; // 6 semaines * 7 jours
+      const remainingCells = totalCells - (startDay + lastDay.getDate());
+      for (let i = 1; i <= remainingCells; i++) {
+        const cell = createCalendarCell(i, true);
+        grid.appendChild(cell);
+      }
+      
+      // Charger les événements du calendrier
+      loadSchedules();
+    }
+
+    // Créer une cellule du calendrier
+    function createCalendarCell(day, isOtherMonth, isToday = false) {
+      const cell = document.createElement('div');
+      cell.className = 'calendar-cell';
+      if (isOtherMonth) cell.classList.add('calendar-other-month');
+      if (isToday) cell.classList.add('calendar-today');
+      
+      const dateDiv = document.createElement('div');
+      dateDiv.className = 'calendar-date';
+      dateDiv.textContent = day;
+      cell.appendChild(dateDiv);
+      
+      // Ajouter un attribut data-date pour identifier la cellule
+      const cellDate = new Date(currentYear, isOtherMonth ? (day < 15 ? currentMonth + 1 : currentMonth - 1) : currentMonth, day);
+      cell.dataset.date = cellDate.toISOString().split('T')[0];
+      
+      return cell;
+    }
+
+    // Mois précédent
+    function previousMonth() {
+      currentMonth--;
+      if (currentMonth < 0) {
+        currentMonth = 11;
+        currentYear--;
+      }
+      updateCalendarTitle();
+      generateCalendarGrid();
+    }
+
+    // Mois actuel
+    function currentMonth() {
+      const now = new Date();
+      currentMonth = now.getMonth();
+      currentYear = now.getFullYear();
+      updateCalendarTitle();
+      generateCalendarGrid();
+    }
+
+    // Mois suivant
+    function nextMonth() {
+      currentMonth++;
+      if (currentMonth > 11) {
+        currentMonth = 0;
+        currentYear++;
+      }
+      updateCalendarTitle();
+      generateCalendarGrid();
+    }
+
+    // Charger les plannings
+    async function loadSchedules() {
+      try {
+        const employeeFilter = document.getElementById('employeeFilter').value;
+        
+        let url = `${API}/schedules/user/${activeUserId}`;
+        if (employeeFilter) {
+          url += `?employeeId=${employeeFilter}`;
+        }
+        
+        const res = await fetch(url, {
+          headers: { Authorization: "Bearer " + JWT },
+        });
+        
+        if (!res.ok) {
+          throw new Error('Erreur lors du chargement des plannings');
+        }
+        
+        const schedules = await res.json();
+        
+        // Effacer tous les événements existants
+        document.querySelectorAll('.calendar-event').forEach(event => event.remove());
+        
+        // Ajouter les événements au calendrier
+        schedules.forEach(schedule => {
+          const startDate = new Date(schedule.start);
+          const endDate = new Date(schedule.end);
+          
+          // Vérifier si l'événement est dans le mois actuel
+          if (startDate.getMonth() === currentMonth || endDate.getMonth() === currentMonth) {
+            addEventToCalendar(schedule);
+          }
+        });
+      } catch (error) {
+        console.error("Erreur:", error);
+        showToast("error", "Erreur", "Impossible de charger les plannings. Veuillez réessayer plus tard.");
+      }
+    }
+
+    // Ajouter un événement au calendrier
+    function addEventToCalendar(schedule) {
+      const startDate = new Date(schedule.start);
+      const endDate = new Date(schedule.end);
+      
+      // Formater la date pour correspondre au format data-date
+      const startDateStr = startDate.toISOString().split('T')[0];
+      
+      // Trouver la cellule correspondante
+      const cell = document.querySelector(`.calendar-cell[data-date="${startDateStr}"]`);
+      if (!cell) return;
+      
+      // Créer l'élément d'événement
+      const eventDiv = document.createElement('div');
+      eventDiv.className = `calendar-event ${schedule.type}`;
+      eventDiv.textContent = schedule.title;
+      eventDiv.dataset.id = schedule._id;
+      eventDiv.addEventListener('click', () => editSchedule(schedule._id));
+      
+      cell.appendChild(eventDiv);
+    }
+
+    // Filtrer les plannings
+    function filterSchedules() {
+      loadSchedules();
+    }
+
+    // Ouvrir la modal pour ajouter un événement de planning
+    function openScheduleModal() {
+      document.getElementById('scheduleModalTitle').textContent = 'Nouvel événement';
+      document.getElementById('scheduleForm').reset();
+      document.getElementById('scheduleId').value = '';
+      
+      // Initialiser les dates par défaut
+      const now = new Date();
+      now.setMinutes(now.getMinutes() - now.getTimezoneOffset());
+      
+      const start = new Date(now);
+      start.setHours(9, 0, 0, 0);
+      
+      const end = new Date(now);
+      end.setHours(18, 0, 0, 0);
+      
+      document.getElementById('scheduleStart').value = start.toISOString().slice(0, 16);
+      document.getElementById('scheduleEnd').value = end.toISOString().slice(0, 16);
+      
+      document.getElementById('scheduleModal').style.display = 'flex';
+    }
+
+    // Fermer la modal de planning
+    function closeScheduleModal() {
+      document.getElementById('scheduleModal').style.display = 'none';
+    }
+
+    // Modifier un événement de planning
+    async function editSchedule(id) {
+      try {
+        const res = await fetch(`${API}/schedules/${id}`, {
+          headers: { Authorization: "Bearer " + JWT },
+        });
+        
+        if (!res.ok) {
+          throw new Error('Erreur lors du chargement de l\'événement');
+        }
+        
+        const schedule = await res.json();
+        
+        document.getElementById('scheduleModalTitle').textContent = 'Modifier un événement';
+        document.getElementById('scheduleId').value = schedule._id;
+        document.getElementById('scheduleEmployee').value = schedule.employeeId;
+        document.getElementById('scheduleType').value = schedule.type;
+        document.getElementById('scheduleTitle').value = schedule.title;
+        document.getElementById('scheduleStart').value = new Date(schedule.start).toISOString().slice(0, 16);
+        document.getElementById('scheduleEnd').value = new Date(schedule.end).toISOString().slice(0, 16);
+        document.getElementById('scheduleDescription').value = schedule.description || '';
+        document.getElementById('scheduleStatus').value = schedule.status || 'planifié';
+        
+        // Récurrence
+        if (schedule.recurring) {
+          document.getElementById('scheduleRecurring').checked = true;
+          document.getElementById('scheduleRecurringPeriod').disabled = false;
+          document.getElementById('scheduleRecurringPeriod').value = schedule.recurringPeriod || 'hebdomadaire';
+        } else {
+          document.getElementById('scheduleRecurring').checked = false;
+          document.getElementById('scheduleRecurringPeriod').disabled = true;
+        }
+        
+        document.getElementById('scheduleModal').style.display = 'flex';
+      } catch (error) {
+        console.error("Erreur:", error);
+        showToast("error", "Erreur", "Impossible de charger les détails de l'événement. Veuillez réessayer plus tard.");
+      }
+    }
+
+    // Générer un planning hebdomadaire
+    async function generateWeeklySchedule() {
+      if (!confirm("Voulez-vous générer un planning hebdomadaire pour tous les employés ?")) {
+        return;
+      }
+      
+      try {
+        const res = await fetch(`${API}/schedules/generate-weekly/${activeUserId}`, {
+          method: "POST",
+          headers: { Authorization: "Bearer " + JWT },
+        });
+        
+        if (!res.ok) {
+          throw new Error("Erreur lors de la génération du planning hebdomadaire");
+        }
+        
+        const result = await res.json();
+        showToast("success", "Succès", `Planning hebdomadaire généré avec ${result.count} événements`);
+        loadSchedules();
+      } catch (error) {
+        console.error("Erreur:", error);
+        showToast("error", "Erreur", "Impossible de générer le planning hebdomadaire. Veuillez réessayer plus tard.");
+      }
+    }
+
+    // Soumettre le formulaire de planning
+    document.getElementById("scheduleForm").addEventListener("submit", async function(e) {
+      e.preventDefault();
+      
+      const scheduleId = document.getElementById('scheduleId').value;
+      
+      const scheduleData = {
+        userId: activeUserId,
+        employeeId: document.getElementById('scheduleEmployee').value,
+        type: document.getElementById('scheduleType').value,
+        title: document.getElementById('scheduleTitle').value,
+        start: document.getElementById('scheduleStart').value,
+        end: document.getElementById('scheduleEnd').value,
+        description: document.getElementById('scheduleDescription').value,
+        status: document.getElementById('scheduleStatus').value,
+        recurring: document.getElementById('scheduleRecurring').checked,
+        recurringPeriod: document.getElementById('scheduleRecurring').checked ? document.getElementById('scheduleRecurringPeriod').value : null
+      };
+      
+      try {
+        let res;
+        
+        if (scheduleId) {
+          // Mise à jour d'un événement existant
+          res = await fetch(`${API}/schedules/${scheduleId}`, {
+            method: "PUT",
+            headers: { 
+              "Content-Type": "application/json",
+              Authorization: "Bearer " + JWT 
+            },
+            body: JSON.stringify(scheduleData)
+          });
+        } else {
+          // Création d'un nouvel événement
+          res = await fetch(`${API}/schedules`, {
+            method: "POST",
+            headers: { 
+              "Content-Type": "application/json",
+              Authorization: "Bearer " + JWT 
+            },
+            body: JSON.stringify(scheduleData)
+          });
+        }
+        
+        if (!res.ok) {
+          throw new Error("Erreur lors de l'enregistrement de l'événement");
+        }
+        
+        closeScheduleModal();
+        loadSchedules();
+        showToast("success", "Succès", scheduleId ? "Événement mis à jour avec succès" : "Événement ajouté avec succès");
+      } catch (error) {
+        console.error("Erreur:", error);
+        showToast("error", "Erreur", "Impossible d'enregistrer l'événement. Veuillez réessayer plus tard.");
+      }
+    });
+
+    // Charger les évaluations de performance
+    async function loadPerformances() {
+      try {
+        const employeeFilter = document.getElementById('performanceEmployeeFilter').value;
+        const periodFilter = document.getElementById('performancePeriodFilter').value;
+        
+        let url = `${API}/performances/user/${activeUserId}`;
+        let params = [];
+        if (employeeFilter) params.push(`employeeId=${employeeFilter}`);
+        if (periodFilter) params.push(`period=${periodFilter}`);
+        if (params.length > 0) url += `?${params.join('&')}`;
+        
+        const res = await fetch(url, {
+          headers: { Authorization: "Bearer " + JWT },
+        });
+        
+        if (!res.ok) {
+          throw new Error('Erreur lors du chargement des évaluations');
+        }
+        
+        const performances = await res.json();
+        displayPerformances(performances);
+      } catch (error) {
+        console.error("Erreur:", error);
+        showToast("error", "Erreur", "Impossible de charger les évaluations. Veuillez réessayer plus tard.");
+      }
+    }
+
+    // Afficher les évaluations de performance
+    function displayPerformances(performances) {
+      const grid = document.getElementById('performanceGrid');
+      grid.innerHTML = '';
+      
+      if (performances.length === 0) {
+        grid.innerHTML = '<p class="text-center text-muted">Aucune évaluation trouvée</p>';
+        return;
+      }
+      
+      performances.forEach(performance => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        
+        // Calculer la note moyenne
+        const metrics = [
+          performance.metrics.productivity || 0,
+          performance.metrics.quality || 0,
+          performance.metrics.teamwork || 0,
+          performance.metrics.initiative || 0
+        ];
+        const averageRating = metrics.reduce((a, b) => a + b, 0) / metrics.length;
+        
+        // Déterminer la classe de la note
+        let ratingClass = '';
+        if (averageRating >= 4.5) ratingClass = 'excellent';
+        else if (averageRating >= 3.5) ratingClass = 'good';
+        else if (averageRating >= 2.5) ratingClass = 'average';
+        else ratingClass = 'poor';
+        
+        // Formater la date
+        const date = new Date(performance.date);
+        const formattedDate = date.toLocaleDateString();
+        
+        card.innerHTML = `
+          <div class="card-header">
+            <div class="d-flex justify-content-between align-items-center">
+              <h3 class="card-title">${performance.employeeName}</h3>
+              <span class="badge badge-${performance.status === 'validé' ? 'success' : performance.status === 'en_attente' ? 'warning' : 'secondary'}">${performance.status}</span>
+            </div>
+            <div class="text-muted">${formattedDate} - ${performance.period}</div>
+          </div>
+          <div class="card-body">
+            <div class="performance-rating ${ratingClass}">${averageRating.toFixed(1)}/5</div>
+            <div class="metrics-grid">
+              <div class="metric-item">
+                <span class="metric-label">Productivité</span>
+                <span class="metric-value">${performance.metrics.productivity || 0}/5</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Qualité</span>
+                <span class="metric-value">${performance.metrics.quality || 0}/5</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Travail d'équipe</span>
+                <span class="metric-value">${performance.metrics.teamwork || 0}/5</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Initiative</span>
+                <span class="metric-value">${performance.metrics.initiative || 0}/5</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <span class="text-muted">Évaluateur: ${performance.evaluator}</span>
+              </div>
+              <div class="btn-group">
+                <button class="btn btn-sm btn-primary" onclick="editPerformance('${performance._id}')">Modifier</button>
+                <button class="btn btn-sm btn-danger" onclick="deletePerformance('${performance._id}')">Supprimer</button>
+              </div>
+            </div>
+          </div>
+        `;
+        
+        grid.appendChild(card);
+      });
+    }
+
+    // Ouvrir la modal pour ajouter une évaluation de performance
+    function openPerformanceModal() {
+      document.getElementById('performanceModalTitle').textContent = 'Nouvelle évaluation';
+      document.getElementById('performanceForm').reset();
+      document.getElementById('performanceId').value = '';
+      
+      // Initialiser la date à aujourd'hui
+      const today = new Date();
+      document.getElementById('performanceDate').valueAsDate = today;
+      
+      // Initialiser l'évaluateur
+      document.getElementById('performanceEvaluator').value = 'Admin';
+      
+      document.getElementById('performanceModal').style.display = 'flex';
+    }
+
+    // Fermer la modal d'évaluation
+    function closePerformanceModal() {
+      document.getElementById('performanceModal').style.display = 'none';
+    }
+
+    // Modifier une évaluation de performance
+    async function editPerformance(id) {
+      try {
+        const res = await fetch(`${API}/performances/${id}`, {
+          headers: { Authorization: "Bearer " + JWT },
+        });
+        
+        if (!res.ok) {
+          throw new Error('Erreur lors du chargement de l\'évaluation');
+        }
+        
+        const performance = await res.json();
+        
+        document.getElementById('performanceModalTitle').textContent = 'Modifier une évaluation';
+        document.getElementById('performanceId').value = performance._id;
+        document.getElementById('performanceEmployee').value = performance.employeeId;
+        document.getElementById('performancePeriod').value = performance.period;
+        document.getElementById('performanceDate').value = new Date(performance.date).toISOString().split('T')[0];
+        document.getElementById('performanceEvaluator').value = performance.evaluator;
+        document.getElementById('performanceComments').value = performance.comments || '';
+        document.getElementById('performanceStatus').value = performance.status || 'brouillon';
+        
+        // Métriques
+        if (performance.metrics) {
+          document.querySelector(`input[name="productivity"][value="${performance.metrics.productivity}"]`).checked = true;
+          document.querySelector(`input[name="quality"][value="${performance.metrics.quality}"]`).checked = true;
+          document.querySelector(`input[name="teamwork"][value="${performance.metrics.teamwork}"]`).checked = true;
+          document.querySelector(`input[name="initiative"][value="${performance.metrics.initiative}"]`).checked = true;
+        }
+        
+        // Points forts
+        document.getElementById('strengthsList').innerHTML = '';
+        if (performance.strengths && performance.strengths.length > 0) {
+          performance.strengths.forEach(strength => {
+            addListItem('strengthsList', 'strengths[]', 'Point fort', strength);
+          });
+        } else {
+          addListItem('strengthsList', 'strengths[]', 'Point fort');
+        }
+        
+        // Points à améliorer
+        document.getElementById('improvementsList').innerHTML = '';
+        if (performance.improvements && performance.improvements.length > 0) {
+          performance.improvements.forEach(improvement => {
+            addListItem('improvementsList', 'improvements[]', 'Point à améliorer', improvement);
+          });
+        } else {
+          addListItem('improvementsList', 'improvements[]', 'Point à améliorer');
+        }
+        
+        document.getElementById('performanceModal').style.display = 'flex';
+      } catch (error) {
+        console.error("Erreur:", error);
+        showToast("error", "Erreur", "Impossible de charger les détails de l'évaluation. Veuillez réessayer plus tard.");
+      }
+    }
+
+    // Supprimer une évaluation de performance
+    async function deletePerformance(id) {
+      if (!confirm("Êtes-vous sûr de vouloir supprimer cette évaluation ?")) {
+        return;
+      }
+      
+      try {
+        const res = await fetch(`${API}/performances/${id}`, {
+          method: "DELETE",
+          headers: { Authorization: "Bearer " + JWT },
+        });
+        
+        if (!res.ok) {
+          throw new Error("Erreur lors de la suppression de l'évaluation");
+        }
+        
+        showToast("success", "Succès", "Évaluation supprimée avec succès");
+        loadPerformances();
+      } catch (error) {
+        console.error("Erreur:", error);
+        showToast("error", "Erreur", "Impossible de supprimer l'évaluation. Veuillez réessayer plus tard.");
+      }
+    }
+
+    // Ajouter un élément à une liste
+    function addListItem(listId, inputName, placeholder, value = '') {
+      const list = document.getElementById(listId);
+      const item = document.createElement('div');
+      item.className = 'list-item';
+      item.innerHTML = `
+        <input type="text" class="form-control" name="${inputName}" placeholder="${placeholder}" value="${value}">
+        <button type="button" class="btn btn-icon btn-danger remove-item" onclick="removeListItem(this)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      `;
+      list.appendChild(item);
+    }
+
+    // Supprimer un élément d'une liste
+    function removeListItem(button) {
+      const item = button.parentElement;
+      item.remove();
+    }
+
+    // Soumettre le formulaire d'évaluation
+    document.getElementById("performanceForm").addEventListener("submit", async function(e) {
+      e.preventDefault();
+      
+      const performanceId = document.getElementById('performanceId').value;
+      
+      // Récupérer les métriques
+      const metrics = {
+        productivity: parseInt(document.querySelector('input[name="productivity"]:checked')?.value || 0),
+        quality: parseInt(document.querySelector('input[name="quality"]:checked')?.value || 0),
+        teamwork: parseInt(document.querySelector('input[name="teamwork"]:checked')?.value || 0),
+        initiative: parseInt(document.querySelector('input[name="initiative"]:checked')?.value || 0)
+      };
+      
+      // Récupérer les points forts
+      const strengths = [];
+      document.querySelectorAll('input[name="strengths[]"]').forEach(input => {
+        if (input.value.trim()) strengths.push(input.value.trim());
+      });
+      
+      // Récupérer les points à améliorer
+      const improvements = [];
+      document.querySelectorAll('input[name="improvements[]"]').forEach(input => {
+        if (input.value.trim()) improvements.push(input.value.trim());
+      });
+      
+      // Récupérer l'employé sélectionné
+      const employeeSelect = document.getElementById('performanceEmployee');
+      const employeeId = employeeSelect.value;
+      const employeeName = employeeSelect.options[employeeSelect.selectedIndex].text;
+      
+      const performanceData = {
+        userId: activeUserId,
+        employeeId: employeeId,
+        employeeName: employeeName,
+        period: document.getElementById('performancePeriod').value,
+        date: document.getElementById('performanceDate').value,
+        evaluator: document.getElementById('performanceEvaluator').value,
+        metrics: metrics,
+        strengths: strengths,
+        improvements: improvements,
+        comments: document.getElementById('performanceComments').value,
+        status: document.getElementById('performanceStatus').value
+      };
+      
+      try {
+        let res;
+        
+        if (performanceId) {
+          // Mise à jour d'une évaluation existante
+          res = await fetch(`${API}/performances/${performanceId}`, {
+            method: "PUT",
+            headers: { 
+              "Content-Type": "application/json",
+              Authorization: "Bearer " + JWT 
+            },
+            body: JSON.stringify(performanceData)
+          });
+        } else {
+          // Création d'une nouvelle évaluation
+          res = await fetch(`${API}/performances`, {
+            method: "POST",
+            headers: { 
+              "Content-Type": "application/json",
+              Authorization: "Bearer " + JWT 
+            },
+            body: JSON.stringify(performanceData)
+          });
+        }
+        
+        if (!res.ok) {
+          throw new Error("Erreur lors de l'enregistrement de l'évaluation");
+        }
+        
+        closePerformanceModal();
+        loadPerformances();
+        showToast("success", "Succès", performanceId ? "Évaluation mise à jour avec succès" : "Évaluation ajoutée avec succès");
+      } catch (error) {
+        console.error("Erreur:", error);
+        showToast("error", "Erreur", "Impossible d'enregistrer l'évaluation. Veuillez réessayer plus tard.");
+      }
+    });
+
+    // Générer un rapport de performance
+    async function generatePerformanceReport() {
+      try {
+        const employeeId = document.getElementById('reportEmployeeFilter').value;
+        const startDate = document.getElementById('reportStartDate').value;
+        const endDate = document.getElementById('reportEndDate').value;
+        
+        if (!employeeId) {
+          showToast("warning", "Attention", "Veuillez sélectionner un employé pour le rapport.");
+          return;
+        }
+        
+        if (!startDate || !endDate) {
+          showToast("warning", "Attention", "Veuillez sélectionner une période pour le rapport.");
+          return;
+        }
+        
+        let url = `${API}/performances/report?employeeId=${employeeId}&startDate=${startDate}&endDate=${endDate}`;
+        
+        const res = await fetch(url, {
+          headers: { Authorization: "Bearer " + JWT },
+        });
+        
+        if (!res.ok) {
+          throw new Error('Erreur lors de la génération du rapport');
+        }
+        
+        const report = await res.json();
+        displayPerformanceReport(report);
+        
+        showToast("success", "Succès", "Rapport de performance généré avec succès");
+      } catch (error) {
+        console.error("Erreur:", error);
+        showToast("error", "Erreur", "Impossible de générer le rapport. Veuillez réessayer plus tard.");
+      }
+    }
+
+    // Afficher un rapport de performance
+    function displayPerformanceReport(report) {
+      const container = document.getElementById('reportContent');
+      
+      // Formater les dates
+      const startDate = new Date(report.period.start).toLocaleDateString();
+      const endDate = new Date(report.period.end).toLocaleDateString();
+      
+      container.innerHTML = `
+        <div class="card">
+          <div class="card-header">
+            <div class="d-flex justify-content-between align-items-center">
+              <h2 class="card-title">Rapport de performance: ${report.employeeName}</h2>
+              <div class="text-muted">Période: ${startDate} - ${endDate}</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-header">
+                  <h3 class="stat-title">Note moyenne</h3>
+                  <div class="stat-icon blue">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                  </div>
+                </div>
+                <div class="stat-value">${report.averageRating.toFixed(1)}/5</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-header">
+                  <h3 class="stat-title">Productivité</h3>
+                  <div class="stat-icon green">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                      <polyline points="17 6 23 6 23 12"></polyline>
+                    </svg>
+                  </div>
+                </div>
+                <div class="stat-value">${report.metrics.productivity.toFixed(1)}/5</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-header">
+                  <h3 class="stat-title">Qualité</h3>
+                  <div class="stat-icon purple">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                  </div>
+                </div>
+                <div class="stat-value">${report.metrics.quality.toFixed(1)}/5</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-header">
+                  <h3 class="stat-title">Travail d'équipe</h3>
+                  <div class="stat-icon orange">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="stat-value">${report.metrics.teamwork.toFixed(1)}/5</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-header">
+                  <h3 class="stat-title">Initiative</h3>
+                  <div class="stat-icon red">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="12" y1="8" x2="12" y2="16"></line>
+                      <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                  </div>
+                </div>
+                <div class="stat-value">${report.metrics.initiative.toFixed(1)}/5</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-header">
+                  <h3 class="stat-title">Évolution</h3>
+                  <div class="stat-icon blue">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                      <polyline points="17 6 23 6 23 12"></polyline>
+                    </svg>
+                  </div>
+                </div>
+                <div class="stat-value ${report.progression > 0 ? 'positive' : report.progression < 0 ? 'negative' : ''}">${report.progression > 0 ? '+' : ''}${report.progression.toFixed(1)}%</div>
+              </div>
+            </div>
+            
+            <div class="card" style="margin-top: var(--spacing-lg);">
+              <div class="card-header">
+                <h3 class="card-title">Évolution des performances</h3>
+              </div>
+              <div class="card-body">
+                <div class="chart-container" id="performanceChart">
+                  <!-- Le graphique sera généré ici -->
+                </div>
+              </div>
+            </div>
+            
+            <div class="grid-container" style="grid-template-columns: repeat(2, 1fr); gap: var(--spacing-md); margin-top: var(--spacing-lg);">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Points forts récurrents</h3>
+                </div>
+                <div class="card-body">
+                  <div class="tag-cloud" id="strengthsCloud">
+                    ${report.topStrengths.map(s => `<span class="tag">${s.text} <span class="tag-count">${s.count}</span></span>`).join('')}
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Points à améliorer récurrents</h3>
+                </div>
+                <div class="card-body">
+                  <div class="tag-cloud" id="improvementsCloud">
+                    ${report.topImprovements.map(i => `<span class="tag">${i.text} <span class="tag-count">${i.count}</span></span>`).join('')}
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card" style="margin-top: var(--spacing-lg);">
+              <div class="card-header">
+                <h3 class="card-title">Commentaires récents</h3>
+              </div>
+              <div class="card-body">
+                <div class="comments-list">
+                  ${report.recentComments.map(c => `
+                    <div class="comment-item">
+                      <div class="comment-header">
+                        <div class="comment-date">${new Date(c.date).toLocaleDateString()}</div>
+                        <div class="comment-author">${c.evaluator}</div>
+                      </div>
+                      <div class="comment-text">${c.text}</div>
+                    </div>
+                  `).join('')}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+      
+      // Générer le graphique d'évolution
+      generatePerformanceChart(report.performanceHistory);
+    }
+
+    // Générer le graphique d'évolution des performances
+    function generatePerformanceChart(history) {
+      const chartContainer = document.getElementById('performanceChart');
+      chartContainer.innerHTML = '<canvas id="performanceCanvas"></canvas>';
+      
+      const ctx = document.getElementById('performanceCanvas').getContext('2d');
+      
+      // Extraire les données pour le graphique
+      const labels = history.map(item => new Date(item.date).toLocaleDateString());
+      const ratings = history.map(item => item.rating);
+      
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: [
+            {
+              label: 'Note moyenne',
+              data: ratings,
+              borderColor: '#176BFF',
+              backgroundColor: 'rgba(23, 107, 255, 0.1)',
+              tension: 0.4,
+              fill: true
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'top',
+            },
+            tooltip: {
+              callbacks: {
+                label: function(context) {
+                  return `Note: ${context.raw.toFixed(1)}/5`;
+                }
+              }
+            }
+          },
+          scales: {
+            y: {
+              min: 0,
+              max: 5,
+              ticks: {
+                stepSize: 1
+              }
+            }
+          }
+        }
+      });
+    }
+
+    // Recherche d'employés
+    document.getElementById("searchInput").addEventListener("input", function(e) {
+      const searchTerm = e.target.value.toLowerCase();
+      
+      // Recherche dans les évaluations
+      if (document.getElementById('performance-tab').classList.contains('active')) {
+        const cards = document.querySelectorAll('#performanceGrid .card');
+        cards.forEach(card => {
+          const employeeName = card.querySelector('.card-title').textContent.toLowerCase();
+          card.style.display = employeeName.includes(searchTerm) ? "" : "none";
+        });
+      }
+      
+      // Recherche dans le planning (filtrer les événements)
+      if (document.getElementById('planning-tab').classList.contains('active')) {
+        const events = document.querySelectorAll('.calendar-event');
+        events.forEach(event => {
+          const eventText = event.textContent.toLowerCase();
+          event.style.display = eventText.includes(searchTerm) ? "" : "none";
+        });
+      }
+    });
+  </script>
+</body>
+</html>

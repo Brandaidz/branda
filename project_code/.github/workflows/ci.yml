@@ -1,0 +1,51 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x]
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+        cache-dependency-path: '**/package-lock.json'
+
+    - name: Install Dependencies (Root)
+      run: npm ci
+
+    - name: Install Dependencies (Backend)
+      run: cd src/backend && npm ci
+
+    - name: Install Dependencies (Frontend)
+      run: cd src/frontend && npm ci
+
+    # Added Lint step
+    - name: Lint
+      run: npm run lint
+
+    # Added Integration tests step
+    - name: Integration tests
+      run: npx vitest run --config vitest.config.ts --include src/backend/tests/integration/app.test.ts
+
+    - name: Unit & Sanity Tests with Coverage
+      run: npx vitest run --coverage
+
+    # Placeholder for build steps if needed
+    # - name: Build Backend
+    #   run: cd src/backend && npm run build --if-present
+    # - name: Build Frontend
+    #   run: cd src/frontend && npm run build --if-present
+

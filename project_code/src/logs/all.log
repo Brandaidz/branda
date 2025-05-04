@@ -1,0 +1,845 @@
+2025-05-02 18:25:46:2546 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:25:46:2546 info: Workflow Test: beforeAll started
+2025-05-02 18:25:46:2546 info: Historique trouvé dans le cache Redis pour conversation conv456
+2025-05-02 18:25:46:2546 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:25:46:2546 info: Historique non trouvé dans le cache, recherche dans MongoDB pour conversation conv456
+2025-05-02 18:25:46:2546 info: Mise en cache de l'historique pour conversation conv456
+2025-05-02 18:25:46:2546 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:25:46:2546 info: Historique non trouvé dans le cache, recherche dans MongoDB pour conversation conv456
+2025-05-02 18:25:46:2546 warn: Aucune conversation trouvée avec l'ID conv456
+2025-05-02 18:25:46:2546 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:25:46:2546 error: Erreur lors de la récupération de l'historique de conversation conv456:
+2025-05-02 18:25:46:2546 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:25:46:2546 info: Historique non trouvé dans le cache, recherche dans MongoDB pour conversation conv456
+2025-05-02 18:25:46:2546 error: Erreur lors de la récupération de l'historique de conversation conv456:
+2025-05-02 18:25:46:2546 info: Ajout d'un message à la conversation conv456 (utilisateur user123, tenant tenant456)
+2025-05-02 18:25:46:2546 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:25:46:2546 info: Historique trouvé dans le cache Redis pour conversation conv456
+2025-05-02 18:25:46:2546 info: Mise à jour du cache Redis pour conversation conv456
+2025-05-02 18:25:46:2546 info: Mise à jour de MongoDB pour conversation conv456
+2025-05-02 18:25:46:2546 info: Ajout d'un message à la conversation conv456 (utilisateur user123, tenant tenant456)
+2025-05-02 18:25:46:2546 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:25:46:2546 info: Historique non trouvé dans le cache, recherche dans MongoDB pour conversation conv456
+2025-05-02 18:25:46:2546 info: Mise en cache de l'historique pour conversation conv456
+2025-05-02 18:25:46:2546 info: Mise à jour du cache Redis pour conversation conv456
+2025-05-02 18:25:46:2546 info: Mise à jour de MongoDB pour conversation conv456
+2025-05-02 18:25:46:2546 info: Ajout d'un message à la conversation conv456 (utilisateur user123, tenant tenant456)
+2025-05-02 18:25:46:2546 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:25:46:2546 info: Historique trouvé dans le cache Redis pour conversation conv456
+2025-05-02 18:25:46:2546 info: Mise à jour du cache Redis pour conversation conv456
+2025-05-02 18:25:46:2546 error: Erreur lors de l'ajout du message à l'historique de conversation conv456:
+2025-05-02 18:25:46:2546 info: Ajout d'un message à la conversation conv456 (utilisateur user123, tenant tenant456)
+2025-05-02 18:25:46:2546 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:25:46:2546 info: Historique trouvé dans le cache Redis pour conversation conv456
+2025-05-02 18:25:46:2546 info: Mise à jour du cache Redis pour conversation conv456
+2025-05-02 18:25:46:2546 info: Mise à jour de MongoDB pour conversation conv456
+2025-05-02 18:25:46:2546 error: Erreur lors de l'ajout du message à l'historique de conversation conv456:
+2025-05-02 18:25:46:2546 info: Workflow Test: afterAll started
+2025-05-02 18:25:46:2546 info: Workflow Test: afterAll finished
+2025-05-02 18:26:09:269 info: Workflow Test: beforeAll started
+2025-05-02 18:26:09:269 info: Workflow Test: afterAll started
+2025-05-02 18:26:09:269 info: Workflow Test: afterAll finished
+2025-05-02 18:26:09:269 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:26:09:269 info: Historique trouvé dans le cache Redis pour conversation conv456
+2025-05-02 18:26:09:269 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:26:09:269 info: Historique non trouvé dans le cache, recherche dans MongoDB pour conversation conv456
+2025-05-02 18:26:09:269 info: Mise en cache de l'historique pour conversation conv456
+2025-05-02 18:26:09:269 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:26:09:269 info: Historique non trouvé dans le cache, recherche dans MongoDB pour conversation conv456
+2025-05-02 18:26:09:269 warn: Aucune conversation trouvée avec l'ID conv456
+2025-05-02 18:26:09:269 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:26:09:269 error: Erreur lors de la récupération de l'historique de conversation conv456:
+2025-05-02 18:26:09:269 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:26:09:269 info: Historique non trouvé dans le cache, recherche dans MongoDB pour conversation conv456
+2025-05-02 18:26:09:269 error: Erreur lors de la récupération de l'historique de conversation conv456:
+2025-05-02 18:26:09:269 info: Ajout d'un message à la conversation conv456 (utilisateur user123, tenant tenant456)
+2025-05-02 18:26:09:269 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:26:09:269 info: Historique trouvé dans le cache Redis pour conversation conv456
+2025-05-02 18:26:09:269 info: Mise à jour du cache Redis pour conversation conv456
+2025-05-02 18:26:09:269 info: Mise à jour de MongoDB pour conversation conv456
+2025-05-02 18:26:09:269 info: Ajout d'un message à la conversation conv456 (utilisateur user123, tenant tenant456)
+2025-05-02 18:26:09:269 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:26:09:269 info: Historique non trouvé dans le cache, recherche dans MongoDB pour conversation conv456
+2025-05-02 18:26:09:269 info: Mise en cache de l'historique pour conversation conv456
+2025-05-02 18:26:09:269 info: Mise à jour du cache Redis pour conversation conv456
+2025-05-02 18:26:09:269 info: Mise à jour de MongoDB pour conversation conv456
+2025-05-02 18:26:09:269 info: Ajout d'un message à la conversation conv456 (utilisateur user123, tenant tenant456)
+2025-05-02 18:26:09:269 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:26:09:269 info: Historique trouvé dans le cache Redis pour conversation conv456
+2025-05-02 18:26:09:269 info: Mise à jour du cache Redis pour conversation conv456
+2025-05-02 18:26:09:269 error: Erreur lors de l'ajout du message à l'historique de conversation conv456:
+2025-05-02 18:26:09:269 info: Ajout d'un message à la conversation conv456 (utilisateur user123, tenant tenant456)
+2025-05-02 18:26:09:269 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:26:09:269 info: Historique trouvé dans le cache Redis pour conversation conv456
+2025-05-02 18:26:09:269 info: Mise à jour du cache Redis pour conversation conv456
+2025-05-02 18:26:09:269 info: Mise à jour de MongoDB pour conversation conv456
+2025-05-02 18:26:09:269 error: Erreur lors de l'ajout du message à l'historique de conversation conv456:
+2025-05-02 18:27:14:2714 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:27:14:2714 info: Historique trouvé dans le cache Redis pour conversation conv456
+2025-05-02 18:27:14:2714 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:27:14:2714 info: Historique non trouvé dans le cache, recherche dans MongoDB pour conversation conv456
+2025-05-02 18:27:14:2714 info: Mise en cache de l'historique pour conversation conv456
+2025-05-02 18:27:14:2714 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:27:14:2714 info: Historique non trouvé dans le cache, recherche dans MongoDB pour conversation conv456
+2025-05-02 18:27:14:2714 warn: Aucune conversation trouvée avec l'ID conv456
+2025-05-02 18:27:14:2714 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:27:14:2714 error: Erreur lors de la récupération de l'historique de conversation conv456:
+2025-05-02 18:27:14:2714 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:27:14:2714 info: Historique non trouvé dans le cache, recherche dans MongoDB pour conversation conv456
+2025-05-02 18:27:14:2714 error: Erreur lors de la récupération de l'historique de conversation conv456:
+2025-05-02 18:27:14:2714 info: Ajout d'un message à la conversation conv456 (utilisateur user123, tenant tenant456)
+2025-05-02 18:27:14:2714 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:27:14:2714 info: Historique trouvé dans le cache Redis pour conversation conv456
+2025-05-02 18:27:14:2714 info: Mise à jour du cache Redis pour conversation conv456
+2025-05-02 18:27:14:2714 info: Mise à jour de MongoDB pour conversation conv456
+2025-05-02 18:27:14:2714 info: Ajout d'un message à la conversation conv456 (utilisateur user123, tenant tenant456)
+2025-05-02 18:27:14:2714 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:27:14:2714 info: Historique non trouvé dans le cache, recherche dans MongoDB pour conversation conv456
+2025-05-02 18:27:14:2714 info: Mise en cache de l'historique pour conversation conv456
+2025-05-02 18:27:14:2714 info: Mise à jour du cache Redis pour conversation conv456
+2025-05-02 18:27:14:2714 info: Mise à jour de MongoDB pour conversation conv456
+2025-05-02 18:27:14:2714 info: Ajout d'un message à la conversation conv456 (utilisateur user123, tenant tenant456)
+2025-05-02 18:27:14:2714 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:27:14:2714 info: Historique trouvé dans le cache Redis pour conversation conv456
+2025-05-02 18:27:14:2714 info: Mise à jour du cache Redis pour conversation conv456
+2025-05-02 18:27:14:2714 error: Erreur lors de l'ajout du message à l'historique de conversation conv456:
+2025-05-02 18:27:14:2714 info: Ajout d'un message à la conversation conv456 (utilisateur user123, tenant tenant456)
+2025-05-02 18:27:14:2714 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:27:14:2714 info: Historique trouvé dans le cache Redis pour conversation conv456
+2025-05-02 18:27:14:2714 info: Mise à jour du cache Redis pour conversation conv456
+2025-05-02 18:27:14:2714 info: Mise à jour de MongoDB pour conversation conv456
+2025-05-02 18:27:14:2714 error: Erreur lors de l'ajout du message à l'historique de conversation conv456:
+2025-05-02 18:27:15:2715 info: Workflow Test: beforeAll started
+2025-05-02 18:27:15:2715 info: Workflow Test: afterAll started
+2025-05-02 18:27:15:2715 info: Workflow Test: afterAll finished
+2025-05-02 18:27:45:2745 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:27:45:2745 info: Historique trouvé dans le cache Redis pour conversation conv456
+2025-05-02 18:27:45:2745 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:27:45:2745 info: Historique non trouvé dans le cache, recherche dans MongoDB pour conversation conv456
+2025-05-02 18:27:45:2745 info: Mise en cache de l'historique pour conversation conv456
+2025-05-02 18:27:45:2745 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:27:45:2745 info: Historique non trouvé dans le cache, recherche dans MongoDB pour conversation conv456
+2025-05-02 18:27:45:2745 warn: Aucune conversation trouvée avec l'ID conv456
+2025-05-02 18:27:45:2745 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:27:45:2745 error: Erreur lors de la récupération de l'historique de conversation conv456:
+2025-05-02 18:27:45:2745 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:27:45:2745 info: Historique non trouvé dans le cache, recherche dans MongoDB pour conversation conv456
+2025-05-02 18:27:45:2745 error: Erreur lors de la récupération de l'historique de conversation conv456:
+2025-05-02 18:27:45:2745 info: Ajout d'un message à la conversation conv456 (utilisateur user123, tenant tenant456)
+2025-05-02 18:27:45:2745 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:27:45:2745 info: Historique trouvé dans le cache Redis pour conversation conv456
+2025-05-02 18:27:45:2745 info: Mise à jour du cache Redis pour conversation conv456
+2025-05-02 18:27:45:2745 info: Mise à jour de MongoDB pour conversation conv456
+2025-05-02 18:27:45:2745 info: Ajout d'un message à la conversation conv456 (utilisateur user123, tenant tenant456)
+2025-05-02 18:27:45:2745 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:27:45:2745 info: Historique non trouvé dans le cache, recherche dans MongoDB pour conversation conv456
+2025-05-02 18:27:45:2745 info: Mise en cache de l'historique pour conversation conv456
+2025-05-02 18:27:45:2745 info: Mise à jour du cache Redis pour conversation conv456
+2025-05-02 18:27:45:2745 info: Mise à jour de MongoDB pour conversation conv456
+2025-05-02 18:27:45:2745 info: Ajout d'un message à la conversation conv456 (utilisateur user123, tenant tenant456)
+2025-05-02 18:27:45:2745 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:27:45:2745 info: Historique trouvé dans le cache Redis pour conversation conv456
+2025-05-02 18:27:45:2745 info: Mise à jour du cache Redis pour conversation conv456
+2025-05-02 18:27:45:2745 error: Erreur lors de l'ajout du message à l'historique de conversation conv456:
+2025-05-02 18:27:45:2745 info: Ajout d'un message à la conversation conv456 (utilisateur user123, tenant tenant456)
+2025-05-02 18:27:45:2745 info: Récupération de l'historique pour conversation conv456 (utilisateur user123)
+2025-05-02 18:27:45:2745 info: Historique trouvé dans le cache Redis pour conversation conv456
+2025-05-02 18:27:45:2745 info: Mise à jour du cache Redis pour conversation conv456
+2025-05-02 18:27:45:2745 info: Mise à jour de MongoDB pour conversation conv456
+2025-05-02 18:27:45:2745 error: Erreur lors de l'ajout du message à l'historique de conversation conv456:
+2025-05-02 18:27:45:2745 info: Workflow Test: beforeAll started
+2025-05-02 18:27:45:2745 info: Workflow Test: afterAll started
+2025-05-02 18:27:45:2745 info: Workflow Test: afterAll finished
+2025-05-03 13:35:56:3556 warn: Variable d"environnement ALLOWED_ORIGINS non définie ou vide. Aucune origine ne sera autorisée par CORS, sauf les requêtes same-origin.
+2025-05-03 13:35:56:3556 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-03 13:35:56:3556 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-03 13:35:56:3556 info: Service des fichiers statiques depuis: /home/ubuntu/branda_project/home/ubuntu/branda_complete_archive_v2/project_code/src/backend/public
+2025-05-03 13:35:56:3556 error: Erreur Redis:
+2025-05-03 13:35:56:3556 info: Tentative de reconnexion Redis (1), délai: 50ms
+2025-05-03 13:35:56:3556 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:35:56:3556 error: Erreur Redis:
+2025-05-03 13:35:56:3556 info: Tentative de reconnexion Redis (2), délai: 100ms
+2025-05-03 13:35:56:3556 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:35:57:3557 error: Erreur Redis:
+2025-05-03 13:35:57:3557 info: Tentative de reconnexion Redis (3), délai: 150ms
+2025-05-03 13:35:57:3557 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:35:57:3557 error: Erreur Redis:
+2025-05-03 13:35:57:3557 info: Tentative de reconnexion Redis (4), délai: 200ms
+2025-05-03 13:35:57:3557 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:35:57:3557 error: Erreur Redis:
+2025-05-03 13:35:57:3557 info: Tentative de reconnexion Redis (5), délai: 250ms
+2025-05-03 13:35:57:3557 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:35:57:3557 error: Erreur Redis:
+2025-05-03 13:35:57:3557 info: Tentative de reconnexion Redis (6), délai: 300ms
+2025-05-03 13:35:57:3557 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:35:57:3557 error: Erreur Redis:
+2025-05-03 13:35:57:3557 info: Tentative de reconnexion Redis (7), délai: 350ms
+2025-05-03 13:35:57:3557 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:35:58:3558 error: Erreur Redis:
+2025-05-03 13:35:58:3558 info: Tentative de reconnexion Redis (8), délai: 400ms
+2025-05-03 13:35:58:3558 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:35:58:3558 error: Erreur Redis:
+2025-05-03 13:35:58:3558 info: Tentative de reconnexion Redis (9), délai: 450ms
+2025-05-03 13:35:58:3558 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:35:59:3559 error: Erreur Redis:
+2025-05-03 13:35:59:3559 info: Tentative de reconnexion Redis (10), délai: 500ms
+2025-05-03 13:35:59:3559 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:35:59:3559 error: Erreur Redis:
+2025-05-03 13:35:59:3559 info: Tentative de reconnexion Redis (11), délai: 550ms
+2025-05-03 13:35:59:3559 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:36:00:360 error: Erreur Redis:
+2025-05-03 13:36:00:360 info: Tentative de reconnexion Redis (12), délai: 600ms
+2025-05-03 13:36:00:360 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:36:00:360 error: Erreur Redis:
+2025-05-03 13:36:00:360 info: Tentative de reconnexion Redis (13), délai: 650ms
+2025-05-03 13:36:00:360 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:36:01:361 error: Erreur Redis:
+2025-05-03 13:36:01:361 info: Tentative de reconnexion Redis (14), délai: 700ms
+2025-05-03 13:36:01:361 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:36:02:362 error: Erreur Redis:
+2025-05-03 13:36:02:362 info: Tentative de reconnexion Redis (15), délai: 750ms
+2025-05-03 13:36:02:362 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:36:02:362 error: Erreur Redis:
+2025-05-03 13:36:02:362 info: Tentative de reconnexion Redis (16), délai: 800ms
+2025-05-03 13:36:02:362 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:36:03:363 error: Erreur Redis:
+2025-05-03 13:36:03:363 info: Tentative de reconnexion Redis (17), délai: 850ms
+2025-05-03 13:36:03:363 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:36:04:364 error: Erreur Redis:
+2025-05-03 13:36:04:364 info: Tentative de reconnexion Redis (18), délai: 900ms
+2025-05-03 13:36:04:364 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:36:05:365 error: Erreur Redis:
+2025-05-03 13:36:05:365 info: Tentative de reconnexion Redis (19), délai: 950ms
+2025-05-03 13:36:05:365 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:36:06:366 error: Erreur Redis:
+2025-05-03 13:36:06:366 info: Tentative de reconnexion Redis (20), délai: 1000ms
+2025-05-03 13:36:06:366 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:36:07:367 error: Erreur Redis:
+2025-05-03 13:36:07:367 info: Tentative de reconnexion Redis (21), délai: 1050ms
+2025-05-03 13:36:07:367 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:36:08:368 error: Erreur Redis:
+2025-05-03 13:36:08:368 info: Tentative de reconnexion Redis (22), délai: 1100ms
+2025-05-03 13:36:08:368 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:36:09:369 error: Erreur Redis:
+2025-05-03 13:36:09:369 info: Tentative de reconnexion Redis (23), délai: 1150ms
+2025-05-03 13:36:09:369 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:36:10:3610 error: Erreur Redis:
+2025-05-03 13:36:10:3610 info: Tentative de reconnexion Redis (24), délai: 1200ms
+2025-05-03 13:36:10:3610 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:36:11:3611 error: Erreur Redis:
+2025-05-03 13:36:11:3611 info: Tentative de reconnexion Redis (25), délai: 1250ms
+2025-05-03 13:36:11:3611 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:36:13:3613 error: Erreur Redis:
+2025-05-03 13:36:13:3613 info: Tentative de reconnexion Redis (26), délai: 1300ms
+2025-05-03 13:36:13:3613 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:36:14:3614 error: Erreur Redis:
+2025-05-03 13:36:14:3614 info: Tentative de reconnexion Redis (27), délai: 1350ms
+2025-05-03 13:36:14:3614 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:36:15:3615 error: Erreur Redis:
+2025-05-03 13:36:15:3615 info: Tentative de reconnexion Redis (28), délai: 1400ms
+2025-05-03 13:36:15:3615 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:36:17:3617 error: Erreur Redis:
+2025-05-03 13:36:17:3617 info: Tentative de reconnexion Redis (29), délai: 1450ms
+2025-05-03 13:36:17:3617 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:36:18:3618 error: Erreur Redis:
+2025-05-03 13:36:18:3618 info: Tentative de reconnexion Redis (30), délai: 1500ms
+2025-05-03 13:36:18:3618 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:36:20:3620 error: Erreur Redis:
+2025-05-03 13:36:20:3620 info: Tentative de reconnexion Redis (31), délai: 1550ms
+2025-05-03 13:36:20:3620 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:36:21:3621 error: Erreur Redis:
+2025-05-03 13:36:21:3621 info: Tentative de reconnexion Redis (32), délai: 1600ms
+2025-05-03 13:36:21:3621 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:36:23:3623 error: Erreur Redis:
+2025-05-03 13:36:23:3623 info: Tentative de reconnexion Redis (33), délai: 1650ms
+2025-05-03 13:36:23:3623 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:36:25:3625 error: Erreur Redis:
+2025-05-03 13:36:25:3625 info: Tentative de reconnexion Redis (34), délai: 1700ms
+2025-05-03 13:36:25:3625 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:36:26:3626 error: Erreur Redis:
+2025-05-03 13:36:26:3626 info: Tentative de reconnexion Redis (35), délai: 1750ms
+2025-05-03 13:36:26:3626 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 13:36:26:3626 error: Erreur de connexion à MongoDB: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-05-03 23:42:42:4242 error: Erreur Redis:
+2025-05-03 23:42:42:4242 info: Tentative de reconnexion Redis (1), délai: 50ms
+2025-05-03 23:42:42:4242 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:42:43:4243 error: Erreur Redis:
+2025-05-03 23:42:43:4243 info: Tentative de reconnexion Redis (2), délai: 100ms
+2025-05-03 23:42:43:4243 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:42:43:4243 error: Erreur Redis:
+2025-05-03 23:42:43:4243 info: Tentative de reconnexion Redis (3), délai: 150ms
+2025-05-03 23:42:43:4243 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:43:43:4343 error: Erreur Redis:
+2025-05-03 23:43:43:4343 info: Tentative de reconnexion Redis (1), délai: 50ms
+2025-05-03 23:43:43:4343 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:43:44:4344 error: Erreur Redis:
+2025-05-03 23:43:44:4344 info: Tentative de reconnexion Redis (2), délai: 100ms
+2025-05-03 23:43:44:4344 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:43:44:4344 error: Erreur Redis:
+2025-05-03 23:44:24:4424 error: Erreur Redis:
+2025-05-03 23:44:24:4424 info: Tentative de reconnexion Redis (1), délai: 50ms
+2025-05-03 23:44:24:4424 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:44:24:4424 error: Erreur Redis:
+2025-05-03 23:44:24:4424 info: Tentative de reconnexion Redis (2), délai: 100ms
+2025-05-03 23:44:24:4424 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:44:24:4424 error: Erreur Redis:
+2025-05-03 23:44:24:4424 info: Tentative de reconnexion Redis (3), délai: 150ms
+2025-05-03 23:44:24:4424 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:45:08:458 error: Erreur Redis:
+2025-05-03 23:45:08:458 info: Tentative de reconnexion Redis (1), délai: 50ms
+2025-05-03 23:45:08:458 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:45:08:458 error: Erreur Redis:
+2025-05-03 23:45:08:458 info: Tentative de reconnexion Redis (2), délai: 100ms
+2025-05-03 23:45:08:458 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:45:09:459 error: Erreur Redis:
+2025-05-03 23:45:09:459 info: Tentative de reconnexion Redis (3), délai: 150ms
+2025-05-03 23:45:09:459 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:45:09:459 error: Erreur Redis:
+2025-05-03 23:45:09:459 info: Tentative de reconnexion Redis (4), délai: 200ms
+2025-05-03 23:45:09:459 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:45:09:459 error: Erreur Redis:
+2025-05-03 23:45:09:459 info: Tentative de reconnexion Redis (5), délai: 250ms
+2025-05-03 23:45:09:459 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:45:09:459 error: Erreur Redis:
+2025-05-03 23:45:09:459 info: Tentative de reconnexion Redis (6), délai: 300ms
+2025-05-03 23:45:09:459 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:45:55:4555 error: Erreur Redis:
+2025-05-03 23:45:55:4555 info: Tentative de reconnexion Redis (1), délai: 50ms
+2025-05-03 23:45:55:4555 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:45:55:4555 error: Erreur Redis:
+2025-05-03 23:45:55:4555 info: Tentative de reconnexion Redis (2), délai: 100ms
+2025-05-03 23:45:55:4555 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:45:56:4556 error: Erreur Redis:
+2025-05-03 23:45:56:4556 info: Tentative de reconnexion Redis (3), délai: 150ms
+2025-05-03 23:45:56:4556 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:45:56:4556 error: Erreur Redis:
+2025-05-03 23:45:56:4556 info: Tentative de reconnexion Redis (4), délai: 200ms
+2025-05-03 23:45:56:4556 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:45:56:4556 error: Erreur Redis:
+2025-05-03 23:45:56:4556 info: Tentative de reconnexion Redis (5), délai: 250ms
+2025-05-03 23:45:56:4556 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:45:56:4556 warn: Variable d"environnement ALLOWED_ORIGINS non définie ou vide. Aucune origine ne sera autorisée par CORS, sauf les requêtes same-origin.
+2025-05-03 23:45:56:4556 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-03 23:45:56:4556 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-03 23:45:56:4556 error: ERREUR FATALE: Les variables d'environnement OPENROUTER_KEY et OPENROUTER_API_BASE sont requises.
+2025-05-03 23:45:56:4556 error: Erreur Redis:
+2025-05-03 23:45:56:4556 info: Tentative de reconnexion Redis (6), délai: 300ms
+2025-05-03 23:45:56:4556 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:46:39:4639 error: Erreur Redis:
+2025-05-03 23:46:39:4639 info: Tentative de reconnexion Redis (1), délai: 50ms
+2025-05-03 23:46:39:4639 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:46:39:4639 error: Erreur Redis:
+2025-05-03 23:46:39:4639 info: Tentative de reconnexion Redis (2), délai: 100ms
+2025-05-03 23:46:39:4639 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:46:40:4640 error: Erreur Redis:
+2025-05-03 23:46:40:4640 info: Tentative de reconnexion Redis (3), délai: 150ms
+2025-05-03 23:46:40:4640 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:46:40:4640 error: Erreur Redis:
+2025-05-03 23:46:40:4640 info: Tentative de reconnexion Redis (4), délai: 200ms
+2025-05-03 23:46:40:4640 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:46:40:4640 error: Erreur Redis:
+2025-05-03 23:46:40:4640 info: Tentative de reconnexion Redis (5), délai: 250ms
+2025-05-03 23:46:40:4640 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:46:40:4640 warn: Variable d"environnement ALLOWED_ORIGINS non définie ou vide. Aucune origine ne sera autorisée par CORS, sauf les requêtes same-origin.
+2025-05-03 23:46:40:4640 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-03 23:46:40:4640 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-03 23:46:40:4640 error: ERREUR FATALE: Les variables d'environnement OPENROUTER_KEY et OPENROUTER_API_BASE sont requises.
+2025-05-03 23:46:40:4640 error: Erreur Redis:
+2025-05-03 23:46:40:4640 info: Tentative de reconnexion Redis (6), délai: 300ms
+2025-05-03 23:46:40:4640 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:47:29:4729 error: Erreur Redis:
+2025-05-03 23:47:29:4729 info: Tentative de reconnexion Redis (1), délai: 50ms
+2025-05-03 23:47:29:4729 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:47:29:4729 error: Erreur Redis:
+2025-05-03 23:47:29:4729 info: Tentative de reconnexion Redis (2), délai: 100ms
+2025-05-03 23:47:29:4729 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:47:29:4729 error: Erreur Redis:
+2025-05-03 23:47:29:4729 info: Tentative de reconnexion Redis (3), délai: 150ms
+2025-05-03 23:47:29:4729 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:47:29:4729 error: Erreur Redis:
+2025-05-03 23:47:29:4729 info: Tentative de reconnexion Redis (4), délai: 200ms
+2025-05-03 23:47:29:4729 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:47:29:4729 error: Erreur Redis:
+2025-05-03 23:47:29:4729 info: Tentative de reconnexion Redis (5), délai: 250ms
+2025-05-03 23:47:29:4729 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:47:29:4729 error: Erreur Redis:
+2025-05-03 23:47:29:4729 info: Tentative de reconnexion Redis (6), délai: 300ms
+2025-05-03 23:47:29:4729 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:47:30:4730 warn: Variable d"environnement ALLOWED_ORIGINS non définie ou vide. Aucune origine ne sera autorisée par CORS, sauf les requêtes same-origin.
+2025-05-03 23:47:30:4730 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-03 23:47:30:4730 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-03 23:47:30:4730 error: ERREUR FATALE: Les variables d'environnement OPENROUTER_KEY et OPENROUTER_API_BASE sont requises.
+2025-05-03 23:47:30:4730 error: Erreur Redis:
+2025-05-03 23:47:30:4730 info: Tentative de reconnexion Redis (7), délai: 350ms
+2025-05-03 23:47:30:4730 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:48:23:4823 error: Erreur Redis:
+2025-05-03 23:48:23:4823 info: Tentative de reconnexion Redis (1), délai: 50ms
+2025-05-03 23:48:23:4823 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:48:23:4823 error: Erreur Redis:
+2025-05-03 23:48:23:4823 info: Tentative de reconnexion Redis (2), délai: 100ms
+2025-05-03 23:48:23:4823 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:48:23:4823 error: Erreur Redis:
+2025-05-03 23:48:23:4823 info: Tentative de reconnexion Redis (3), délai: 150ms
+2025-05-03 23:48:23:4823 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:48:24:4824 error: Erreur Redis:
+2025-05-03 23:48:24:4824 info: Tentative de reconnexion Redis (4), délai: 200ms
+2025-05-03 23:48:24:4824 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:48:24:4824 error: Erreur Redis:
+2025-05-03 23:48:24:4824 info: Tentative de reconnexion Redis (5), délai: 250ms
+2025-05-03 23:48:24:4824 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:48:24:4824 warn: Variable d"environnement ALLOWED_ORIGINS non définie ou vide. Aucune origine ne sera autorisée par CORS, sauf les requêtes same-origin.
+2025-05-03 23:48:24:4824 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-03 23:48:24:4824 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-03 23:48:24:4824 error: ERREUR FATALE: Les variables d'environnement OPENROUTER_KEY et OPENROUTER_API_BASE sont requises.
+2025-05-03 23:49:06:496 error: Erreur Redis:
+2025-05-03 23:49:06:496 info: Tentative de reconnexion Redis (1), délai: 50ms
+2025-05-03 23:49:06:496 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:49:06:496 error: Erreur Redis:
+2025-05-03 23:49:06:496 info: Tentative de reconnexion Redis (2), délai: 100ms
+2025-05-03 23:49:06:496 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:49:06:496 error: Erreur Redis:
+2025-05-03 23:49:06:496 info: Tentative de reconnexion Redis (3), délai: 150ms
+2025-05-03 23:49:06:496 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:49:06:496 error: Erreur Redis:
+2025-05-03 23:49:06:496 info: Tentative de reconnexion Redis (4), délai: 200ms
+2025-05-03 23:49:06:496 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:49:06:496 error: Erreur Redis:
+2025-05-03 23:49:06:496 info: Tentative de reconnexion Redis (5), délai: 250ms
+2025-05-03 23:49:06:496 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:49:06:496 warn: Variable d"environnement ALLOWED_ORIGINS non définie ou vide. Aucune origine ne sera autorisée par CORS, sauf les requêtes same-origin.
+2025-05-03 23:49:06:496 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-03 23:49:06:496 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-03 23:49:06:496 error: ERREUR FATALE: Les variables d'environnement OPENROUTER_KEY et OPENROUTER_API_BASE sont requises.
+2025-05-03 23:49:07:497 error: Erreur Redis:
+2025-05-03 23:49:07:497 info: Tentative de reconnexion Redis (6), délai: 300ms
+2025-05-03 23:49:07:497 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:50:00:500 error: Erreur Redis:
+2025-05-03 23:50:00:500 info: Tentative de reconnexion Redis (1), délai: 50ms
+2025-05-03 23:50:00:500 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:50:00:500 error: Erreur Redis:
+2025-05-03 23:50:00:500 info: Tentative de reconnexion Redis (2), délai: 100ms
+2025-05-03 23:50:00:500 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:50:00:500 error: Erreur Redis:
+2025-05-03 23:50:00:500 info: Tentative de reconnexion Redis (3), délai: 150ms
+2025-05-03 23:50:00:500 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:50:01:501 error: Erreur Redis:
+2025-05-03 23:50:01:501 info: Tentative de reconnexion Redis (4), délai: 200ms
+2025-05-03 23:50:01:501 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:50:01:501 error: Erreur Redis:
+2025-05-03 23:50:01:501 info: Tentative de reconnexion Redis (5), délai: 250ms
+2025-05-03 23:50:01:501 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:50:01:501 warn: Variable d"environnement ALLOWED_ORIGINS non définie ou vide. Aucune origine ne sera autorisée par CORS, sauf les requêtes same-origin.
+2025-05-03 23:50:01:501 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-03 23:50:01:501 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-03 23:50:01:501 warn: ATTENTION: La variable d'environnement MONGODB_URI n'est pas définie. Utilisation de l'URI par défaut mongodb://localhost:27017/branda
+2025-05-03 23:50:01:501 info: Service des fichiers statiques React depuis: /home/ubuntu/branda_project/home/ubuntu/branda_project/home/ubuntu/branda_complete_archive_v2/project_code/src/frontend/react_app/dist
+2025-05-03 23:50:01:501 info: Service des fichiers statiques legacy depuis: /home/ubuntu/branda_project/home/ubuntu/branda_project/home/ubuntu/branda_complete_archive_v2/project_code/src/frontend
+2025-05-03 23:50:01:501 info: Environnement de test détecté. Connexion MongoDB et démarrage serveur différés (gérés par les tests).
+2025-05-03 23:50:01:501 error: Erreur Redis:
+2025-05-03 23:50:01:501 info: Tentative de reconnexion Redis (6), délai: 300ms
+2025-05-03 23:50:01:501 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:50:48:5048 error: Erreur Redis:
+2025-05-03 23:50:48:5048 info: Tentative de reconnexion Redis (1), délai: 50ms
+2025-05-03 23:50:48:5048 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:50:48:5048 error: Erreur Redis:
+2025-05-03 23:50:48:5048 info: Tentative de reconnexion Redis (2), délai: 100ms
+2025-05-03 23:50:48:5048 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:50:48:5048 error: Erreur Redis:
+2025-05-03 23:50:48:5048 info: Tentative de reconnexion Redis (3), délai: 150ms
+2025-05-03 23:50:48:5048 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:50:49:5049 error: Erreur Redis:
+2025-05-03 23:50:49:5049 info: Tentative de reconnexion Redis (4), délai: 200ms
+2025-05-03 23:50:49:5049 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:50:49:5049 error: Erreur Redis:
+2025-05-03 23:50:49:5049 info: Tentative de reconnexion Redis (5), délai: 250ms
+2025-05-03 23:50:49:5049 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:50:49:5049 warn: Variable d"environnement ALLOWED_ORIGINS non définie ou vide. Aucune origine ne sera autorisée par CORS, sauf les requêtes same-origin.
+2025-05-03 23:50:49:5049 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-03 23:50:49:5049 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-03 23:50:49:5049 warn: ATTENTION: La variable d'environnement MONGODB_URI n'est pas définie. Utilisation de l'URI par défaut mongodb://localhost:27017/branda
+2025-05-03 23:50:49:5049 info: Service des fichiers statiques React depuis: /home/ubuntu/branda_project/home/ubuntu/branda_project/home/ubuntu/branda_complete_archive_v2/project_code/src/frontend/react_app/dist
+2025-05-03 23:50:49:5049 info: Service des fichiers statiques legacy depuis: /home/ubuntu/branda_project/home/ubuntu/branda_project/home/ubuntu/branda_complete_archive_v2/project_code/src/frontend
+2025-05-03 23:50:49:5049 info: Environnement de test détecté. Connexion MongoDB et démarrage serveur différés (gérés par les tests).
+2025-05-03 23:50:49:5049 warn: Impossible de vérifier la blacklist: req.user ou req.user.jti manquant.
+2025-05-03 23:50:49:5049 error: Erreur Redis:
+2025-05-03 23:50:49:5049 info: Tentative de reconnexion Redis (6), délai: 300ms
+2025-05-03 23:50:49:5049 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:51:50:5150 error: Erreur Redis:
+2025-05-03 23:51:50:5150 info: Tentative de reconnexion Redis (1), délai: 50ms
+2025-05-03 23:51:50:5150 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:51:50:5150 error: Erreur Redis:
+2025-05-03 23:51:50:5150 info: Tentative de reconnexion Redis (2), délai: 100ms
+2025-05-03 23:51:50:5150 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:51:50:5150 error: Erreur Redis:
+2025-05-03 23:51:50:5150 info: Tentative de reconnexion Redis (3), délai: 150ms
+2025-05-03 23:51:50:5150 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:51:50:5150 error: Erreur Redis:
+2025-05-03 23:51:50:5150 info: Tentative de reconnexion Redis (4), délai: 200ms
+2025-05-03 23:51:50:5150 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:51:51:5151 error: Erreur Redis:
+2025-05-03 23:51:51:5151 info: Tentative de reconnexion Redis (5), délai: 250ms
+2025-05-03 23:51:51:5151 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:51:51:5151 warn: Variable d"environnement ALLOWED_ORIGINS non définie ou vide. Aucune origine ne sera autorisée par CORS, sauf les requêtes same-origin.
+2025-05-03 23:51:51:5151 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-03 23:51:51:5151 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-03 23:51:51:5151 warn: ATTENTION: La variable d'environnement MONGODB_URI n'est pas définie. Utilisation de l'URI par défaut mongodb://localhost:27017/branda
+2025-05-03 23:51:51:5151 info: Service des fichiers statiques React depuis: /home/ubuntu/branda_project/home/ubuntu/branda_project/home/ubuntu/branda_complete_archive_v2/project_code/src/frontend/react_app/dist
+2025-05-03 23:51:51:5151 info: Service des fichiers statiques legacy depuis: /home/ubuntu/branda_project/home/ubuntu/branda_project/home/ubuntu/branda_complete_archive_v2/project_code/src/frontend
+2025-05-03 23:51:51:5151 info: Environnement de test détecté. Connexion MongoDB et démarrage serveur différés (gérés par les tests).
+2025-05-03 23:51:51:5151 warn: Impossible de vérifier la blacklist: req.user ou req.user.jti manquant.
+2025-05-03 23:51:51:5151 error: Erreur Redis:
+2025-05-03 23:51:51:5151 info: Tentative de reconnexion Redis (6), délai: 300ms
+2025-05-03 23:51:51:5151 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:55:29:5529 error: Erreur Redis:
+2025-05-03 23:55:29:5529 info: Tentative de reconnexion Redis (1), délai: 50ms
+2025-05-03 23:55:29:5529 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:55:29:5529 error: Erreur Redis:
+2025-05-03 23:55:29:5529 info: Tentative de reconnexion Redis (2), délai: 100ms
+2025-05-03 23:55:29:5529 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:55:29:5529 error: Erreur Redis:
+2025-05-03 23:55:29:5529 info: Tentative de reconnexion Redis (3), délai: 150ms
+2025-05-03 23:55:29:5529 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:55:30:5530 error: Erreur Redis:
+2025-05-03 23:55:30:5530 info: Tentative de reconnexion Redis (4), délai: 200ms
+2025-05-03 23:55:30:5530 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:55:30:5530 error: Erreur Redis:
+2025-05-03 23:55:30:5530 info: Tentative de reconnexion Redis (5), délai: 250ms
+2025-05-03 23:55:30:5530 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:55:30:5530 warn: Variable d"environnement ALLOWED_ORIGINS non définie ou vide. Aucune origine ne sera autorisée par CORS, sauf les requêtes same-origin.
+2025-05-03 23:55:30:5530 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-03 23:55:30:5530 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-03 23:55:30:5530 warn: ATTENTION: La variable d'environnement MONGODB_URI n'est pas définie. Utilisation de l'URI par défaut mongodb://localhost:27017/branda
+2025-05-03 23:55:30:5530 info: Service des fichiers statiques React depuis: /home/ubuntu/branda_project/home/ubuntu/branda_project/home/ubuntu/branda_complete_archive_v2/project_code/src/frontend/react_app/dist
+2025-05-03 23:55:30:5530 info: Service des fichiers statiques legacy depuis: /home/ubuntu/branda_project/home/ubuntu/branda_project/home/ubuntu/branda_complete_archive_v2/project_code/src/frontend
+2025-05-03 23:55:30:5530 info: Environnement de test détecté. Connexion MongoDB et démarrage serveur différés (gérés par les tests).
+2025-05-03 23:55:30:5530 warn: Impossible de vérifier la blacklist: req.user ou req.user.jti manquant.
+2025-05-03 23:55:30:5530 error: Erreur Redis:
+2025-05-03 23:55:30:5530 info: Tentative de reconnexion Redis (6), délai: 300ms
+2025-05-03 23:55:30:5530 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:56:30:5630 error: Erreur Redis:
+2025-05-03 23:56:30:5630 info: Tentative de reconnexion Redis (1), délai: 50ms
+2025-05-03 23:56:30:5630 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:56:30:5630 error: Erreur Redis:
+2025-05-03 23:56:30:5630 info: Tentative de reconnexion Redis (2), délai: 100ms
+2025-05-03 23:56:30:5630 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:56:30:5630 error: Erreur Redis:
+2025-05-03 23:56:30:5630 info: Tentative de reconnexion Redis (3), délai: 150ms
+2025-05-03 23:56:30:5630 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:56:30:5630 error: Erreur Redis:
+2025-05-03 23:56:30:5630 info: Tentative de reconnexion Redis (4), délai: 200ms
+2025-05-03 23:56:30:5630 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:56:30:5630 error: Erreur Redis:
+2025-05-03 23:56:30:5630 info: Tentative de reconnexion Redis (5), délai: 250ms
+2025-05-03 23:56:30:5630 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:56:30:5630 warn: Variable d"environnement ALLOWED_ORIGINS non définie ou vide. Aucune origine ne sera autorisée par CORS, sauf les requêtes same-origin.
+2025-05-03 23:56:30:5630 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-03 23:56:30:5630 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-03 23:56:30:5630 warn: ATTENTION: La variable d'environnement MONGODB_URI n'est pas définie. Utilisation de l'URI par défaut mongodb://localhost:27017/branda
+2025-05-03 23:56:30:5630 info: Service des fichiers statiques React depuis: /home/ubuntu/branda_project/home/ubuntu/branda_project/home/ubuntu/branda_complete_archive_v2/project_code/src/frontend/react_app/dist
+2025-05-03 23:56:30:5630 info: Service des fichiers statiques legacy depuis: /home/ubuntu/branda_project/home/ubuntu/branda_project/home/ubuntu/branda_complete_archive_v2/project_code/src/frontend
+2025-05-03 23:56:30:5630 info: Environnement de test détecté. Connexion MongoDB et démarrage serveur différés (gérés par les tests).
+2025-05-03 23:56:30:5630 warn: Impossible de vérifier la blacklist: req.user ou req.user.jti manquant.
+2025-05-03 23:56:31:5631 error: Erreur Redis:
+2025-05-03 23:56:31:5631 info: Tentative de reconnexion Redis (6), délai: 300ms
+2025-05-03 23:56:31:5631 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:58:38:5838 error: Erreur Redis:
+2025-05-03 23:58:38:5838 info: Tentative de reconnexion Redis (1), délai: 50ms
+2025-05-03 23:58:38:5838 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:58:38:5838 error: Erreur Redis:
+2025-05-03 23:58:38:5838 info: Tentative de reconnexion Redis (2), délai: 100ms
+2025-05-03 23:58:38:5838 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:58:38:5838 error: Erreur Redis:
+2025-05-03 23:58:38:5838 info: Tentative de reconnexion Redis (3), délai: 150ms
+2025-05-03 23:58:38:5838 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:58:38:5838 error: Erreur Redis:
+2025-05-03 23:58:38:5838 info: Tentative de reconnexion Redis (4), délai: 200ms
+2025-05-03 23:58:38:5838 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:58:38:5838 error: Erreur Redis:
+2025-05-03 23:58:38:5838 info: Tentative de reconnexion Redis (5), délai: 250ms
+2025-05-03 23:58:38:5838 warn: Tentative de reconnexion Redis en cours...
+2025-05-03 23:58:38:5838 warn: Variable d"environnement ALLOWED_ORIGINS non définie ou vide. Aucune origine ne sera autorisée par CORS, sauf les requêtes same-origin.
+2025-05-03 23:58:38:5838 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-03 23:58:38:5838 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-03 23:58:38:5838 warn: ATTENTION: La variable d'environnement MONGODB_URI n'est pas définie. Utilisation de l'URI par défaut mongodb://localhost:27017/branda
+2025-05-03 23:58:38:5838 info: Service des fichiers statiques React depuis: /home/ubuntu/branda_project/home/ubuntu/branda_project/home/ubuntu/branda_complete_archive_v2/project_code/src/frontend/react_app/dist
+2025-05-03 23:58:38:5838 info: Service des fichiers statiques legacy depuis: /home/ubuntu/branda_project/home/ubuntu/branda_project/home/ubuntu/branda_complete_archive_v2/project_code/src/frontend
+2025-05-03 23:58:38:5838 info: Environnement de test détecté. Connexion MongoDB et démarrage serveur différés (gérés par les tests).
+2025-05-03 23:58:39:5839 error: Erreur Redis:
+2025-05-03 23:58:39:5839 info: Tentative de reconnexion Redis (6), délai: 300ms
+2025-05-03 23:58:39:5839 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 00:32:44:3244 error: Erreur Redis:
+2025-05-04 00:32:44:3244 info: Tentative de reconnexion Redis (1), délai: 50ms
+2025-05-04 00:32:44:3244 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 00:32:44:3244 error: Erreur Redis:
+2025-05-04 00:32:44:3244 info: Tentative de reconnexion Redis (2), délai: 100ms
+2025-05-04 00:32:44:3244 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 00:32:44:3244 error: Erreur Redis:
+2025-05-04 00:32:44:3244 info: Tentative de reconnexion Redis (3), délai: 150ms
+2025-05-04 00:32:44:3244 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 00:32:45:3245 error: Erreur Redis:
+2025-05-04 00:32:45:3245 info: Tentative de reconnexion Redis (4), délai: 200ms
+2025-05-04 00:32:45:3245 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 00:32:45:3245 error: Erreur Redis:
+2025-05-04 00:32:45:3245 info: Tentative de reconnexion Redis (5), délai: 250ms
+2025-05-04 00:32:45:3245 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 00:32:45:3245 warn: Variable d"environnement ALLOWED_ORIGINS non définie ou vide. Aucune origine ne sera autorisée par CORS, sauf les requêtes same-origin.
+2025-05-04 00:32:45:3245 warn: ATTENTION: La variable d'environnement MONGODB_URI n'est pas définie. Utilisation de l'URI par défaut mongodb://localhost:27017/branda
+2025-05-04 00:32:45:3245 info: Service des fichiers statiques React depuis: /home/ubuntu/branda_project/home/ubuntu/branda_project/home/ubuntu/branda_complete_archive_v2/project_code/src/frontend/react_app/dist
+2025-05-04 00:32:45:3245 info: Service des fichiers statiques legacy depuis: /home/ubuntu/branda_project/home/ubuntu/branda_project/home/ubuntu/branda_complete_archive_v2/project_code/src/frontend
+2025-05-04 00:32:45:3245 info: Environnement de test détecté. Connexion MongoDB et démarrage serveur différés (gérés par les tests).
+2025-05-04 00:32:45:3245 error: Erreur Redis:
+2025-05-04 00:32:45:3245 info: Tentative de reconnexion Redis (6), délai: 300ms
+2025-05-04 00:32:45:3245 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 00:40:20:4020 error: Erreur Redis:
+2025-05-04 00:40:20:4020 info: Tentative de reconnexion Redis (1), délai: 50ms
+2025-05-04 00:40:20:4020 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 00:40:20:4020 error: Erreur Redis:
+2025-05-04 00:40:20:4020 info: Tentative de reconnexion Redis (2), délai: 100ms
+2025-05-04 00:40:20:4020 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 00:40:21:4021 error: Erreur Redis:
+2025-05-04 00:40:21:4021 info: Tentative de reconnexion Redis (3), délai: 150ms
+2025-05-04 00:40:21:4021 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 00:40:21:4021 error: Erreur Redis:
+2025-05-04 00:40:21:4021 info: Tentative de reconnexion Redis (4), délai: 200ms
+2025-05-04 00:40:21:4021 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 00:40:21:4021 error: Erreur Redis:
+2025-05-04 00:40:21:4021 info: Tentative de reconnexion Redis (5), délai: 250ms
+2025-05-04 00:40:21:4021 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 00:40:21:4021 info: Origines CORS autorisées chargées depuis ALLOWED_ORIGINS: http://localhost
+2025-05-04 00:40:21:4021 info: Service des fichiers statiques React depuis: /home/ubuntu/branda_project/home/ubuntu/branda_project/home/ubuntu/branda_complete_archive_v2/project_code/src/frontend/react_app/dist
+2025-05-04 00:40:21:4021 info: Service des fichiers statiques legacy depuis: /home/ubuntu/branda_project/home/ubuntu/branda_project/home/ubuntu/branda_complete_archive_v2/project_code/src/frontend
+2025-05-04 00:40:21:4021 info: Environnement de test détecté. Connexion MongoDB et démarrage serveur différés (gérés par les tests).
+2025-05-04 00:40:21:4021 error: Erreur Redis:
+2025-05-04 00:40:21:4021 info: Tentative de reconnexion Redis (6), délai: 300ms
+2025-05-04 00:40:21:4021 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 01:48:11:4811 error: Erreur Redis:
+2025-05-04 01:48:11:4811 info: Tentative de reconnexion Redis (1), délai: 50ms
+2025-05-04 01:48:11:4811 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 01:48:11:4811 error: Erreur Redis:
+2025-05-04 01:48:11:4811 info: Tentative de reconnexion Redis (2), délai: 100ms
+2025-05-04 01:48:11:4811 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 01:48:11:4811 error: Erreur Redis:
+2025-05-04 01:48:11:4811 info: Tentative de reconnexion Redis (3), délai: 150ms
+2025-05-04 01:48:11:4811 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 01:48:11:4811 error: Erreur Redis:
+2025-05-04 01:48:11:4811 info: Tentative de reconnexion Redis (4), délai: 200ms
+2025-05-04 01:48:11:4811 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 01:48:12:4812 error: Erreur Redis:
+2025-05-04 01:48:12:4812 info: Tentative de reconnexion Redis (5), délai: 250ms
+2025-05-04 01:48:12:4812 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 01:48:12:4812 error: Erreur Redis:
+2025-05-04 01:48:12:4812 info: Tentative de reconnexion Redis (6), délai: 300ms
+2025-05-04 01:48:12:4812 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 01:53:36:5336 error: Erreur Redis:
+2025-05-04 01:53:36:5336 info: Tentative de reconnexion Redis (1), délai: 50ms
+2025-05-04 01:53:36:5336 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 01:53:36:5336 error: Erreur Redis:
+2025-05-04 01:53:36:5336 info: Tentative de reconnexion Redis (2), délai: 100ms
+2025-05-04 01:53:36:5336 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 01:53:36:5336 error: Erreur Redis:
+2025-05-04 01:53:36:5336 info: Tentative de reconnexion Redis (3), délai: 150ms
+2025-05-04 01:53:36:5336 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 01:53:36:5336 error: Erreur Redis:
+2025-05-04 01:53:36:5336 info: Tentative de reconnexion Redis (4), délai: 200ms
+2025-05-04 01:53:36:5336 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 01:53:37:5337 error: Erreur Redis:
+2025-05-04 01:53:37:5337 info: Tentative de reconnexion Redis (5), délai: 250ms
+2025-05-04 01:53:37:5337 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 01:53:37:5337 error: Erreur Redis:
+2025-05-04 01:53:37:5337 info: Tentative de reconnexion Redis (6), délai: 300ms
+2025-05-04 01:53:37:5337 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 01:54:19:5419 error: Erreur Redis:
+2025-05-04 01:54:19:5419 info: Tentative de reconnexion Redis (1), délai: 50ms
+2025-05-04 01:54:19:5419 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 01:54:19:5419 error: Erreur Redis:
+2025-05-04 01:54:19:5419 info: Tentative de reconnexion Redis (2), délai: 100ms
+2025-05-04 01:54:19:5419 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 01:54:19:5419 error: Erreur Redis:
+2025-05-04 01:54:19:5419 info: Tentative de reconnexion Redis (3), délai: 150ms
+2025-05-04 01:54:19:5419 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 01:54:19:5419 error: Erreur Redis:
+2025-05-04 01:54:19:5419 info: Tentative de reconnexion Redis (4), délai: 200ms
+2025-05-04 01:54:19:5419 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 01:54:19:5419 error: Erreur Redis:
+2025-05-04 01:54:19:5419 info: Tentative de reconnexion Redis (5), délai: 250ms
+2025-05-04 01:54:19:5419 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 01:54:20:5420 error: Erreur Redis:
+2025-05-04 01:54:20:5420 info: Tentative de reconnexion Redis (6), délai: 300ms
+2025-05-04 01:54:20:5420 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 01:57:36:5736 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-04 01:57:36:5736 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-04 01:57:36:5736 error: Erreur Redis:
+2025-05-04 01:57:36:5736 info: Tentative de reconnexion Redis (1), délai: 50ms
+2025-05-04 01:57:36:5736 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 01:57:36:5736 error: Erreur Redis:
+2025-05-04 01:57:36:5736 info: Tentative de reconnexion Redis (2), délai: 100ms
+2025-05-04 01:57:36:5736 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 01:57:36:5736 error: Erreur Redis:
+2025-05-04 01:57:36:5736 info: Tentative de reconnexion Redis (3), délai: 150ms
+2025-05-04 01:57:36:5736 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 01:57:36:5736 error: Erreur Redis:
+2025-05-04 01:57:36:5736 info: Tentative de reconnexion Redis (4), délai: 200ms
+2025-05-04 01:57:36:5736 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 01:57:36:5736 error: Erreur Redis:
+2025-05-04 01:57:36:5736 info: Tentative de reconnexion Redis (1), délai: 50ms
+2025-05-04 01:57:36:5736 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 01:57:36:5736 error: Erreur Redis:
+2025-05-04 01:57:36:5736 info: Tentative de reconnexion Redis (2), délai: 100ms
+2025-05-04 01:57:36:5736 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 01:57:36:5736 error: Erreur Redis:
+2025-05-04 01:57:37:5737 info: Tentative de reconnexion Redis (3), délai: 150ms
+2025-05-04 01:57:37:5737 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 01:57:37:5737 error: Erreur Redis:
+2025-05-04 01:57:37:5737 info: Tentative de reconnexion Redis (4), délai: 200ms
+2025-05-04 01:57:37:5737 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 01:57:37:5737 error: Erreur Redis:
+2025-05-04 01:57:37:5737 info: Tentative de reconnexion Redis (5), délai: 250ms
+2025-05-04 01:57:37:5737 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 01:57:37:5737 error: Erreur Redis:
+2025-05-04 01:57:37:5737 info: Tentative de reconnexion Redis (5), délai: 250ms
+2025-05-04 01:57:37:5737 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 01:57:37:5737 error: Erreur Redis:
+2025-05-04 01:57:37:5737 info: Tentative de reconnexion Redis (6), délai: 300ms
+2025-05-04 01:57:37:5737 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 01:57:37:5737 error: Erreur Redis:
+2025-05-04 01:57:37:5737 info: Tentative de reconnexion Redis (6), délai: 300ms
+2025-05-04 01:57:37:5737 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 01:57:38:5738 error: Erreur Redis:
+2025-05-04 01:57:38:5738 info: Tentative de reconnexion Redis (7), délai: 350ms
+2025-05-04 01:57:38:5738 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 01:57:38:5738 error: Erreur Redis:
+2025-05-04 01:57:38:5738 info: Tentative de reconnexion Redis (7), délai: 350ms
+2025-05-04 01:57:38:5738 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:12:29:1229 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-04 07:12:29:1229 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-04 07:13:19:1319 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-04 07:13:19:1319 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-04 07:14:15:1415 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-04 07:14:15:1415 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-04 07:15:09:159 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-04 07:15:09:159 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-04 07:15:37:1537 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-04 07:15:37:1537 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-04 07:16:03:163 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-04 07:16:03:163 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-04 07:17:30:1730 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-04 07:17:30:1730 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-04 07:22:08:228 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-04 07:22:08:228 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-04 07:22:08:228 error: Erreur Redis:
+2025-05-04 07:22:08:228 info: Tentative de reconnexion Redis (1), délai: 50ms
+2025-05-04 07:22:08:228 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:22:08:228 error: Erreur Redis:
+2025-05-04 07:22:08:228 info: Tentative de reconnexion Redis (2), délai: 100ms
+2025-05-04 07:22:08:228 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:22:08:228 error: Erreur Redis:
+2025-05-04 07:22:08:228 info: Tentative de reconnexion Redis (3), délai: 150ms
+2025-05-04 07:22:08:228 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:22:09:229 error: Erreur Redis:
+2025-05-04 07:22:09:229 info: Tentative de reconnexion Redis (1), délai: 50ms
+2025-05-04 07:22:09:229 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:22:09:229 error: Erreur Redis:
+2025-05-04 07:22:09:229 info: Tentative de reconnexion Redis (2), délai: 100ms
+2025-05-04 07:22:09:229 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:22:09:229 error: Erreur Redis:
+2025-05-04 07:22:09:229 info: Tentative de reconnexion Redis (3), délai: 150ms
+2025-05-04 07:22:09:229 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:22:09:229 error: Erreur Redis:
+2025-05-04 07:22:09:229 info: Tentative de reconnexion Redis (4), délai: 200ms
+2025-05-04 07:22:09:229 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:22:09:229 error: Erreur Redis:
+2025-05-04 07:22:09:229 info: Tentative de reconnexion Redis (4), délai: 200ms
+2025-05-04 07:22:09:229 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:22:09:229 error: Erreur Redis:
+2025-05-04 07:22:09:229 info: Tentative de reconnexion Redis (5), délai: 250ms
+2025-05-04 07:22:09:229 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:24:43:2443 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-04 07:24:43:2443 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-04 07:28:01:281 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-04 07:28:01:281 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-04 07:28:01:281 error: Erreur Redis:
+2025-05-04 07:28:01:281 info: Tentative de reconnexion Redis (1), délai: 50ms
+2025-05-04 07:28:01:281 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:28:01:281 error: Erreur Redis:
+2025-05-04 07:28:01:281 info: Tentative de reconnexion Redis (2), délai: 100ms
+2025-05-04 07:28:01:281 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:28:01:281 error: Erreur Redis:
+2025-05-04 07:28:01:281 info: Tentative de reconnexion Redis (3), délai: 150ms
+2025-05-04 07:28:01:281 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:28:01:281 error: Erreur Redis:
+2025-05-04 07:28:01:281 info: Tentative de reconnexion Redis (1), délai: 50ms
+2025-05-04 07:28:01:281 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:28:01:281 error: Erreur Redis:
+2025-05-04 07:28:01:281 info: Tentative de reconnexion Redis (2), délai: 100ms
+2025-05-04 07:28:01:281 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:28:01:281 error: Erreur Redis:
+2025-05-04 07:28:01:281 info: Tentative de reconnexion Redis (3), délai: 150ms
+2025-05-04 07:28:01:281 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:28:02:282 error: Erreur Redis:
+2025-05-04 07:28:02:282 info: Tentative de reconnexion Redis (4), délai: 200ms
+2025-05-04 07:28:02:282 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:28:02:282 error: Erreur Redis:
+2025-05-04 07:28:02:282 info: Tentative de reconnexion Redis (4), délai: 200ms
+2025-05-04 07:28:02:282 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:28:02:282 error: Erreur Redis:
+2025-05-04 07:28:02:282 info: Tentative de reconnexion Redis (5), délai: 250ms
+2025-05-04 07:28:02:282 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:39:17:3917 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-04 07:39:17:3917 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-04 07:39:17:3917 error: Erreur Redis:
+2025-05-04 07:39:17:3917 info: Tentative de reconnexion Redis (1), délai: 50ms
+2025-05-04 07:39:17:3917 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:39:17:3917 error: Erreur Redis:
+2025-05-04 07:39:17:3917 info: Tentative de reconnexion Redis (2), délai: 100ms
+2025-05-04 07:39:17:3917 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:39:17:3917 error: Erreur Redis:
+2025-05-04 07:39:17:3917 info: Tentative de reconnexion Redis (3), délai: 150ms
+2025-05-04 07:39:17:3917 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:39:17:3917 error: Erreur Redis:
+2025-05-04 07:39:17:3917 info: Tentative de reconnexion Redis (1), délai: 50ms
+2025-05-04 07:39:17:3917 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:39:17:3917 error: Erreur Redis:
+2025-05-04 07:39:17:3917 info: Tentative de reconnexion Redis (2), délai: 100ms
+2025-05-04 07:39:17:3917 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:39:17:3917 error: Erreur Redis:
+2025-05-04 07:39:17:3917 info: Tentative de reconnexion Redis (3), délai: 150ms
+2025-05-04 07:39:17:3917 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:39:18:3918 error: Erreur Redis:
+2025-05-04 07:39:18:3918 info: Tentative de reconnexion Redis (4), délai: 200ms
+2025-05-04 07:39:18:3918 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:39:18:3918 error: Erreur Redis:
+2025-05-04 07:39:18:3918 info: Tentative de reconnexion Redis (4), délai: 200ms
+2025-05-04 07:39:18:3918 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:39:18:3918 error: Erreur Redis:
+2025-05-04 07:39:18:3918 info: Tentative de reconnexion Redis (5), délai: 250ms
+2025-05-04 07:39:18:3918 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:40:43:4043 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-04 07:40:43:4043 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-04 07:40:43:4043 error: Erreur Redis:
+2025-05-04 07:40:43:4043 info: Tentative de reconnexion Redis (1), délai: 50ms
+2025-05-04 07:40:43:4043 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:40:43:4043 error: Erreur Redis:
+2025-05-04 07:40:43:4043 info: Tentative de reconnexion Redis (2), délai: 100ms
+2025-05-04 07:40:43:4043 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:40:43:4043 error: Erreur Redis:
+2025-05-04 07:40:43:4043 info: Tentative de reconnexion Redis (3), délai: 150ms
+2025-05-04 07:40:43:4043 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:40:43:4043 error: Erreur Redis:
+2025-05-04 07:40:43:4043 info: Tentative de reconnexion Redis (1), délai: 50ms
+2025-05-04 07:40:43:4043 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:40:43:4043 error: Erreur Redis:
+2025-05-04 07:40:43:4043 info: Tentative de reconnexion Redis (2), délai: 100ms
+2025-05-04 07:40:43:4043 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:40:43:4043 error: Erreur Redis:
+2025-05-04 07:40:43:4043 info: Tentative de reconnexion Redis (4), délai: 200ms
+2025-05-04 07:40:43:4043 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:40:43:4043 error: Erreur Redis:
+2025-05-04 07:40:43:4043 info: Tentative de reconnexion Redis (3), délai: 150ms
+2025-05-04 07:40:43:4043 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 07:40:43:4043 error: Erreur Redis:
+2025-05-04 07:40:43:4043 info: Tentative de reconnexion Redis (4), délai: 200ms
+2025-05-04 07:40:43:4043 warn: Tentative de reconnexion Redis en cours...
+2025-05-04 08:08:16:816 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-04 08:08:16:816 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-04 08:10:48:1048 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
+2025-05-04 08:10:48:1048 warn: Client Redis non prêt ou indisponible. Utilisation de MemoryStore pour le rate limiter comme solution de secours.
