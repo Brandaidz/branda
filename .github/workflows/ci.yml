@@ -1,15 +1,17 @@
-name: CI – Tests & Coverage
+name: CI – Tests & Coverage (Matrix)
 
 on:
   push:
-    branches: [ main, master ]
+    branches:
+      - main
   pull_request:
-    branches: [ main, master ]
 
 jobs:
-  test-and-coverage:
-    name: Run tests & collect coverage
+  build-and-test:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        app: [backend, frontend]
 
     steps:
       - name: Checkout repository
@@ -20,17 +22,34 @@ jobs:
         with:
           node-version: 18
 
+      - name: Use project ${{ matrix.app }}
+        run: cd ${{ matrix.app }}
+
+      - name: Restore dependencies from cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.npm
+            ${{ matrix.app }}/node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles(format('{0}/package-lock.json', matrix.app)) }}
+
       - name: Install dependencies
-        run: npm ci
+        run: |
+          cd ${{ matrix.app }}
+          npm install
 
-      - name: Run full test suite
-        run: npm run test
+      - name: Run tests
+        run: |
+          cd ${{ matrix.app }}
+          npm run test
 
-      - name: Generate coverage report
-        run: npm run test:coverage
+      - name: Run coverage
+        run: |
+          cd ${{ matrix.app }}
+          npm run test:coverage
 
       - name: Upload coverage report
         uses: actions/upload-artifact@v3
         with:
-          name: coverage-report
-          path: coverage
+          name: ${{ matrix.app }}-coverage
+          path: ${{ matrix.app }}/coverage
