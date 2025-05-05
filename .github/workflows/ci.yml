@@ -1,18 +1,9 @@
-name: CI – Tests only (Matrix)
-
-on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
-
 jobs:
   build-and-test:
+    strategy:
+      matrix:
+        app: [project_code/src/backend, project_code/src/frontend, workers]
     runs-on: ubuntu-latest
-strategy:
-  matrix:
-    app: [project_code/src/backend, project_code/src/frontend, workers]
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -31,4 +22,11 @@ strategy:
         run: |
           cd ${{ matrix.app }}
           npm run test || echo "⚠️ No test script defined"
+
+      - name: Upload coverage report if exists
+        if: ${{ hashFiles('${{ matrix.app }}/coverage/lcov.info') != '' }}
+        uses: actions/upload-artifact@v2
+        with:
+          name: coverage-report
+          path: ${{ matrix.app }}/coverage/lcov.info
 
