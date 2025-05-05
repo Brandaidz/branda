@@ -10,8 +10,8 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
     strategy:
-      matrix:
-        app: [backend, frontend, workers]
+        matrix:
+          app: [project_code/src/backend, project_code/src/frontend, workers]
     defaults:
       run:
         # On fixe le dossier de travail à project_code/src/${{ matrix.app }}
