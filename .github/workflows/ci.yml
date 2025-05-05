@@ -1,17 +1,40 @@
-```yaml
-- name: Upload coverage report for ${{ matrix.app }}
-  # Ensure you are using actions/upload-artifact@v3 or later
-  uses: actions/upload-artifact@v3
-  with:
-    # Use a dynamic name based on the matrix variable to distinguish artifacts
-    name: coverage-report-${{ matrix.app }}
-    # The path should be relative to the working directory of this step
-    # Assuming the working directory is set to the module's folder (e.g., project_code/src/${{ matrix.app }})
-    path: coverage/lcov.info
-    # This option tells the action what to do if the path doesn't match any files
-    # 'warn': The action completes successfully but logs a warning. (Default)
-    # 'ignore': The action completes successfully without any warning.
-    # 'error': The action fails (this is the behavior without this option).
-    # Choose 'warn' or 'ignore' depending on your preference.
-    if-no-files-found: warn
-```
+name: CI – Tests & Coverage (Matrix)
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build-and-test:
+    strategy:
+      matrix:
+        app: [project_code/src/backend, project_code/src/frontend, workers]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        working-directory: ${{ matrix.app }}
+        run: npm install
+
+      - name: Run tests
+        working-directory: ${{ matrix.app }}
+        run: npm run test
+
+      - name: Upload coverage report for ${{ matrix.app }}
+        uses: actions/upload-artifact@v3
+        if: success()
+        with:
+          name: coverage-report-${{ matrix.app }}
+          path: ${{ matrix.app }}/coverage/lcov.info
+          if-no-files-found: warn
+
