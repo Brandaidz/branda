@@ -2,39 +2,40 @@ name: CI – Tests & Coverage (Matrix)
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request:
+    branches: [main]
 
 jobs:
   build-and-test:
+    runs-on: ubuntu-latest
     strategy:
       matrix:
-        app: [project_code/src/backend, project_code/src/frontend, workers]
-    runs-on: ubuntu-latest
+        app: [backend, frontend, workers]
+    defaults:
+      run:
+        # On fixe le dossier de travail à project_code/src/${{ matrix.app }}
+        working-directory: project_code/src/${{ matrix.app }}
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - name: Setup Node.js 20.x
+        uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Install dependencies
-        run: npm install
-        working-directory: ${{ matrix.app }}
+        run: npm ci
 
-      - name: Run tests
-        run: npm run test -- --coverage
-        working-directory: ${{ matrix.app }}
+      - name: Run tests with coverage
+        run: npm test -- --coverage
 
-      - name: Upload coverage report if exists
-        if: always()
-        uses: actions/upload-artifact@v2
+      - name: Upload coverage report
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v3
         with:
-          name: coverage-${{ matrix.app }}
-          path: |
-            ${{ matrix.app }}/coverage/lcov.info
+          name: coverage-report-${{ matrix.app }}
+          path: coverage/lcov.info
           if-no-files-found: warn
