@@ -1,10 +1,10 @@
-name: CI – Tests & Coverage (Matrix)
+name: CI – Tests only (Matrix)
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request:
+    branches: [main]
 
 jobs:
   build-and-test:
@@ -14,31 +14,21 @@ jobs:
         app: [backend, frontend, workers]
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - name: Use Node.js 20.x
+        uses: actions/setup-node@v4
         with:
-          node-version: 18
-
-      - name: Change to ${{ matrix.app }} directory
-        run: cd ${{ matrix.app }}
+          node-version: 20
 
       - name: Install dependencies
         run: |
           cd ${{ matrix.app }}
-          npm install
+          npm ci
 
       - name: Run tests
         run: |
           cd ${{ matrix.app }}
           npm run test || echo "⚠️ No test script defined"
-
-      - name: Upload coverage report if exists
-        if: ${{ hashFiles('coverage/lcov.info') != '' }}
-        uses: actions/upload-artifact@v2
-        with:
-          name: coverage-report
-          path: coverage/lcov.info
 
