@@ -1,41 +1,40 @@
-name: CI - Branda Tests & Coverage
+name: CI – Tests & Coverage (Matrix)
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
   pull_request:
-    branches: [main]
 
 jobs:
   build-and-test:
-    runs-on: ubuntu-latest
     strategy:
       matrix:
         app: [project_code/src/backend, project_code/src/frontend, workers]
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      - name: Use Node.js 20.x
-        uses: actions/setup-node@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: 18
 
       - name: Install dependencies
-        run: |
-          cd ${{ matrix.app }}
-          npm ci
+        run: npm install
+        working-directory: ${{ matrix.app }}
 
       - name: Run tests
-        run: |
-          cd ${{ matrix.app }}
-          npm run test || echo "⚠️ No test script defined"
+        run: npm run test -- --coverage
+        working-directory: ${{ matrix.app }}
 
       - name: Upload coverage report if exists
-        if: ${{ hashFiles(format('{0}/coverage/lcov.info', matrix.app)) != '' }}
-        uses: actions/upload-artifact@v3
+        if: always()
+        uses: actions/upload-artifact@v2
         with:
-          name: coverage-report-${{ matrix.app }}
-          path: ${{ matrix.app }}/coverage/lcov.info
-
+          name: coverage-${{ matrix.app }}
+          path: |
+            ${{ matrix.app }}/coverage/lcov.info
+          if-no-files-found: warn
