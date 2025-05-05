@@ -1,4 +1,4 @@
-name: CI - Tests et Couverture
+name: CI - Branda Tests & Coverage
 
 on:
   push:
@@ -38,3 +38,4 @@ jobs:
         with:
           name: coverage-report-${{ matrix.app }}
           path: ${{ matrix.app }}/coverage/lcov.info
+
