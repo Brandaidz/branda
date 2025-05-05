@@ -1,4 +1,4 @@
-name: CI – Tests & Coverage (Matrix)
+name: CI – Tests
 
 on:
   push:
@@ -12,6 +12,7 @@ jobs:
     strategy:
       matrix:
         app: [project_code/src/backend, project_code/src/frontend, workers]
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -31,10 +32,10 @@ jobs:
           cd ${{ matrix.app }}
           npm run test || echo "⚠️ No test script defined"
 
-      - name: Upload coverage report if exists
+      - name: Upload coverage if exists
         if: ${{ hashFiles('${{ matrix.app }}/coverage/lcov.info') != '' }}
         uses: actions/upload-artifact@v2
         with:
-          name: coverage-report
+          name: ${{ matrix.app }}-coverage
           path: ${{ matrix.app }}/coverage/lcov.info
 
