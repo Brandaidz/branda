@@ -9,9 +9,9 @@ on:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        app: [backend, frontend, workers]
+strategy:
+  matrix:
+    app: [project_code/src/backend, project_code/src/frontend, workers]
 
     steps:
       - name: Checkout repo
