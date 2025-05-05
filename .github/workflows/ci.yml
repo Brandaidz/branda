@@ -32,10 +32,10 @@ jobs:
           cd ${{ matrix.app }}
           npm run test || echo "⚠️ No test script defined"
 
-      - name: Upload coverage report if exists
-        if: ${{ hashFiles(format('{0}/coverage/lcov.info', matrix.app)) != '' }}
-        uses: actions/upload-artifact@v2
+      - name: Upload coverage report for ${{ matrix.app }}
+        uses: actions/upload-artifact@v3
         with:
-          name: coverage-${{ matrix.app }}
-          path: ${{ matrix.app }}/coverage/lcov.info
+          name: coverage-report-${{ matrix.app }}
+          path: coverage/lcov.info
+          if-n-files-found: warn
 
