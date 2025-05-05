@@ -35,8 +35,8 @@ jobs:
           cd ${{ matrix.app }}
           npm run test || echo "⚠️ No test script defined"
 
-      - name: Upload coverage artifact
-        if: success()
+      - name: Upload coverage artifact (if exists)
+        if: success() && hashFiles('${{ matrix.app }}/coverage') != ''
         uses: actions/upload-artifact@v3
         with:
           name: ${{ matrix.app }}-coverage
