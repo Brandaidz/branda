@@ -1,41 +1,17 @@
-name: CI – Tests
-
-on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
-
-jobs:
-  build-and-test:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        app: [project_code/src/backend, project_code/src/frontend, workers]
-
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-
-      - name: Use Node.js 20.x
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Install dependencies
-        run: |
-          cd ${{ matrix.app }}
-          npm ci
-
-      - name: Run tests
-        run: |
-          cd ${{ matrix.app }}
-          npm run test || echo "⚠️ No test script defined"
-
-      - name: Upload coverage report for ${{ matrix.app }}
-        uses: actions/upload-artifact@v3
-        with:
-          name: coverage-report-${{ matrix.app }}
-          path: coverage/lcov.info
-          if-n-files-found: warn
-
+```yaml
+- name: Upload coverage report for ${{ matrix.app }}
+  # Ensure you are using actions/upload-artifact@v3 or later
+  uses: actions/upload-artifact@v3
+  with:
+    # Use a dynamic name based on the matrix variable to distinguish artifacts
+    name: coverage-report-${{ matrix.app }}
+    # The path should be relative to the working directory of this step
+    # Assuming the working directory is set to the module's folder (e.g., project_code/src/${{ matrix.app }})
+    path: coverage/lcov.info
+    # This option tells the action what to do if the path doesn't match any files
+    # 'warn': The action completes successfully but logs a warning. (Default)
+    # 'ignore': The action completes successfully without any warning.
+    # 'error': The action fails (this is the behavior without this option).
+    # Choose 'warn' or 'ignore' depending on your preference.
+    if-no-files-found: warn
+```
